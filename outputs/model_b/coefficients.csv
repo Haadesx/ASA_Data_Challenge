@@ -1,0 +1,33 @@
+feature,coefficient
+intervention_family_College Access,38666.48545654299
+intervention_family_College Access:x:child_poverty_rate,-10291.529809765787
+intervention_family_Technology-Assisted,-6402.825103345285
+intervention_family_Teacher Support,5401.369043099799
+intervention_family_Tutoring,-4183.515393155937
+intervention_family_College Access:x:log_pp_exp,-4075.329506207467
+intervention_family_Technology-Assisted:x:child_poverty_rate,2079.0381124817663
+intervention_family_Tutoring:x:child_poverty_rate,1482.9756383331644
+intervention_family_Other,1417.8398488983987
+intervention_family_Teacher Support:x:child_poverty_rate,-1099.9952007377353
+intercept,-1088.502839131566
+intervention_family_College Access:x:log_pp_exp:x:child_poverty_rate,910.1391528090833
+intervention_family_Technology-Assisted:x:log_pp_exp,675.3226364002111
+intervention_family_Teacher Support:x:log_pp_exp,-568.794392727043
+intervention_family_Tutoring:x:log_pp_exp,441.4408452577595
+intervention_family_Technology-Assisted:x:log_pp_exp:x:child_poverty_rate,-192.21526769084548
+log_pp_exp,171.4507269592968
+intervention_family_Other:x:log_pp_exp,-148.93438029099897
+intervention_family_Tutoring:x:log_pp_exp:x:child_poverty_rate,-139.40310261597872
+intervention_family_Teacher Support:x:log_pp_exp:x:child_poverty_rate,89.64251588663706
+intervention_family_Other:x:child_poverty_rate,-23.536963456723438
+intervention_family_Other:x:log_pp_exp:x:child_poverty_rate,-5.900273975480901
+study_design_std_Single Case Design,1.0650341904164484
+study_design_std_Regression Discontinuity Design,-0.1687796406229872
+study_quality_score,-0.10028986768851242
+study_design_std_Unknown,-0.07928840517394159
+ell_share,0.06638443456027372
+study_design_std_Randomized Controlled Trial,0.021304418149562767
+teacher_salary_real,-0.009614332929953943
+child_poverty_rate,-4.063363306614995e-05
+publication_year_c,-3.542037384024379e-05
+frpl_share,-7.777069730361428e-07

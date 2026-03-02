@@ -1,0 +1,24 @@
+feature,coefficient
+study_design_std_Single Case Design,1.0913200502562106
+intervention_family_Tutoring,0.2201954386975163
+intercept,0.20843395777423065
+intervention_family_College Access,0.19514502693230534
+study_design_std_Regression Discontinuity Design,-0.1766532961350398
+study_quality_score,-0.09183315262329059
+ell_share,0.0704706248406032
+intervention_family_Tutoring:x:rucc_rural_share,0.06605863160925482
+intervention_family_College Access:x:rucc_rural_share,0.05854350807969159
+intervention_family_Technology-Assisted,-0.050838751679035545
+intervention_family_Teacher Support,0.046638714800291366
+study_design_std_Unknown,-0.03922997082935248
+study_design_std_Randomized Controlled Trial,0.01847388701813988
+intervention_family_Technology-Assisted:x:rucc_rural_share,-0.015251625503710632
+intervention_family_Other,0.015061493104324771
+intervention_family_Teacher Support:x:rucc_rural_share,0.013991614440087423
+acs_ba_z,-0.008118982727311515
+acs_income_z,-0.008118982727311357
+intervention_family_Other:x:rucc_rural_share,0.004518447931297589
+frpl_share,0.001394990803083206
+child_poverty_rate,0.0013949908030830693
+publication_year_c,-1.6642512566753656e-05
+rucc_rural_share,-5.551115123125783e-17

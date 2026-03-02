@@ -1,0 +1,9 @@
+{
+  "model": "C_transportability",
+  "rows": 12361,
+  "features": 22,
+  "weighted_r2": 0.0022197242189062605,
+  "context_source_values": [
+    "proxy_from_wwc"
+  ]
+}

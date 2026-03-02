@@ -1,0 +1,16 @@
+{
+  "generated_utc": "2026-03-01T01:44:21.485840+00:00",
+  "year_start": 2009,
+  "year_end": 2024,
+  "rows": 663,
+  "sources": {
+    "acs5_api": "https://api.census.gov/data/{year}/acs/acs5",
+    "saipe_api": "https://api.census.gov/data/timeseries/poverty/saipe",
+    "rucc_csv": "https://www.ers.usda.gov/media/5768/2023-rural-urban-continuum-codes.csv?v=39528"
+  },
+  "notes": [
+    "FRPL share proxied using SAIPE child poverty rate when NCES CCD FRPL is unavailable.",
+    "F-33 finance columns are null placeholders and can be replaced later with NCES F-33.",
+    "RUCC rural share is constant across years (derived from 2023 RUCC and 2020 county population)."
+  ]
+}

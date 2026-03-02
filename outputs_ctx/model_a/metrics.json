@@ -1,0 +1,9 @@
+{
+  "model": "A_subgroup_heterogeneity",
+  "rows": 23691,
+  "features": 90,
+  "weighted_r2": 0.00999351962959616,
+  "context_source_values": [
+    "merged_external_with_proxy_fallback"
+  ]
+}

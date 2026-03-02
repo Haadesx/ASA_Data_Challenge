@@ -1,0 +1,9 @@
+{
+  "model": "B_resource_moderation",
+  "rows": 12361,
+  "features": 31,
+  "weighted_r2": 0.0025503430083891887,
+  "context_source_values": [
+    "proxy_from_wwc"
+  ]
+}

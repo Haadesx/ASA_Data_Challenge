@@ -1,0 +1,52 @@
+feature,coefficient
+intervention_family_Teacher Support:x:frpl_share:x:ell_share,8.063439360453646
+intervention_family_College Access:x:frpl_share:x:ell_share,-5.686839129594738
+intervention_family_Tutoring:x:frpl_share:x:ell_share,5.2869232492914815
+intervention_family_Teacher Support:x:ell_share,-4.638862628538402
+intervention_family_College Access:x:ell_share,3.1997896112219926
+intervention_family_Tutoring:x:ell_share,-2.281808108112084
+intervention_family_Teacher Support:x:frpl_share,-1.4311456263722837
+study_design_std_Single Case Design,1.0541999400499311
+intervention_family_Technology-Assisted:x:ell_share,0.8134665010980942
+intervention_family_Teacher Support,0.8107618049542904
+intervention_family_Technology-Assisted:x:frpl_share:x:ell_share,-0.6601857325461578
+intervention_family_Tutoring:x:frpl_share,-0.6069436645868028
+frpl_share,0.5651274011321056
+intervention_family_Other:x:frpl_share,-0.5393474876044743
+intervention_family_Tutoring,0.4458988922364746
+intervention_family_Other:x:frpl_share:x:ell_share,0.24742100778901022
+intervention_family_Other,0.23871466779489411
+study_design_std_Regression Discontinuity Design,-0.17530487610848744
+intervention_family_College Access,0.16418589190183813
+study_quality_score,-0.09650811825253469
+ell_share,-0.09246645617633967
+minority_share,0.08520233620364794
+intervention_family_Technology-Assisted,-0.08460146986556338
+intercept,-0.06400585465114231
+intervention_family_Technology-Assisted:x:frpl_share,-0.05818905574357219
+intervention_family_Other:x:ell_share,0.054186579190615064
+study_design_std_Randomized Controlled Trial,0.02212426611762536
+intervention_family_College Access:x:frpl_share,0.017822496848177567
+study_design_std_Unknown,-0.010910504667794953
+publication_year_c,-1.9704057905755728e-05
+swd_share,-4.052314039881821e-15
+intervention_family_College Access:x:ell_share:x:swd_share,0.0
+intervention_family_Technology-Assisted:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_Teacher Support:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_Other:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_College Access:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_Tutoring:x:ell_share:x:swd_share,0.0
+intervention_family_Technology-Assisted:x:ell_share:x:swd_share,0.0
+intervention_family_Teacher Support:x:ell_share:x:swd_share,0.0
+intervention_family_Other:x:ell_share:x:swd_share,0.0
+intervention_family_Other:x:frpl_share:x:swd_share,0.0
+intervention_family_Tutoring:x:frpl_share:x:swd_share,0.0
+intervention_family_Technology-Assisted:x:frpl_share:x:swd_share,0.0
+intervention_family_Teacher Support:x:frpl_share:x:swd_share,0.0
+intervention_family_College Access:x:frpl_share:x:swd_share,0.0
+intervention_family_Tutoring:x:swd_share,0.0
+intervention_family_Technology-Assisted:x:swd_share,0.0
+intervention_family_Teacher Support:x:swd_share,0.0
+intervention_family_Other:x:swd_share,0.0
+intervention_family_College Access:x:swd_share,0.0
+intervention_family_Tutoring:x:frpl_share:x:ell_share:x:swd_share,0.0

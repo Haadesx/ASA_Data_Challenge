@@ -1,0 +1,100 @@
+feature,coefficient
+intervention_family_College Access,-102609.22671236756
+intervention_family_Technology-Assisted,-65992.50590254732
+intervention_family_College Access:x:child_poverty_rate,27660.69505532478
+intervention_family_Technology-Assisted:x:child_poverty_rate,17088.042826663732
+intervention_family_Tutoring,12509.4664906264
+intervention_family_College Access:x:log_pp_exp,10815.092623473472
+intervention_family_Technology-Assisted:x:log_pp_exp,6955.3920620706485
+intervention_family_Teacher Support,-4826.422808766445
+intervention_family_Tutoring:x:child_poverty_rate,-3287.27155453214
+intervention_family_Teacher-Level,-3183.1216371693245
+intervention_family_Supplement,2455.9597301329736
+intervention_family_College Access:x:log_pp_exp:x:child_poverty_rate,-2453.0534331909494
+intervention_family_Technology-Assisted:x:log_pp_exp:x:child_poverty_rate,-1501.69238300284
+intervention_family_Other,-1404.4235588244237
+intervention_family_Teacher Support:x:child_poverty_rate,1349.5743719933716
+intervention_family_Tutoring:x:log_pp_exp,-1318.441790076252
+intervention_family_Teacher-Level:x:child_poverty_rate,957.588747923648
+intervention_family_Supplement:x:child_poverty_rate,-610.0439058922773
+intervention_family_Teacher Support:x:log_pp_exp,508.7418600619858
+intervention_family_Other:x:child_poverty_rate,417.6239450085359
+intervention_family_Teacher-Level:x:log_pp_exp,335.6047826802519
+intervention_family_Tutoring:x:log_pp_exp:x:child_poverty_rate,289.8527681448677
+intervention_family_Supplement:x:log_pp_exp,-258.82850710793537
+intervention_family_Other:x:log_pp_exp,148.03852826211642
+intervention_family_Teacher Support:x:log_pp_exp:x:child_poverty_rate,-120.71252910982003
+intercept,-100.93718766119895
+intervention_family_Teacher-Level:x:log_pp_exp:x:child_poverty_rate,-87.1244993795408
+intervention_family_Supplement:x:log_pp_exp:x:child_poverty_rate,53.059066041538244
+intervention_family_Other:x:log_pp_exp:x:child_poverty_rate,-37.809708741042414
+log_pp_exp,15.21457567332316
+state_abbr_ND,-1.6877083239811839
+state_abbr_OK,-1.1842162644566088
+study_design_std_Single Case Design,1.0723127076587815
+state_abbr_IA,-1.0424164668342808
+state_abbr_WV,-1.0212094048513336
+state_abbr_MS,-0.9806238694509375
+state_abbr_ME,-0.762752504169157
+state_abbr_SC,-0.49973609494554694
+intervention_family_Curriculum:x:log_pp_exp:x:child_poverty_rate,-0.45324370668544134
+state_abbr_MO,-0.432051982572375
+state_abbr_HI,0.39051644179190337
+state_abbr_RI,0.34679145332893313
+state_abbr_MI,-0.335559365124368
+state_abbr_WY,0.32932189335276973
+state_abbr_NJ,-0.271591352628775
+state_abbr_GA,-0.2524983640642047
+state_abbr_KS,-0.20952024213283948
+study_design_std_Regression Discontinuity Design,-0.18537277970380206
+state_abbr_MT,0.1844587590881368
+state_abbr_OR,0.16139174170530168
+state_abbr_AL,-0.16021881431784823
+state_abbr_VT,0.15459244278883943
+ell_share,0.14087539871735988
+state_abbr_NH,-0.13699845729797744
+intervention_family_Curriculum:x:log_pp_exp,0.1342804356263514
+state_abbr_NC,-0.13345105532062007
+state_abbr_CA,-0.1321016732253586
+state_abbr_ID,-0.13199437484363585
+state_abbr_WI,-0.13107804750507057
+state_abbr_IN,0.12242772886202147
+state_abbr_SD,0.11896361268918554
+state_abbr_KY,-0.11861769935603661
+state_abbr_MD,-0.11856884906501364
+state_abbr_WA,-0.11538140032644151
+state_abbr_MA,-0.11212397991585021
+state_abbr_NE,0.11159318865611567
+state_abbr_DC,-0.11158933523879355
+state_abbr_IL,-0.1081560639199779
+state_abbr_LA,-0.10131491478023236
+state_abbr_UT,-0.10104744196655702
+state_abbr_PA,-0.09927781345732001
+state_abbr_MN,-0.0955819353548577
+state_abbr_CO,0.08856364884812251
+study_quality_score,-0.08801401293472849
+state_abbr_NA,-0.08605971112774569
+state_abbr_VA,-0.0811221033069387
+state_abbr_NV,-0.07247576191639382
+state_abbr_TN,-0.0724517579546955
+state_abbr_TX,-0.053255622489814414
+study_design_std_Unknown,0.05286145244109974
+state_abbr_NM,0.0522616329808443
+intervention_family_Curriculum:x:child_poverty_rate,-0.04912317740603811
+state_abbr_AZ,0.0446005477362128
+state_abbr_OH,-0.04450928849291813
+state_abbr_NY,-0.04035427731105301
+state_abbr_FL,-0.0331407931393537
+study_design_std_Randomized Controlled Trial,0.030676844483783938
+state_abbr_AR,0.030498345881516897
+state_abbr_DE,-0.02266863457307
+intervention_family_Practice:x:log_pp_exp,0.013304618540132651
+intervention_family_Curriculum,0.011749161448211809
+state_abbr_CT,-0.010573886374125152
+intervention_family_Practice:x:log_pp_exp:x:child_poverty_rate,0.0027009488926523773
+intervention_family_Practice,0.0014164062042889558
+teacher_salary_real,-0.0007653524985708898
+intervention_family_Practice:x:child_poverty_rate,0.00028730694174328164
+publication_year_c,-9.90039405571741e-05
+child_poverty_rate,-1.3982756416753075e-05
+frpl_share,-8.69926115251718e-06

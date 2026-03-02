@@ -1,0 +1,9 @@
+{
+  "model": "C_transportability",
+  "rows": 23691,
+  "features": 81,
+  "weighted_r2": 0.005076044453501405,
+  "context_source_values": [
+    "merged_external_with_proxy_fallback"
+  ]
+}

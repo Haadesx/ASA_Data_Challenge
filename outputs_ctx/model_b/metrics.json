@@ -1,0 +1,9 @@
+{
+  "model": "B_resource_moderation",
+  "rows": 23691,
+  "features": 98,
+  "weighted_r2": 0.005664170426035731,
+  "context_source_values": [
+    "merged_external_with_proxy_fallback"
+  ]
+}

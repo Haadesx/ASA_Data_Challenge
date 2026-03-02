@@ -1,0 +1,9 @@
+{
+  "model": "A_subgroup_heterogeneity",
+  "rows": 12361,
+  "features": 50,
+  "weighted_r2": 0.002410402261230682,
+  "context_source_values": [
+    "proxy_from_wwc"
+  ]
+}

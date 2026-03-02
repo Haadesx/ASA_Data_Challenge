@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WWC ASA Data Challenge</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+      color: #0f172a;
+      background:
+        radial-gradient(1000px 450px at -10% -20%, #bfdbfe 0%, transparent 70%),
+        radial-gradient(1000px 450px at 110% -10%, #ddd6fe 0%, transparent 70%),
+        #f5f8ff;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 22px 36px; }
+    .hero {
+      border-radius: 16px;
+      background: linear-gradient(120deg, #0f172a 0%, #1d4ed8 50%, #7c3aed 100%);
+      color: #fff;
+      padding: 22px;
+      box-shadow: 0 10px 24px rgba(15,23,42,0.2);
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    .muted { color: #dbeafe; font-size: 14px; }
+    .grid {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #dbe4f0;
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: 0 3px 10px rgba(15,23,42,0.05);
+    }
+    .card h2 { margin: 0 0 8px; font-size: 18px; }
+    .card a {
+      display: inline-block;
+      margin-top: 6px;
+      color: #1d4ed8;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .card a:hover { text-decoration: underline; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>WWC ASA Data Challenge</h1>
+      <div class="muted">Data engineering, subset readiness, modeling outputs, and dashboard artifacts.</div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Data Readiness Dashboard</h2>
+        <p>Professional dashboard showing data coverage, subset viability, state-level evidence density, and GO/NO-GO recommendations.</p>
+        <a href="./Urvi_Analysis/dashboard/data_readiness_dashboard.html">Open Dashboard</a>
+      </article>
+      <article class="card">
+        <h2>In-Depth Documentation</h2>
+        <p>Complete documentation of what was done, why, impact, and next steps.</p>
+        <a href="./Urvi_Analysis/WWC_Project_Documentation_InDepth.md">Open Documentation</a>
+      </article>
+      <article class="card">
+        <h2>Data Products</h2>
+        <p>Ready-to-use subsets: predictive core, inference core, geography context core, and strict demographic subset.</p>
+        <a href="./Urvi_Analysis/data_products/">Browse Data Products</a>
+      </article>
+      <article class="card">
+        <h2>Model Outputs</h2>
+        <p>Generated analysis figures and tables from baseline model runs with and without external context.</p>
+        <a href="./outputs_ctx/">Browse Context-Aware Outputs</a>
+      </article>
+    </section>
+  </div>
+</body>
+</html>

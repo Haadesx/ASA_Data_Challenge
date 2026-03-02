@@ -1,0 +1,26 @@
+intervention_family,subgroup_label,avg_pred_effect
+Tutoring,General/Mixed,0.2764213640736406
+College Access,General/Mixed,0.22324301602721244
+Practice,General/Mixed,0.21761461360332598
+Curriculum,General/Mixed,0.20534397540935612
+Teacher-Level,General/Mixed,0.1255478660149041
+Supplement,General/Mixed,0.061974232522915874
+Other,General/Mixed,0.027296012455013518
+Behavior/SEL,General/Mixed,0.02149616332789597
+Teacher Support,General/Mixed,0.017133667548539278
+Technology-Assisted,General/Mixed,-0.0583328266395293
+College Access,High EL,0.38040190535600404
+Tutoring,High EL,0.3352916079199298
+Teacher-Level,High EL,0.11924644469039763
+Teacher Support,High EL,0.10579945645910332
+Other,High EL,0.07376959983364209
+Behavior/SEL,High EL,-0.06324216704838727
+Technology-Assisted,High EL,-0.1288079351491523
+Tutoring,High Poverty,0.3332885687984459
+Supplement,High Poverty,0.2578122566734822
+College Access,High Poverty,0.18990571220723698
+Teacher-Level,High Poverty,0.07237234051954287
+Other,High Poverty,0.06698744759163715
+Teacher Support,High Poverty,0.05670291817900702
+Other,High Poverty + High EL,0.10796901169076707
+Teacher-Level,High Poverty + High EL,0.10253676146903452

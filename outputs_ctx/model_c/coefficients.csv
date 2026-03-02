@@ -1,0 +1,83 @@
+feature,coefficient
+intervention_family_College Access:x:rucc_rural_share,1.3229121670178352
+state_abbr_OK,-1.2049518792360918
+study_design_std_Single Case Design,1.1164785360843215
+intervention_family_Technology-Assisted:x:rucc_rural_share,1.0464643828568425
+state_abbr_MS,-1.0296266058797083
+state_abbr_WV,-1.027647005046439
+state_abbr_IA,-1.018152043097462
+state_abbr_ND,-0.8841469097980307
+state_abbr_ME,-0.7541726582766449
+intervention_family_Tutoring:x:rucc_rural_share,-0.7026108651870682
+state_abbr_CO,0.6035284813912237
+state_abbr_SC,-0.5520793338256383
+state_abbr_RI,0.4745107586819024
+state_abbr_MO,-0.4349650596527024
+intervention_family_Tutoring,0.39228654584423167
+state_abbr_HI,0.34807576382538336
+state_abbr_GA,-0.298011851186454
+intercept,0.2936927840793736
+intervention_family_Curriculum:x:rucc_rural_share,0.2893419191449259
+state_abbr_WY,0.266160300005291
+state_abbr_NJ,-0.2632794302065405
+state_abbr_MI,-0.2510376415559788
+intervention_family_Teacher-Level:x:rucc_rural_share,0.2203688069350154
+state_abbr_DC,-0.21199411382035538
+state_abbr_KS,-0.2107397764077003
+study_design_std_Regression Discontinuity Design,-0.18083752649630083
+state_abbr_NA,-0.17838231900361284
+intervention_family_Technology-Assisted,-0.1682195617535151
+intervention_family_Practice:x:rucc_rural_share,0.1647839540388333
+intervention_family_Practice,0.1564717710586399
+state_abbr_OR,0.1548251345482764
+state_abbr_MT,0.1480896868928212
+state_abbr_IN,0.14000543164572807
+state_abbr_KY,-0.13908335201426447
+state_abbr_MA,-0.1352070471865569
+state_abbr_MD,-0.13472439853798002
+intervention_family_College Access,0.13425072229210852
+state_abbr_WI,-0.1320657222555297
+state_abbr_IL,-0.12915254225635583
+state_abbr_VT,0.12857448212007547
+intervention_family_Curriculum,0.12720561763631766
+state_abbr_LA,-0.12643214574816836
+state_abbr_UT,0.12480483437415696
+state_abbr_PA,-0.12253844793826663
+state_abbr_NC,-0.1212198098208141
+state_abbr_CA,-0.11802085554905838
+state_abbr_WA,-0.11725865129829244
+state_abbr_NE,0.11215470402430788
+state_abbr_NV,-0.10965178628079778
+state_abbr_ID,-0.10554343575277698
+child_poverty_rate,0.1012685292749061
+frpl_share,0.10126852927486293
+state_abbr_SD,0.09951318446029486
+state_abbr_MN,-0.0995113946541718
+study_quality_score,-0.09424786311556235
+state_abbr_VA,-0.08915421627253352
+state_abbr_TN,-0.08456100768270791
+intervention_family_Teacher Support,0.08197710682277615
+intervention_family_Supplement,0.07896866940254754
+intervention_family_Supplement:x:rucc_rural_share,0.07671769999269297
+state_abbr_NY,-0.0705224740327473
+state_abbr_TX,-0.05880920599601522
+state_abbr_DE,-0.05561282200387491
+ell_share,0.05469699626470126
+state_abbr_AL,0.05308813593953838
+state_abbr_NH,-0.05102215367070393
+intervention_family_Other:x:rucc_rural_share,0.05021303518064607
+intervention_family_Teacher Support:x:rucc_rural_share,-0.04667880835933752
+state_abbr_OH,-0.04436458000474913
+state_abbr_FL,-0.04301251519472217
+study_design_std_Unknown,0.03482023116106476
+state_abbr_NM,0.0327271300317858
+state_abbr_AZ,0.02903546082277758
+intervention_family_Teacher-Level,0.02866385830865391
+state_abbr_CT,-0.025948753679485737
+acs_ba_z,0.019519481327686883
+study_design_std_Randomized Controlled Trial,0.01934279478199033
+rucc_rural_share,0.012291933184020597
+acs_income_z,0.004381512620053015
+state_abbr_AR,-0.003082648476666422
+intervention_family_Other,0.0003300392510293612
+publication_year_c,-5.067518424028972e-05

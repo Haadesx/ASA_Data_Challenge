@@ -1,0 +1,92 @@
+feature,coefficient
+intervention_family_Practice:x:ell_share,45.43762400038117
+intervention_family_Tutoring:x:frpl_share:x:ell_share,33.64619913266146
+intervention_family_Curriculum:x:frpl_share,-12.410054490707436
+intervention_family_Supplement:x:frpl_share:x:ell_share,11.126617224657924
+intervention_family_Teacher Support:x:frpl_share:x:ell_share,-10.907844234700239
+intervention_family_Practice:x:frpl_share:x:ell_share,9.223837672077309
+intervention_family_Tutoring:x:ell_share,-6.4822680447183085
+intervention_family_Curriculum,4.268379883134125
+intervention_family_Practice,-3.9793083616236613
+intervention_family_College Access:x:frpl_share:x:ell_share,-3.4498366070548236
+intervention_family_Tutoring:x:frpl_share,-3.3218786903587025
+intervention_family_College Access:x:frpl_share,-2.9594842780029342
+intervention_family_Technology-Assisted:x:frpl_share,2.5623160913798184
+grade_band_Mixed/Unknown,-2.150269655779289
+intervention_family_Technology-Assisted:x:frpl_share:x:ell_share,-1.81926549514333
+intervention_family_Teacher Support:x:ell_share,1.812527864443353
+intervention_family_Teacher Support:x:frpl_share,1.6979684745760015
+intervention_family_Curriculum:x:frpl_share:x:ell_share,-1.6133070837919554
+intervention_family_Supplement:x:ell_share,-1.3747886963001634
+study_design_std_Single Case Design,1.1345376291598033
+intervention_family_Supplement:x:frpl_share,-1.0583760393565727
+intervention_family_Tutoring,0.832478864281094
+intervention_family_Practice:x:frpl_share,-0.8077995974098108
+intervention_family_College Access,0.6898666953080396
+intervention_family_Teacher-Level:x:frpl_share:x:ell_share,-0.6258075981359261
+intervention_family_College Access:x:ell_share,0.6161638027624924
+intervention_family_Curriculum:x:ell_share,0.5548893848074773
+ell_share,0.47661624021912613
+minority_share,0.4701489766321599
+intervention_family_Technology-Assisted,-0.4463492101774122
+intervention_family_Teacher-Level:x:frpl_share,0.4377358884566629
+intervention_family_Other:x:ell_share,-0.39212076798072015
+intervention_family_Technology-Assisted:x:ell_share,0.3794750959421824
+intervention_family_Other:x:frpl_share,0.3696875248839555
+frpl_share,-0.3011914812397256
+study_design_std_Regression Discontinuity Design,-0.20762534847517022
+intervention_family_Teacher Support,-0.19057007197997178
+intervention_family_Supplement,0.1768740247615617
+intervention_family_Teacher-Level:x:ell_share,0.1730338774326654
+urbanicity_Rural,-0.17143279392447042
+urbanicity_Suburban,0.13708830664065874
+grade_band_Postsecondary,0.08326883770126958
+grade_band_High School,0.07469297272057052
+intercept,-0.06571471314710256
+study_quality_score,-0.061093133687429704
+grade_band_Middle,0.047706084695186
+intervention_family_Other,0.021671133585053952
+intervention_family_Other:x:frpl_share:x:ell_share,0.021156510466448175
+study_design_std_Randomized Controlled Trial,-0.019248089516323397
+urbanicity_Urban,0.013945925930723857
+grade_band_Elementary,-0.005978581652675757
+intervention_family_Teacher-Level,0.0025548939795290715
+study_design_std_Unknown,-0.0009223032552270194
+publication_year_c,-6.050359173315201e-05
+swd_share,2.0261570199409107e-14
+intervention_family_Tutoring:x:ell_share:x:swd_share,0.0
+intervention_family_Other:x:ell_share:x:swd_share,0.0
+intervention_family_Practice:x:ell_share:x:swd_share,0.0
+intervention_family_Supplement:x:ell_share:x:swd_share,0.0
+intervention_family_Teacher Support:x:ell_share:x:swd_share,0.0
+intervention_family_Teacher-Level:x:ell_share:x:swd_share,0.0
+intervention_family_Technology-Assisted:x:ell_share:x:swd_share,0.0
+intervention_family_Supplement:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_College Access:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_Curriculum:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_Other:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_Practice:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_College Access:x:ell_share:x:swd_share,0.0
+intervention_family_Teacher Support:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_Teacher-Level:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_Technology-Assisted:x:frpl_share:x:ell_share:x:swd_share,0.0
+intervention_family_Curriculum:x:ell_share:x:swd_share,0.0
+intervention_family_Practice:x:frpl_share:x:swd_share,0.0
+intervention_family_Tutoring:x:frpl_share:x:swd_share,0.0
+intervention_family_Technology-Assisted:x:frpl_share:x:swd_share,0.0
+intervention_family_College Access:x:swd_share,0.0
+intervention_family_Curriculum:x:swd_share,0.0
+intervention_family_Other:x:swd_share,0.0
+intervention_family_Practice:x:swd_share,0.0
+intervention_family_Supplement:x:swd_share,0.0
+intervention_family_Teacher Support:x:swd_share,0.0
+intervention_family_Teacher-Level:x:swd_share,0.0
+intervention_family_Technology-Assisted:x:swd_share,0.0
+intervention_family_Tutoring:x:swd_share,0.0
+intervention_family_College Access:x:frpl_share:x:swd_share,0.0
+intervention_family_Curriculum:x:frpl_share:x:swd_share,0.0
+intervention_family_Other:x:frpl_share:x:swd_share,0.0
+intervention_family_Supplement:x:frpl_share:x:swd_share,0.0
+intervention_family_Teacher Support:x:frpl_share:x:swd_share,0.0
+intervention_family_Teacher-Level:x:frpl_share:x:swd_share,0.0
+intervention_family_Tutoring:x:frpl_share:x:ell_share:x:swd_share,0.0

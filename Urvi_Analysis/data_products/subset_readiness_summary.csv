@@ -1,0 +1,5 @@
+subset,description,required_non_null,required_true,rows,row_share,studies,interventions,outcome_domains,status
+predictive_modeling_core,Primary ML subset for heterogeneity prediction,"f_Effect_Size_WWC, s_Study_Design, s_Study_Rating, s_Grade",state_specific_available,6994,0.5370498349074714,848,607,178,GO
+inference_ci_core,Primary inferential subset for confidence intervals/meta-regression,"f_Effect_Size_WWC, f_p_Value_WWC, f_Outcome_Sample_Size, s_Study_Design, s_Study_Rating",,10329,0.7931352222990095,1315,903,195,GO
+geography_context_core,Subset for state+school-context analyses,"f_Effect_Size_WWC, s_Study_Design, s_Study_Rating","state_specific_available, urbanicity_available, school_type_available",2984,0.22913307225677648,363,290,135,GO (Cautious)
+demographic_strict_subset,Strict demographic subset (FRPL + ELL available),"f_Effect_Size_WWC, s_Study_Design, s_Study_Rating, s_Grade, s_Demographics_Sample_FRPL, s_Demographics_Sample_ELL",state_specific_available,1521,0.11679336558396683,206,153,93,NO-GO
