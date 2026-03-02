@@ -1,7 +1,7 @@
 # WWC Project Documentation (In-Depth)
 
 Project: ASA Data Challenge (WWC)  
-Workspace: `/Volumes/Auxilary/Side_Projects/ASA Data Challange`  
+Workspace: `/Volumes/Auxilary/Side_Projects/ASA_Data_Challenge`  
 Documentation date: March 2, 2026
 
 ## 1) Purpose and Problem Statement

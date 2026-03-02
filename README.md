@@ -17,7 +17,7 @@ This repository contains:
 
 After GitHub Pages is enabled, public URL should be:
 
-`https://haadesx.github.io/ASA_Data_Challange/`
+`https://haadesx.github.io/ASA_Data_Challenge/`
 
 ## Key Documentation
 

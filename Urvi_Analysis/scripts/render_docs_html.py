@@ -3,7 +3,7 @@ from pathlib import Path
 import html
 import mistune
 
-ROOT=Path('/Volumes/Auxilary/Side_Projects/ASA_Data_Challange')
+ROOT=Path(__file__).resolve().parents[2]
 md=ROOT/'Urvi_Analysis'/'WWC_Project_Documentation_InDepth.md'
 out=ROOT/'Urvi_Analysis'/'WWC_Project_Documentation_InDepth.html'
 text=md.read_text(encoding='utf-8')
