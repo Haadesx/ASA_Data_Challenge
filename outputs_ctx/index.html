@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WWC Model Outputs (Context-Aware)</title>
+  <style>
+    body{margin:0;font-family:"IBM Plex Sans","Segoe UI",Arial,sans-serif;background:#f6f8ff;color:#0f172a}
+    .wrap{max-width:1100px;margin:0 auto;padding:22px}
+    .hero{background:linear-gradient(120deg,#0f172a 0%,#0ea5e9 50%,#14b8a6 100%);color:#fff;border-radius:14px;padding:18px}
+    .hero h1{margin:0}
+    .hero p{margin:6px 0 0;color:#dbeafe}
+    .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:14px}
+    .card{background:#fff;border:1px solid #dbe4f0;border-radius:12px;padding:14px}
+    h2{margin:0 0 8px}
+    ul{margin:0;padding-left:18px}
+    li{margin:6px 0}
+    a{color:#1d4ed8;text-decoration:none;font-weight:600}
+    a:hover{text-decoration:underline}
+    @media (max-width:1000px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Context-Aware Model Outputs</h1>
+      <p>Outputs generated from WWC + external context merge runs.</p>
+      <p><a style="color:#fff" href="../index.html">← Home</a></p>
+    </section>
+    <section class="grid">
+      <article class="card"><h2>Model A</h2><ul>
+        <li><a href="./model_a/metrics.json">metrics.json</a></li>
+        <li><a href="./model_a/heterogeneity_heatmap_frpl.png">heterogeneity_heatmap_frpl.png</a></li>
+        <li><a href="./model_a/observed_vs_predicted.png">observed_vs_predicted.png</a></li>
+        <li><a href="./model_a/intervention_rank_by_frpl_band.csv">intervention_rank_by_frpl_band.csv</a></li>
+      </ul></article>
+      <article class="card"><h2>Model B</h2><ul>
+        <li><a href="./model_b/metrics.json">metrics.json</a></li>
+        <li><a href="./model_b/moderation_curves.png">moderation_curves.png</a></li>
+        <li><a href="./model_b/state_resource_bubble.png">state_resource_bubble.png</a></li>
+        <li><a href="./model_b/state_resource_summary.csv">state_resource_summary.csv</a></li>
+      </ul></article>
+      <article class="card"><h2>Model C</h2><ul>
+        <li><a href="./model_c/metrics.json">metrics.json</a></li>
+        <li><a href="./model_c/coverage_heatmap.png">coverage_heatmap.png</a></li>
+        <li><a href="./model_c/transport_risk_top25.png">transport_risk_top25.png</a></li>
+        <li><a href="./model_c/intervention_rank_by_subgroup.csv">intervention_rank_by_subgroup.csv</a></li>
+      </ul></article>
+    </section>
+  </div>
+</body>
+</html>

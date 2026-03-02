@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WWC In-Depth Documentation</title>
+  <style>
+    :root { --bg:#f6f8ff; --card:#ffffff; --line:#dbe4f0; --text:#0f172a; --muted:#475569; --link:#1d4ed8; }
+    body { margin:0; font-family: "IBM Plex Sans", "Segoe UI", Arial, sans-serif; color:var(--text); background:radial-gradient(900px 400px at -10% -20%,#bfdbfe 0%,transparent 70%), radial-gradient(900px 400px at 110% -10%,#ddd6fe 0%,transparent 70%), var(--bg); }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 22px; }
+    .top { background: linear-gradient(120deg,#0f172a 0%,#1d4ed8 55%,#7c3aed 100%); color:white; border-radius:14px; padding:18px; box-shadow: 0 8px 24px rgba(15,23,42,.2); }
+    .top h1 { margin:0; font-size: 28px; }
+    .top p { margin:6px 0 0; color:#dbeafe; }
+    .card { margin-top:14px; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; box-shadow:0 3px 10px rgba(15,23,42,.05); }
+    .nav a { color:white; font-weight:600; text-decoration:none; margin-right:14px; }
+    .nav a:hover { text-decoration: underline; }
+    h1,h2,h3,h4 { color:#0b2340; line-height:1.3; }
+    h2 { margin-top:26px; border-top:1px solid #e2e8f0; padding-top:16px; }
+    p,li { line-height:1.6; font-size:15px; }
+    code { background:#eef2ff; padding:2px 6px; border-radius:6px; font-family: ui-monospace, Menlo, monospace; font-size: 90%; }
+    pre { background:#0b1220; color:#e2e8f0; padding:14px; border-radius:10px; overflow:auto; }
+    a { color:var(--link); text-decoration:none; }
+    a:hover { text-decoration: underline; }
+    table { width:100%; border-collapse:collapse; margin:12px 0; }
+    th,td { border:1px solid #dbe4f0; padding:8px; text-align:left; font-size:14px; }
+    th { background:#eff6ff; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="top">
+      <div class="nav"><a href="../index.html">Home</a><a href="./dashboard/data_readiness_dashboard.html">Dashboard</a></div>
+      <h1>WWC Project Documentation (In-Depth)</h1>
+      <p>Formatted HTML version for public viewing on GitHub Pages.</p>
+    </section>
+    <section class="card"><h1>WWC Project Documentation (In-Depth)</h1>
+<p>Project: ASA Data Challenge (WWC)<br />
+Workspace: <code>/Volumes/Auxilary/Side_Projects/ASA Data Challange</code><br />
+Documentation date: March 2, 2026</p>
+<h2>1) Purpose and Problem Statement</h2>
+<p>The objective is to answer the WWC challenge question in a rigorous and practical way:</p>
+<ul>
+<li><strong>What works?</strong></li>
+<li><strong>For whom?</strong></li>
+<li><strong>Under what conditions?</strong></li>
+</ul>
+<p>The raw WWC data is nested and sparse in several key predictors. The project therefore required:</p>
+<ul>
+<li>careful feature-level availability analysis,</li>
+<li>defensible subset design,</li>
+<li>a reproducible modeling workflow,</li>
+<li>and a decision-ready dashboard for team and mentor alignment.</li>
+</ul>
+<h2>2) Timeline: What Was Done, When</h2>
+<h2>Phase 1: Core pipeline build (February 28, 2026)</h2>
+<ul>
+<li>Parsed WWC export and reviewed dictionary/metadata.</li>
+<li>Built analytic schema + mart scripts:<ul>
+<li><code>sql/wwc_analytic_schema.sql</code></li>
+<li><code>sql/wwc_build_marts.sql</code></li>
+</ul>
+</li>
+<li>Built model scripts and output pipeline:<ul>
+<li><code>analysis/01_fit_model_a.py</code></li>
+<li><code>analysis/02_fit_model_b.py</code></li>
+<li><code>analysis/03_fit_model_c.py</code></li>
+<li><code>analysis/run_all.py</code></li>
+</ul>
+</li>
+<li>Generated first round of outputs in <code>outputs/</code> and context-aware outputs in <code>outputs_ctx/</code>.</li>
+</ul>
+<h2>Phase 2: External context integration (February 28, 2026)</h2>
+<ul>
+<li>Implemented context fetch:<ul>
+<li><code>analysis/fetch_context_data.py</code></li>
+</ul>
+</li>
+<li>Built merged context file:<ul>
+<li><code>data/context_state_year_acs_saipe_rucc.csv</code></li>
+</ul>
+</li>
+<li>Re-ran all models with external context merge.</li>
+</ul>
+<h2>Phase 3: Data-readiness and subset strategy (March 2, 2026)</h2>
+<ul>
+<li>Profiled teammate’s aggregated file:<ul>
+<li><code>Urvi_Analysis/asadata_aggregated.csv</code></li>
+</ul>
+</li>
+<li>Created variable-level and level-of-analysis profile:<ul>
+<li><code>Urvi_Analysis/column_level_profile.csv</code></li>
+</ul>
+</li>
+<li>Produced mentor strategy note:<ul>
+<li><code>Urvi_Analysis/mentor_data_availability_plan.md</code></li>
+</ul>
+</li>
+</ul>
+<h2>Phase 4: Professional dashboard and dual-source enrichment (March 2, 2026)</h2>
+<ul>
+<li>Built a new dashboard generator with stronger UX and decision framing:<ul>
+<li><code>Urvi_Analysis/scripts/generate_subsets_dashboard.py</code></li>
+</ul>
+</li>
+<li>Combined aggregated + original WWC export into enriched base:<ul>
+<li><code>Urvi_Analysis/data_products/combined_enriched_base.csv</code></li>
+</ul>
+</li>
+<li>Generated renamed subsets and dashboard:<ul>
+<li><code>Urvi_Analysis/data_products/predictive_modeling_core.csv</code></li>
+<li><code>Urvi_Analysis/data_products/inference_ci_core.csv</code></li>
+<li><code>Urvi_Analysis/data_products/geography_context_core.csv</code></li>
+<li><code>Urvi_Analysis/data_products/demographic_strict_subset.csv</code></li>
+<li><code>Urvi_Analysis/dashboard/data_readiness_dashboard.html</code></li>
+</ul>
+</li>
+</ul>
+<h2>3) What We Did and Why</h2>
+<h2>3.1 Audited data at the column + hierarchy level</h2>
+<p>Why:</p>
+<ul>
+<li>Prevent weak modeling decisions due hidden sparsity.</li>
+<li>Identify where inference is defensible and where it is not.</li>
+</ul>
+<p>What:</p>
+<ul>
+<li>Measured non-missing coverage, unique values, and level consistency.</li>
+<li>Confirmed dataset grain is primarily finding-level.</li>
+<li>Confirmed geography is state-level only (no county or school IDs).</li>
+</ul>
+<p>Outcome:</p>
+<ul>
+<li>Established clear feasibility boundaries for ML, CI, geography, and subgroup analyses.</li>
+</ul>
+<h2>3.2 Built dual-source enriched base (aggregated + original WWC)</h2>
+<p>Why:</p>
+<ul>
+<li>Aggregated file is convenient but drops one-hot detail.</li>
+<li>Original file contains useful granular indicators (state flags, topic flags, grade flags, school/urbanicity indicators).</li>
+</ul>
+<p>What:</p>
+<ul>
+<li>Merged by <code>f_FindingID</code> (13,023/13,023 match).</li>
+<li>Added 217 extra columns from the original export.</li>
+<li>Derived unified availability features:<ul>
+<li><code>state_specific_available</code></li>
+<li><code>urbanicity_available</code></li>
+<li><code>school_type_available</code></li>
+<li><code>demographic_signal_available</code></li>
+</ul>
+</li>
+</ul>
+<p>Impact:</p>
+<ul>
+<li>Enriched base increased from 90 to 315 columns, enabling more explicit subset design and better dashboard diagnostics.</li>
+</ul>
+<h2>3.3 Reframed subsets with clearer names and strict definitions</h2>
+<p>Why:</p>
+<ul>
+<li>Previous names (<code>ml_core</code>, <code>ci_core</code>, etc.) were short but less descriptive for stakeholder communication.</li>
+</ul>
+<p>What:</p>
+<ul>
+<li>Created decision-oriented subset names and rules:<ul>
+<li><code>predictive_modeling_core</code></li>
+<li><code>inference_ci_core</code></li>
+<li><code>geography_context_core</code></li>
+<li><code>demographic_strict_subset</code></li>
+</ul>
+</li>
+</ul>
+<p>Impact:</p>
+<ul>
+<li>Reduced ambiguity in mentor/team discussions.</li>
+<li>Improved traceability from recommendation -&gt; subset -&gt; model pipeline.</li>
+</ul>
+<h2>3.4 Built a professional, decision-first dashboard</h2>
+<p>Why:</p>
+<ul>
+<li>A basic dashboard is insufficient for mentor review and project governance.</li>
+<li>Needed a tool that answers “should we proceed, and with what?”</li>
+</ul>
+<p>What:</p>
+<ul>
+<li>Upgraded design with:<ul>
+<li>executive decision header,</li>
+<li>composite readiness score,</li>
+<li>GO / Cautious / NO-GO matrix,</li>
+<li>required-field coverage heatmap,</li>
+<li>U.S. state evidence map,</li>
+<li>support and coverage distribution charts.</li>
+</ul>
+</li>
+</ul>
+<p>Impact:</p>
+<ul>
+<li>Dashboard now supports concrete decision-making, not just descriptive viewing.</li>
+</ul>
+<h2>4) Current Results (Most Important Numbers)</h2>
+<p>Base data (combined):</p>
+<ul>
+<li>Rows: 13,023</li>
+<li>Findings: 13,023</li>
+<li>Studies: 1,601</li>
+<li>Interventions: 1,035</li>
+<li>Columns: 315</li>
+</ul>
+<p>Availability signals:</p>
+<ul>
+<li><code>state_specific_available</code>: 68.0%</li>
+<li><code>urbanicity_available</code>: 66.9%</li>
+<li><code>school_type_available</code>: 54.3%</li>
+<li><code>demographic_signal_available</code>: 87.2%</li>
+</ul>
+<p>Subset readiness:</p>
+<ul>
+<li><code>predictive_modeling_core</code>: 6,994 rows, 848 studies, 607 interventions -&gt; <strong>GO</strong></li>
+<li><code>inference_ci_core</code>: 10,329 rows, 1,315 studies, 903 interventions -&gt; <strong>GO</strong></li>
+<li><code>geography_context_core</code>: 2,984 rows, 363 studies, 290 interventions -&gt; <strong>GO (Cautious)</strong></li>
+<li><code>demographic_strict_subset</code>: 1,521 rows, 206 studies, 153 interventions -&gt; <strong>NO-GO</strong> (as primary)</li>
+</ul>
+<p>Composite readiness score in dashboard:</p>
+<ul>
+<li><strong>68.9 / 100</strong></li>
+</ul>
+<h2>5) How This Was Impactful</h2>
+<p>Technical impact:</p>
+<ul>
+<li>Converted a sparse, nested dataset into reproducible, model-ready pipelines.</li>
+<li>Removed uncertainty around variable availability and analysis level.</li>
+<li>Produced reusable subset products for immediate modeling.</li>
+</ul>
+<p>Project impact:</p>
+<ul>
+<li>Team can now split work cleanly:<ul>
+<li>inference track (<code>inference_ci_core</code>)</li>
+<li>predictive track (<code>predictive_modeling_core</code>)</li>
+</ul>
+</li>
+<li>Mentor communication is now evidence-backed and concrete.</li>
+</ul>
+<p>Decision impact:</p>
+<ul>
+<li>Clear “go/no-go” boundaries avoid over-claiming from weak subsets.</li>
+<li>State-level analyses can proceed; county/school-level claims are explicitly out of scope.</li>
+</ul>
+<h2>6) Methods and Reproducibility</h2>
+<p>Regenerate everything:</p>
+<pre><code class="language-bash">python3 /Volumes/Auxilary/Side_Projects/ASA\ Data\ Challange/Urvi_Analysis/scripts/generate_subsets_dashboard.py
+</code></pre>
+<p>Open dashboard:</p>
+<pre><code class="language-bash">open /Volumes/Auxilary/Side_Projects/ASA\ Data\ Challange/Urvi_Analysis/dashboard/data_readiness_dashboard.html
+</code></pre>
+<p>Primary generated outputs:</p>
+<ul>
+<li><code>Urvi_Analysis/data_products/combined_enriched_base.csv</code></li>
+<li><code>Urvi_Analysis/data_products/subset_readiness_summary.csv</code></li>
+<li><code>Urvi_Analysis/data_products/column_coverage_summary.csv</code></li>
+<li><code>Urvi_Analysis/data_products/required_column_coverage_matrix.csv</code></li>
+<li><code>Urvi_Analysis/data_products/state_coverage_summary.csv</code></li>
+<li><code>Urvi_Analysis/data_products/topic_coverage_summary.csv</code></li>
+</ul>
+<h2>7) Recommended Path Forward</h2>
+<h2>Immediate next 1-3 days</h2>
+<ol>
+<li>Run predictive models on <code>predictive_modeling_core.csv</code>.</li>
+<li>Run inference/meta-regression with uncertainty reporting on <code>inference_ci_core.csv</code>.</li>
+<li>Use <code>geography_context_core.csv</code> for state-context analyses with cautious interpretation.</li>
+</ol>
+<h2>Short-term next week</h2>
+<ol>
+<li>Add robust cross-validation, subgroup stability checks, and intervention support thresholds.</li>
+<li>Produce one integrated results dashboard or notebook with:<ul>
+<li>effect heterogeneity,</li>
+<li>uncertainty intervals,</li>
+<li>evidence support counts.</li>
+</ul>
+</li>
+<li>Promote only findings that are stable across folds/specs.</li>
+</ol>
+<h2>Before final submission</h2>
+<ol>
+<li>Expand external context (NCES CCD + F-33 real values, not fallbacks).</li>
+<li>Move to mixed-effects/Bayesian hierarchical modeling for stronger inferential credibility.</li>
+<li>Prepare a methods appendix explicitly documenting:<ul>
+<li>subset logic,</li>
+<li>missingness handling,</li>
+<li>limitations and non-claim boundaries.</li>
+</ul>
+</li>
+</ol>
+<h2>8) Risks and Guardrails</h2>
+<p>Main risks:</p>
+<ul>
+<li>Sparse demographic strict subset can produce unstable subgroup claims.</li>
+<li>Context variables still include fallback logic in some analyses.</li>
+<li>Causal claims are limited by observational and mixed-study design structure.</li>
+</ul>
+<p>Guardrails:</p>
+<ul>
+<li>Treat <code>demographic_strict_subset</code> as sensitivity-only.</li>
+<li>Require minimum support thresholds before ranking interventions.</li>
+<li>Keep state-level interpretations associational unless stronger design assumptions hold.</li>
+</ul>
+<h2>9) Final Recommendation</h2>
+<p>Proceed now with a <strong>two-track execution plan</strong>:</p>
+<ol>
+<li><strong>Inference track:</strong> <code>inference_ci_core.csv</code></li>
+<li><strong>Prediction track:</strong> <code>predictive_modeling_core.csv</code></li>
+</ol>
+<p>Use the dashboard as the team’s shared operating artifact for scope, status, and claim discipline.</p>
+</section>
+  </div>
+</body>
+</html>

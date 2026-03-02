@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WWC Data Products</title>
+  <style>
+    body{margin:0;font-family:"IBM Plex Sans","Segoe UI",Arial,sans-serif;background:#f6f8ff;color:#0f172a}
+    .wrap{max-width:1100px;margin:0 auto;padding:22px}
+    .hero{background:linear-gradient(120deg,#0f172a 0%,#1d4ed8 55%,#7c3aed 100%);color:#fff;border-radius:14px;padding:18px}
+    .hero h1{margin:0}
+    .hero p{margin:6px 0 0;color:#dbeafe}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+    .card{background:#fff;border:1px solid #dbe4f0;border-radius:12px;padding:14px}
+    h2{margin:0 0 8px}
+    ul{margin:0;padding-left:18px}
+    li{margin:6px 0}
+    a{color:#1d4ed8;text-decoration:none;font-weight:600}
+    a:hover{text-decoration:underline}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>WWC Data Products</h1>
+      <p>Analysis-ready subsets and profiling outputs.</p>
+      <p><a style="color:#fff" href="../../index.html">← Home</a></p>
+    </section>
+    <section class="grid">
+      <article class="card"><h2>Core Subsets</h2><ul>
+        <li><a href="./predictive_modeling_core.csv">predictive_modeling_core.csv</a></li>
+        <li><a href="./inference_ci_core.csv">inference_ci_core.csv</a></li>
+        <li><a href="./geography_context_core.csv">geography_context_core.csv</a></li>
+        <li><a href="./demographic_strict_subset.csv">demographic_strict_subset.csv</a></li>
+      </ul></article>
+      <article class="card"><h2>Compatibility Aliases</h2><ul>
+        <li><a href="./ml_core.csv">ml_core.csv</a></li>
+        <li><a href="./ci_core.csv">ci_core.csv</a></li>
+        <li><a href="./ml_demo.csv">ml_demo.csv</a></li>
+      </ul></article>
+      <article class="card"><h2>Coverage Summaries</h2><ul>
+        <li><a href="./subset_readiness_summary.csv">subset_readiness_summary.csv</a></li>
+        <li><a href="./column_coverage_summary.csv">column_coverage_summary.csv</a></li>
+        <li><a href="./required_column_coverage_matrix.csv">required_column_coverage_matrix.csv</a></li>
+        <li><a href="./state_coverage_summary.csv">state_coverage_summary.csv</a></li>
+        <li><a href="./topic_coverage_summary.csv">topic_coverage_summary.csv</a></li>
+      </ul></article>
+      <article class="card"><h2>Support Files</h2><ul>
+        <li><a href="./combined_enriched_base.csv">combined_enriched_base.csv</a></li>
+        <li><a href="./predictive_core_intervention_support.csv">predictive_core_intervention_support.csv</a></li>
+      </ul></article>
+    </section>
+  </div>
+</body>
+</html>

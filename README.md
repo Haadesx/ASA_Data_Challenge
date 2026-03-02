@@ -11,6 +11,9 @@ This repository contains:
 
 - Landing page: `index.html`
 - Dashboard file: `Urvi_Analysis/dashboard/data_readiness_dashboard.html`
+- Documentation (formatted HTML): `Urvi_Analysis/WWC_Project_Documentation_InDepth.html`
+- Data products index: `Urvi_Analysis/data_products/index.html`
+- Outputs index: `outputs_ctx/index.html`
 
 After GitHub Pages is enabled, public URL should be:
 
@@ -21,4 +24,3 @@ After GitHub Pages is enabled, public URL should be:
 - `Urvi_Analysis/WWC_Project_Documentation_InDepth.md`
 - `docs/wwc_end_to_end_documentation.md`
 - `Urvi_Analysis/mentor_data_availability_plan.md`
-
