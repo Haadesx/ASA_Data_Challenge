@@ -1,0 +1,70 @@
+i_InterventionID,i_Intervention_Name,findings_n,studies_n,mean_effect_size_wwc,median_effect_size_wwc,pct_positive_effect_size,mean_improvement_index,state_abbr,state_name,intervention_name
+19.0,Knowledge is Power Program (KIPP),41,3,0.19953975181199887,0.175708448371066,100.0,7.878048780487805,NY,New York,Knowledge is Power Program (KIPP)
+1287.0,Leveled Literacy Intervention,34,1,0.3231532575010971,0.24895804886850098,97.05882352941177,11.911764705882353,NY,New York,Leveled Literacy Intervention
+290.0,"Investigations in Number, Data, and Space®",24,1,-0.035791488519723066,-0.0296202721671157,25.0,-2.125,NY,New York,"Investigations in Number, Data, and Space®"
+425.0,Pre-K Mathematics,24,2,0.2106436137689918,0.116884117481694,100.0,8.208333333333334,NY,New York,Pre-K Mathematics
+797.0,Linked Learning Communities,18,1,,,,1.2777777777777777,NY,New York,Linked Learning Communities
+1581.0,Year Up,14,2,0.025809986101570544,0.1307178235113785,71.42857142857143,1.5714285714285714,NY,New York,Year Up
+17.0,Saxon Math,13,2,0.11035746572015413,0.104091093612701,76.92307692307693,4.3076923076923075,NY,New York,Saxon Math
+1175.0,Math Expressions,9,1,0.05732518513555702,0.0275963385712838,88.88888888888889,2.2222222222222223,NY,New York,Math Expressions
+1077.0,Xtreme Reading,7,1,0.04607932929627497,0.0417442521507802,100.0,1.7142857142857142,NY,New York,Xtreme Reading
+1517.0,Bottom Line,7,1,0.18148173294825373,0.340864516763396,71.42857142857143,7.142857142857143,NY,New York,Bottom Line
+311.0,Scott Foresman-Addison Wesley Elementary Mathematics,6,1,-0.09049112192376868,-0.0962381355216201,16.666666666666664,-3.8333333333333335,NY,New York,Scott Foresman-Addison Wesley Elementary Mathematics
+83.0,Open Learning Initiative (OLI),4,1,0.14032134158796683,0.1264856576979925,100.0,5.5,NY,New York,Open Learning Initiative (OLI)
+1623.0,Single Stop,4,1,0.0839547112438706,0.0593227093463462,75.0,3.5,NY,New York,Single Stop
+623.0,JOBSTART,4,1,,,,13.75,NY,New York,JOBSTART
+305.0,Progress in Mathematics,2,1,0.07112031012624301,0.07112031012624301,50.0,2.5,NY,New York,Progress in Mathematics
+718.0,Service and Conservation Corps,1,1,,,,-2.0,NY,New York,Service and Conservation Corps
+621.0,New Chance,1,1,,,,8.0,NY,New York,New Chance
+2151.0,Building Blocks&trade;,1,1,0.551825640992102,0.551825640992102,100.0,21.0,NY,New York,Building Blocks&trade;
+19.0,Knowledge is Power Program (KIPP),13,1,0.23452534013614063,0.266865851616145,100.0,9.307692307692308,NJ,New Jersey,Knowledge is Power Program (KIPP)
+397.0,Curiosity Corner,9,1,,,,2.6666666666666665,NJ,New Jersey,Curiosity Corner
+818.0,Cognitive Tutor Algebra I,6,3,0.07118220383737028,0.07118220383737028,50.0,0.8333333333333334,NJ,New Jersey,Cognitive Tutor Algebra I
+289.0,Houghton Mifflin Mathematics,3,1,,,,0.0,NJ,New Jersey,Houghton Mifflin Mathematics
+311.0,Scott Foresman-Addison Wesley Elementary Mathematics,2,1,0.06644074410793266,0.06644074410793266,50.0,2.5,NJ,New Jersey,Scott Foresman-Addison Wesley Elementary Mathematics
+425.0,Pre-K Mathematics,26,3,0.20917896838013514,0.116884117481694,100.0,8.192307692307692,CA,California,Pre-K Mathematics
+529.0,Successmaker,23,1,0.021395209620030203,0.0159998686824148,52.17391304347826,0.782608695652174,CA,California,Successmaker
+19.0,Knowledge is Power Program (KIPP),19,2,0.20597782121433061,0.175708448371066,100.0,8.157894736842104,CA,California,Knowledge is Power Program (KIPP)
+1279.0,Prentice Hall/Pearson Literature© (2007-15),15,3,-0.0013771554836284061,-0.0079294074023467,46.666666666666664,0.06666666666666667,CA,California,Prentice Hall/Pearson Literature© (2007-15)
+797.0,Linked Learning Communities,14,1,,,,-0.5714285714285714,CA,California,Linked Learning Communities
+214.0,Success for All®,10,1,0.15719305656822333,0.206750183071705,57.14285714285714,5.9,CA,California,Success for All®
+261.0,Lions Quest -- Skills for Adolescence,10,1,,,,1.6,CA,California,Lions Quest -- Skills for Adolescence
+750.0,Core-Plus Mathematics,9,1,0.3750378161015652,0.289480191481847,77.77777777777779,13.0,CA,California,Core-Plus Mathematics
+309.0,Accelerated Math® ,8,1,0.2946,0.249,100.0,11.6,CA,California,Accelerated Math® 
+418.0,Literacy Express,7,1,0.17655147310556712,0.151966760767822,85.71428571428571,7.142857142857143,CA,California,Literacy Express
+326.0,Vocabulary Improvement Program for English Language Learners and Their Classmates (VIP),6,1,0.42597808017449806,0.4391422737381395,83.33333333333334,16.0,CA,California,Vocabulary Improvement Program for English Language Learners and Their Classmates (VIP)
+434.0,Summer Training and Education Program (STEP),4,1,,,,-0.75,CA,California,Summer Training and Education Program (STEP)
+623.0,JOBSTART,4,1,,,,13.75,CA,California,JOBSTART
+726.0,Project CRISS®,3,1,-0.0166493649416042,-0.0321735993734571,33.33333333333333,-0.6666666666666666,CA,California,Project CRISS®
+321.0,Career Academies,3,1,0.0899708731321358,0.0899708731321358,100.0,7.0,CA,California,Career Academies
+289.0,Houghton Mifflin Mathematics,3,1,,,,0.0,CA,California,Houghton Mifflin Mathematics
+742.0,READ 180®,3,1,0.34881339986456966,0.237108477373884,100.0,13.0,CA,California,READ 180®
+6.0,Teach for America (TFA),2,1,0.09274873159973471,0.09274873159973471,100.0,3.5,CA,California,Teach for America (TFA)
+718.0,Service and Conservation Corps,1,1,,,,-2.0,CA,California,Service and Conservation Corps
+621.0,New Chance,1,1,,,,8.0,CA,California,New Chance
+17.0,Saxon Math,1,1,0.112191716858976,0.112191716858976,100.0,4.0,CA,California,Saxon Math
+393.0,National Guard Youth ChalleNGe Program,1,1,,,,23.0,CA,California,National Guard Youth ChalleNGe Program
+1581.0,Year Up,1,1,1.0008220792979,1.0008220792979,100.0,34.0,CA,California,Year Up
+1572.0,Leadership and Assistance for Science Education Reform (LASER),72,1,0.028279045182326816,0.015567806015207152,56.94444444444444,1.1527777777777777,TX,Texas,Leadership and Assistance for Science Education Reform (LASER)
+19.0,Knowledge is Power Program (KIPP),41,3,0.19953975181199887,0.175708448371066,100.0,7.878048780487805,TX,Texas,Knowledge is Power Program (KIPP)
+290.0,"Investigations in Number, Data, and Space®",24,1,-0.035791488519723066,-0.0296202721671157,25.0,-2.125,TX,Texas,"Investigations in Number, Data, and Space®"
+529.0,Successmaker,23,1,0.021395209620030203,0.0159998686824148,52.17391304347826,0.782608695652174,TX,Texas,Successmaker
+797.0,Linked Learning Communities,18,1,,,,1.2777777777777777,TX,Texas,Linked Learning Communities
+17.0,Saxon Math,13,2,0.11035746572015413,0.104091093612701,76.92307692307693,4.3076923076923075,TX,Texas,Saxon Math
+814.0,Summer Counseling,12,1,0.052381933073295146,0.06934858056794045,66.66666666666666,2.0833333333333335,TX,Texas,Summer Counseling
+309.0,Accelerated Math® ,10,2,0.2527000079872857,0.243,100.0,9.857142857142858,TX,Texas,Accelerated Math® 
+1175.0,Math Expressions,9,1,0.05732518513555702,0.0275963385712838,88.88888888888889,2.2222222222222223,TX,Texas,Math Expressions
+750.0,Core-Plus Mathematics,9,1,0.3750378161015652,0.289480191481847,77.77777777777779,13.0,TX,Texas,Core-Plus Mathematics
+1077.0,Xtreme Reading,7,1,0.04607932929627497,0.0417442521507802,100.0,1.7142857142857142,TX,Texas,Xtreme Reading
+311.0,Scott Foresman-Addison Wesley Elementary Mathematics,6,1,-0.09049112192376868,-0.0962381355216201,16.666666666666664,-3.8333333333333335,TX,Texas,Scott Foresman-Addison Wesley Elementary Mathematics
+818.0,Cognitive Tutor Algebra I,6,3,0.07118220383737028,0.07118220383737028,50.0,0.8333333333333334,TX,Texas,Cognitive Tutor Algebra I
+1194.0,Integrated Basic Education and Skills Training (I-BEST),5,1,0.357605673807994,0.357605673807994,100.0,5.8,TX,Texas,Integrated Basic Education and Skills Training (I-BEST)
+623.0,JOBSTART,4,1,,,,13.75,TX,Texas,JOBSTART
+726.0,Project CRISS®,3,1,-0.0166493649416042,-0.0321735993734571,33.33333333333333,-0.6666666666666666,TX,Texas,Project CRISS®
+321.0,Career Academies,3,1,0.0899708731321358,0.0899708731321358,100.0,7.0,TX,Texas,Career Academies
+7.0,Peer-Assisted Learning Strategies,3,1,0.8575365752542133,0.893101290731852,100.0,30.0,TX,Texas,Peer-Assisted Learning Strategies
+742.0,READ 180®,3,1,0.34881339986456966,0.237108477373884,100.0,13.0,TX,Texas,READ 180®
+232.0,Open Court Reading©,2,1,0.225892052244969,0.225892052244969,100.0,8.0,TX,Texas,Open Court Reading©
+323.0,Quantum Opportunity Program,2,1,0.0454642744943638,0.0454642744943638,100.0,3.0,TX,Texas,Quantum Opportunity Program
+6.0,Teach for America (TFA),2,1,0.09274873159973471,0.09274873159973471,100.0,3.5,TX,Texas,Teach for America (TFA)
+393.0,National Guard Youth ChalleNGe Program,1,1,,,,23.0,TX,Texas,National Guard Youth ChalleNGe Program

@@ -1,0 +1,9 @@
+metric,value
+rows_total,13023.0
+rows_behavior_subset,1063.0
+state_token_available_pct,68.0
+region_token_available_pct,52.2
+saipe_state_merge_pct_all,67.1
+saipe_state_or_region_merge_pct_all,79.7
+saipe_state_merge_pct_behavior,46.2
+saipe_state_or_region_merge_pct_behavior,73.7

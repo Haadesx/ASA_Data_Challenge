@@ -1,0 +1,1028 @@
+state_abbr,s_StudyID,s_Study_Design,s_Study_Rating,s_Study_Page_URL,findings_n,interventions_n,weighted_outcome_sample,mean_effect_size_wwc,mean_improvement_index
+AK,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+AK,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+AL,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+AL,14409,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14409,2,1,321.75,0.14795002795549989,5.5
+AL,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+AL,81433,Randomized controlled trial,Meets WWC standards without reservations,/Study/81433,10,0,2297.833333333333,0.3962562693277202,15.2
+AL,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+AL,81563,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81563,5,0,160.0,,27.8
+AL,81638,Randomized controlled trial,Meets WWC standards without reservations,/Study/81638,2,0,148.28571428571428,,6.5
+AL,82098,Randomized controlled trial,Meets WWC standards with reservations,/Study/82098,2,0,1580.8571428571427,,2.5
+AL,82100,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82100,2,1,1580.8571428571427,0.07118220383737028,2.5
+AL,82196,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82196,2,1,788.4285714285713,,0.0
+AL,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+AL,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+AL,89868,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89868,12,0,3818.8571428571427,0.01317530760775513,0.4166666666666667
+AL,89868,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89868,12,0,3818.8571428571427,0.013156167920148449,0.4166666666666667
+AL,90218,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90218,2,0,229.25,0.21895845176575351,8.5
+AL,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+AR,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+AR,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+AR,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+AR,81563,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81563,5,0,160.0,,27.8
+AR,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+AR,85516,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85516,22,1,37873.22222222222,0.19397960096453054,7.636363636363637
+AR,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+AR,89868,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89868,12,0,3818.8571428571427,0.01317530760775513,0.4166666666666667
+AR,89868,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89868,12,0,3818.8571428571427,0.013156167920148449,0.4166666666666667
+AZ,30135,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30135,4,1,431.22222222222223,,13.75
+AZ,67284,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67284,3,1,578.125,-0.0166493649416042,-0.6666666666666666
+AZ,67284,Randomized controlled trial,Meets WWC standards without reservations,/Study/67284,16,0,4515.5,,-2.5
+AZ,71980,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/71980,2,0,2767.5,0.28880890790206903,11.0
+AZ,77029,Randomized controlled trial,Meets WWC standards without reservations,/Study/77029,1,0,1308.0,0.067051441503542,3.0
+AZ,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+AZ,81003,Randomized controlled trial,Meets WWC standards without reservations,/Study/81003,23,1,887.7142857142857,0.021395209620030203,0.782608695652174
+AZ,81433,Randomized controlled trial,Meets WWC standards without reservations,/Study/81433,10,0,2297.833333333333,0.3962562693277202,15.2
+AZ,81434,Randomized controlled trial,Meets WWC standards without reservations,/Study/81434,4,0,4867.0,,3.25
+AZ,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+AZ,81638,Randomized controlled trial,Meets WWC standards without reservations,/Study/81638,2,0,148.28571428571428,,6.5
+AZ,82125,Randomized controlled trial,Meets WWC standards with reservations,/Study/82125,2,1,83.25,0.11467330185640134,4.5
+AZ,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+AZ,82674,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82674,2,1,527.25,-0.01469072360644005,-0.5
+AZ,86168,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/86168,2,0,76.75,-0.1078970450789562,-4.5
+AZ,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+AZ,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+AZ,89881,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89881,30,0,1336.0,0.5355981494918004,19.8
+AZ,90285,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90285,4,0,438.80000000000007,-0.06418949516054939,-2.5
+AZ,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+CA,131,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/131,7,0,3539.5,0.24363121583570924,9.285714285714286
+CA,1121,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/1121,2,1,571.6666666666666,0.09274873159973471,3.5
+CA,9443,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/9443,3,1,187.33333333333331,0.34881339986456966,13.0
+CA,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+CA,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+CA,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+CA,30135,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30135,4,1,431.22222222222223,,13.75
+CA,30518,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30518,4,1,1285.5,,-0.75
+CA,30639,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30639,1,1,156.5,,-2.0
+CA,32031,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/32031,2,0,3752.333333333333,-0.08780774536079135,-3.5
+CA,44803,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/44803,6,1,32.0,0.42597808017449806,16.0
+CA,63460,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/63460,3,1,70.66666666666666,,0.0
+CA,63987,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/63987,7,1,2527.0,0.17655147310556712,7.142857142857143
+CA,65085,Randomized controlled trial,Meets WWC standards without reservations,/Study/65085,10,1,12289.5,,1.6
+CA,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+CA,67271,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67271,6,0,1487.142857142857,-0.027289559475774217,-1.0
+CA,67284,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67284,3,1,578.125,-0.0166493649416042,-0.6666666666666666
+CA,67284,Randomized controlled trial,Meets WWC standards without reservations,/Study/67284,16,0,4515.5,,-2.5
+CA,67297,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67297,19,0,608.0,-0.21010672635487915,-11.631578947368421
+CA,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+CA,71980,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/71980,2,0,2767.5,0.28880890790206903,11.0
+CA,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+CA,77029,Randomized controlled trial,Meets WWC standards without reservations,/Study/77029,1,0,1308.0,0.067051441503542,3.0
+CA,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+CA,77774,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77774,15,0,1920.75,-0.01749252725814765,-0.8
+CA,77775,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77775,3,0,155.4,0.22198067330319501,9.0
+CA,77968,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77968,15,1,2143.0,0.21772486462549834,8.266666666666667
+CA,78510,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/78510,9,1,1294.5,0.104424850921394,8.11111111111111
+CA,78544,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78544,41,1,9842.166666666666,0.033588452187459636,1.7666666666666666
+CA,78548,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78548,30,0,6714.333333333333,,1.2333333333333334
+CA,78621,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78621,16,0,534.0,-0.2619636527979254,-10.1875
+CA,79332,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79332,14,1,6267.5,,-0.5714285714285714
+CA,79958,Randomized controlled trial,Meets WWC standards without reservations,/Study/79958,1,0,488.66666666666663,,11.0
+CA,80616,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/80616,20,0,4386.0,,3.95
+CA,80630,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/80630,5,0,1218.5,0.08610687472984331,3.8
+CA,81003,Randomized controlled trial,Meets WWC standards without reservations,/Study/81003,23,1,887.7142857142857,0.021395209620030203,0.782608695652174
+CA,81428,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81428,16,0,1464986.111111111,,0.875
+CA,81433,Randomized controlled trial,Meets WWC standards without reservations,/Study/81433,10,0,2297.833333333333,0.3962562693277202,15.2
+CA,81434,Randomized controlled trial,Meets WWC standards without reservations,/Study/81434,4,0,4867.0,,3.25
+CA,81473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81473,12,0,193.71428571428572,0.5892717660524036,21.181818181818183
+CA,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+CA,82209,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82209,1,0,91.33333333333333,0.431203622031817,17.0
+CA,82590,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82590,7,0,9763.600000000002,0.0267494280005808,1.1428571428571428
+CA,82674,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82674,2,1,527.25,-0.01469072360644005,-0.5
+CA,84082,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/84082,1,0,5086.5,,
+CA,84082,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/84082,8,0,34268.0,0.138327291558888,2.5
+CA,84221,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/84221,9,1,1666.0,0.003192531396614089,0.2222222222222222
+CA,84230,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/84230,4,1,1084.3333333333333,-0.005002166902768201,0.0
+CA,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+CA,85520,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85520,21,0,4044.0,0.19164762815940029,7.523809523809524
+CA,85538,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85538,6,1,463.71428571428567,0.14412486355040896,5.666666666666667
+CA,86110,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/86110,4,1,892.0,0.19818594924939537,8.0
+CA,86168,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/86168,2,0,76.75,-0.1078970450789562,-4.5
+CA,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+CA,87305,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87305,14,0,2870.0,,
+CA,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+CA,87535,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87535,6,0,3393.333333333333,0.199745470330223,5.666666666666667
+CA,87574,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87574,9,0,1851.0,0.15583956739594917,6.222222222222222
+CA,87630,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87630,4,0,239.85714285714283,0.2155322373525775,8.333333333333334
+CA,89200,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89200,3,1,707.125,1.0003193162786483,34.0
+CA,89202,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89202,15,0,2891.6666666666665,0.38368132049246145,12.6
+CA,89371,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89371,56,0,38709.33333333333,0.0027065320354599486,0.15217391304347827
+CA,89442,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89442,13,0,2185.8571428571427,0.09983846333177503,4.083333333333333
+CA,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+CA,89782,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89782,7,0,4152.4,0.12346289954849014,3.4285714285714284
+CA,89964,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89964,2,0,379.66666666666663,-0.0010953407223610497,0.0
+CA,89971,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89971,12,0,75822.0,-0.017728877232854257,-0.75
+CA,90012,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90012,9,0,1510.0,-0.47198760002211426,-0.1111111111111111
+CA,90055,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90055,3,0,594.0,,15.0
+CA,90086,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90086,9,0,8010.999999999999,0.07236802220922357,2.5555555555555554
+CA,90092,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90092,3,0,753.5,,5.0
+CA,90094,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90094,2,0,543.0,0.1854727240795785,7.5
+CA,90167,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90167,18,0,16421.75,-0.1082926915956524,-0.7777777777777778
+CA,90184,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90184,5,0,3924.0,0.09659737828616281,3.8
+CA,90220,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90220,4,0,9458.0,0.02799473657322205,0.6666666666666666
+CA,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+CA,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+CA,90645,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90645,4,0,3546.5,0.06508510785688593,2.75
+CA,90647,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90647,3,0,597.0,0.1545692573002733,6.0
+CA,90658,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90658,1,0,2119.0,0.219144425628919,9.0
+CA,90682,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90682,7,0,330.3333333333333,0.22740066406450785,8.857142857142858
+CA,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+CA,90949,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90949,8,0,157.33333333333331,0.7166821692698383,25.875
+CA,94627,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/94627,15,0,9592.75,0.027109936536759454,1.0
+CO,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+CO,30135,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30135,4,1,431.22222222222223,,13.75
+CO,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+CO,67297,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67297,19,0,608.0,-0.21010672635487915,-11.631578947368421
+CO,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+CO,78621,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78621,16,0,534.0,-0.2619636527979254,-10.1875
+CO,81473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81473,12,0,193.71428571428572,0.5892717660524036,21.181818181818183
+CO,81591,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81591,1,0,18.0,,0.0
+CO,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+CO,82909,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82909,3,0,93.33333333333333,,
+CO,84230,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/84230,4,1,1084.3333333333333,-0.005002166902768201,0.0
+CO,85516,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85516,22,1,37873.22222222222,0.19397960096453054,7.636363636363637
+CO,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+CO,86107,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/86107,1,0,58.0,0.885391922322382,31.0
+CO,86168,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/86168,2,0,76.75,-0.1078970450789562,-4.5
+CO,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+CO,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+CO,89848,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89848,14,0,52110.0,0.017663735813629223,0.5714285714285714
+CO,90219,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90219,5,0,6086.5,0.012498808031651251,1.0
+CO,90829,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90829,6,0,389238.0,1.38553789660217,41.2
+CT,30135,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30135,4,1,431.22222222222223,,13.75
+CT,72031,Randomized controlled trial,Meets WWC standards without reservations,/Study/72031,2,0,1429.0,-0.004430777047027599,-0.5
+CT,81563,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81563,5,0,160.0,,27.8
+CT,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+CT,82098,Randomized controlled trial,Meets WWC standards with reservations,/Study/82098,2,0,1580.8571428571427,,2.5
+CT,82100,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82100,2,1,1580.8571428571427,0.07118220383737028,2.5
+CT,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+CT,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,30,1,6030.200000000001,-0.00575970139660081,-1.0666666666666667
+CT,82196,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82196,2,1,788.4285714285713,,0.0
+CT,82197,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82197,2,1,1844.3333333333333,,0.0
+CT,82935,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82935,11,0,1133.0,0.29514896594353535,11.272727272727273
+CT,88740,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88740,6,0,1672.5,0.38250415515592134,7.666666666666667
+CT,88814,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/88814,3,0,2094.0,0.6756210000585331,24.333333333333332
+CT,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+CT,89235,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89235,10,1,2588.5,0.357605673807994,5.8
+DC,30710,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30710,2,1,280.0,0.0454642744943638,3.0
+DC,65085,Randomized controlled trial,Meets WWC standards without reservations,/Study/65085,10,1,12289.5,,1.6
+DC,67294,Randomized controlled trial,Meets WWC standards without reservations,/Study/67294,14,0,0.0,,0.6428571428571429
+DC,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+DC,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+DC,78544,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78544,41,1,9842.166666666666,0.033588452187459636,1.7666666666666666
+DC,78548,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78548,30,0,6714.333333333333,,1.2333333333333334
+DC,78772,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78772,28,0,10219.0,,-0.25
+DC,80616,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/80616,20,0,4386.0,,3.95
+DC,80630,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/80630,5,0,1218.5,0.08610687472984331,3.8
+DC,81428,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81428,16,0,1464986.111111111,,0.875
+DC,81646,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81646,8,0,9346.0,0.11493835487594682,3.375
+DC,82198,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82198,7,0,1186.0,0.0069485165094705465,0.14285714285714285
+DC,82924,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/82924,7,1,1393.0,0.45525812958537654,16.857142857142858
+DC,85485,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85485,12,0,1653.0,0.12576162914478797,5.0
+DC,85516,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85516,22,1,37873.22222222222,0.19397960096453054,7.636363636363637
+DC,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+DC,85645,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85645,5,0,22147.0,0.0009991311199635004,-0.2
+DC,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+DC,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+DC,87630,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87630,4,0,239.85714285714283,0.2155322373525775,8.333333333333334
+DC,89200,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89200,3,1,707.125,1.0003193162786483,34.0
+DC,89442,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89442,13,0,2185.8571428571427,0.09983846333177503,4.083333333333333
+DC,89792,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89792,18,0,9387.0,0.11112002867127946,2.9444444444444446
+DC,89839,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89839,4,0,40.57142857142857,0.07801682713820378,3.0
+DC,89847,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89847,1,0,26.375,-0.157735550869625,-6.0
+DC,89859,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89859,7,0,1158.75,,5.571428571428571
+DC,90004,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90004,15,0,911.5,0.03037338664274841,1.2666666666666666
+DC,90005,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90005,13,0,756.5,0.0009884543358729724,0.0
+DC,90091,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90091,6,0,142.375,0.1649411504023994,6.333333333333333
+DC,90215,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90215,6,0,2853.0,-0.05623210272959903,-2.0
+DC,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+DE,71018,Randomized controlled trial,Meets WWC standards without reservations,/Study/71018,1,0,818.6666666666666,0.0205480031994452,1.0
+DE,89847,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89847,1,0,26.375,-0.157735550869625,-6.0
+DE,90091,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90091,6,0,142.375,0.1649411504023994,6.333333333333333
+DE,90301,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90301,33,0,502.40000000000003,0.13139845902177957,3.727272727272727
+FL,9443,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/9443,3,1,187.33333333333331,0.34881339986456966,13.0
+FL,14409,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14409,2,1,321.75,0.14795002795549989,5.5
+FL,29247,Randomized controlled trial,Meets WWC standards without reservations,/Study/29247,9,1,586.3333333333333,,2.6666666666666665
+FL,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+FL,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+FL,30639,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30639,1,1,156.5,,-2.0
+FL,40473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/40473,7,1,1167.4444444444443,0.04607932929627497,1.7142857142857142
+FL,63987,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/63987,7,1,2527.0,0.17655147310556712,7.142857142857143
+FL,64544,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/64544,8,1,1024.0,0.36373145208230023,11.125
+FL,65127,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65127,1,1,104.28571428571428,0.127630114071465,5.0
+FL,67284,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67284,3,1,578.125,-0.0166493649416042,-0.6666666666666666
+FL,67284,Randomized controlled trial,Meets WWC standards without reservations,/Study/67284,16,0,4515.5,,-2.5
+FL,77775,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77775,3,0,155.4,0.22198067330319501,9.0
+FL,78544,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78544,41,1,9842.166666666666,0.033588452187459636,1.7666666666666666
+FL,78548,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78548,30,0,6714.333333333333,,1.2333333333333334
+FL,80630,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/80630,5,0,1218.5,0.08610687472984331,3.8
+FL,81482,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81482,3,0,607.5,0.12957505240926134,5.0
+FL,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+FL,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+FL,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+FL,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,30,1,6030.200000000001,-0.00575970139660081,-1.0666666666666667
+FL,82590,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82590,7,0,9763.600000000002,0.0267494280005808,1.1428571428571428
+FL,82904,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82904,1,1,152.83333333333331,0.191998492358146,6.0
+FL,82904,Randomized controlled trial,Meets WWC standards without reservations,/Study/82904,1,1,113.16666666666666,0.259785612131792,10.0
+FL,82909,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82909,3,0,93.33333333333333,,
+FL,85768,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85768,7,0,593.0,0.2283508693914756,8.857142857142858
+FL,86088,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/86088,11,0,6496.5,0.08258654903907094,3.272727272727273
+FL,86088,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86088,9,0,6338.0,0.0733163429362887,2.888888888888889
+FL,86123,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86123,25,0,705.2,0.04064272609178279,1.52
+FL,86137,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86137,2,0,230.5,0.181853768275424,7.0
+FL,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+FL,87305,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87305,14,0,2870.0,,
+FL,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+FL,89388,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89388,4,1,9621.0,0.0839547112438706,3.5
+FL,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+FL,89865,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89865,1,0,7.5,0.993756540293579,34.0
+FL,90219,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90219,5,0,6086.5,0.012498808031651251,1.0
+FL,90638,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90638,3,0,152.0,0.681465824668987,23.666666666666668
+FL,90682,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90682,7,0,330.3333333333333,0.22740066406450785,8.857142857142858
+GA,9443,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/9443,3,1,187.33333333333331,0.34881339986456966,13.0
+GA,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+GA,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+GA,30135,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30135,4,1,431.22222222222223,,13.75
+GA,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+GA,67271,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67271,6,0,1487.142857142857,-0.027289559475774217,-1.0
+GA,67284,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67284,3,1,578.125,-0.0166493649416042,-0.6666666666666666
+GA,67284,Randomized controlled trial,Meets WWC standards without reservations,/Study/67284,16,0,4515.5,,-2.5
+GA,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+GA,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+GA,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+GA,78077,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78077,9,1,760.5,-0.020522128170763387,-0.3333333333333333
+GA,78712,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78712,34,1,1953.5,0.3231532575010971,11.911764705882353
+GA,79397,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79397,20,1,7115.0,0.06652589711733413,2.9
+GA,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+GA,81486,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81486,21,0,7444.5,,3.142857142857143
+GA,82904,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82904,1,1,152.83333333333331,0.191998492358146,6.0
+GA,82904,Randomized controlled trial,Meets WWC standards without reservations,/Study/82904,1,1,113.16666666666666,0.259785612131792,10.0
+GA,82909,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82909,3,0,93.33333333333333,,
+GA,85516,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85516,22,1,37873.22222222222,0.19397960096453054,7.636363636363637
+GA,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+GA,85538,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85538,6,1,463.71428571428567,0.14412486355040896,5.666666666666667
+GA,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+GA,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+GA,87523,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87523,4,0,490.0,0.2186632496155815,8.5
+GA,88740,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88740,6,0,1672.5,0.38250415515592134,7.666666666666667
+GA,89200,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89200,3,1,707.125,1.0003193162786483,34.0
+GA,89235,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89235,10,1,2588.5,0.357605673807994,5.8
+GA,89442,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89442,13,0,2185.8571428571427,0.09983846333177503,4.083333333333333
+GA,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+GA,89868,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89868,12,0,3818.8571428571427,0.01317530760775513,0.4166666666666667
+GA,89868,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89868,12,0,3818.8571428571427,0.013156167920148449,0.4166666666666667
+GA,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+GA,90682,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90682,7,0,330.3333333333333,0.22740066406450785,8.857142857142858
+HI,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+IA,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+IA,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+IA,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+IA,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+IA,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+ID,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+ID,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+ID,82904,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82904,1,1,152.83333333333331,0.191998492358146,6.0
+ID,82904,Randomized controlled trial,Meets WWC standards without reservations,/Study/82904,1,1,113.16666666666666,0.259785612131792,10.0
+ID,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+ID,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+IL,1121,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/1121,2,1,571.6666666666666,0.09274873159973471,3.5
+IL,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+IL,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+IL,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+IL,30135,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30135,4,1,431.22222222222223,,13.75
+IL,32031,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/32031,2,0,3752.333333333333,-0.08780774536079135,-3.5
+IL,64307,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/64307,7,1,1511.5,0.09188581215146151,1.8571428571428572
+IL,67271,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67271,6,0,1487.142857142857,-0.027289559475774217,-1.0
+IL,67294,Randomized controlled trial,Meets WWC standards without reservations,/Study/67294,14,0,0.0,,0.6428571428571429
+IL,67297,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67297,19,0,608.0,-0.21010672635487915,-11.631578947368421
+IL,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+IL,77775,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77775,3,0,155.4,0.22198067330319501,9.0
+IL,78621,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78621,16,0,534.0,-0.2619636527979254,-10.1875
+IL,81428,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81428,16,0,1464986.111111111,,0.875
+IL,81473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81473,12,0,193.71428571428572,0.5892717660524036,21.181818181818183
+IL,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+IL,81569,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81569,2,0,86.66666666666666,0.6000141639602434,22.5
+IL,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+IL,84085,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/84085,10,0,42621.666666666664,-0.04099763288517759,-1.7
+IL,84221,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/84221,9,1,1666.0,0.003192531396614089,0.2222222222222222
+IL,84230,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/84230,4,1,1084.3333333333333,-0.005002166902768201,0.0
+IL,85645,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85645,5,0,22147.0,0.0009991311199635004,-0.2
+IL,86088,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/86088,11,0,6496.5,0.08258654903907094,3.272727272727273
+IL,86088,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86088,9,0,6338.0,0.0733163429362887,2.888888888888889
+IL,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+IL,87305,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87305,14,0,2870.0,,
+IL,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+IL,87630,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87630,4,0,239.85714285714283,0.2155322373525775,8.333333333333334
+IL,89200,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89200,3,1,707.125,1.0003193162786483,34.0
+IL,89343,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89343,50,1,160572.0,0.18408829571874985,7.037037037037037
+IL,89784,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89784,18,0,690.0,0.558431941983726,20.88888888888889
+IL,89881,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89881,30,0,1336.0,0.5355981494918004,19.8
+IL,89971,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89971,12,0,75822.0,-0.017728877232854257,-0.75
+IL,90262,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90262,3,0,1914.0,0.0743943710415806,3.0
+IL,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+IL,90317,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90317,7,0,988.9999999999999,0.0034404647697599713,0.2857142857142857
+IL,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+IN,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+IN,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+IN,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+IN,81003,Randomized controlled trial,Meets WWC standards without reservations,/Study/81003,23,1,887.7142857142857,0.021395209620030203,0.782608695652174
+IN,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+IN,81591,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81591,1,0,18.0,,0.0
+IN,81638,Randomized controlled trial,Meets WWC standards without reservations,/Study/81638,2,0,148.28571428571428,,6.5
+IN,82904,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82904,1,1,152.83333333333331,0.191998492358146,6.0
+IN,82904,Randomized controlled trial,Meets WWC standards without reservations,/Study/82904,1,1,113.16666666666666,0.259785612131792,10.0
+IN,86107,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/86107,1,0,58.0,0.885391922322382,31.0
+IN,86110,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/86110,4,1,892.0,0.19818594924939537,8.0
+IN,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+IN,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+IN,89784,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89784,18,0,690.0,0.558431941983726,20.88888888888889
+IN,90317,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90317,7,0,988.9999999999999,0.0034404647697599713,0.2857142857142857
+IN,90356,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90356,36,0,1970097.0,0.07192800117862337,2.875
+IN,90829,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90829,6,0,389238.0,1.38553789660217,41.2
+IN,90946,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90946,15,0,1223.0,0.294329963302244,11.4
+IN,90950,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90950,10,0,834.5,0.17279599471901333,6.8
+IN,90951,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90951,15,0,1207.0,0.28373178858353676,10.8
+IN,94627,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/94627,15,0,9592.75,0.027109936536759454,1.0
+KS,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+KS,29247,Randomized controlled trial,Meets WWC standards without reservations,/Study/29247,9,1,586.3333333333333,,2.6666666666666665
+KS,64592,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/64592,4,1,46.0,0.4033177938130863,15.5
+KS,81003,Randomized controlled trial,Meets WWC standards without reservations,/Study/81003,23,1,887.7142857142857,0.021395209620030203,0.782608695652174
+KS,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+KS,86137,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86137,2,0,230.5,0.181853768275424,7.0
+KS,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+KS,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+KS,89343,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89343,36,1,130223.0,0.23132327298140756,8.85
+KS,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+KY,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+KY,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+KY,77321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77321,2,1,278.75,-0.0478485262082611,-2.0
+KY,81563,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81563,5,0,160.0,,27.8
+KY,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+KY,82098,Randomized controlled trial,Meets WWC standards with reservations,/Study/82098,2,0,1580.8571428571427,,2.5
+KY,82100,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82100,2,1,1580.8571428571427,0.07118220383737028,2.5
+KY,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+KY,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,30,1,6030.200000000001,-0.00575970139660081,-1.0666666666666667
+KY,82196,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82196,2,1,788.4285714285713,,0.0
+KY,82197,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82197,2,1,1844.3333333333333,,0.0
+KY,86110,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/86110,4,1,892.0,0.19818594924939537,8.0
+KY,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+KY,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+KY,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+KY,89343,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89343,36,1,130223.0,0.23132327298140756,8.85
+KY,89782,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89782,7,0,4152.4,0.12346289954849014,3.4285714285714284
+KY,89784,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89784,18,0,690.0,0.558431941983726,20.88888888888889
+KY,89898,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89898,2,0,5724.5,0.02239319736554225,1.0
+KY,90081,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90081,2,0,121.66666666666666,0.10251965598904345,4.0
+KY,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+KY,90946,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90946,15,0,1223.0,0.294329963302244,11.4
+KY,90950,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90950,10,0,834.5,0.17279599471901333,6.8
+KY,90951,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90951,15,0,1207.0,0.28373178858353676,10.8
+LA,1121,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/1121,2,1,571.6666666666666,0.09274873159973471,3.5
+LA,64544,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/64544,8,1,1024.0,0.36373145208230023,11.125
+LA,67271,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67271,6,0,1487.142857142857,-0.027289559475774217,-1.0
+LA,67284,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67284,3,1,578.125,-0.0166493649416042,-0.6666666666666666
+LA,67284,Randomized controlled trial,Meets WWC standards without reservations,/Study/67284,16,0,4515.5,,-2.5
+LA,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+LA,77774,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77774,15,0,1920.75,-0.01749252725814765,-0.8
+LA,81428,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81428,16,0,1464986.111111111,,0.875
+LA,82098,Randomized controlled trial,Meets WWC standards with reservations,/Study/82098,2,0,1580.8571428571427,,2.5
+LA,82100,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82100,2,1,1580.8571428571427,0.07118220383737028,2.5
+LA,82196,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82196,2,1,788.4285714285713,,0.0
+LA,82197,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82197,2,1,1844.3333333333333,,0.0
+LA,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+LA,84085,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/84085,10,0,42621.666666666664,-0.04099763288517759,-1.7
+LA,85645,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85645,3,0,12035.0,-0.0033333112598135997,0.0
+LA,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+LA,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+LA,89343,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89343,50,1,160572.0,0.18408829571874985,7.037037037037037
+LA,89388,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89388,4,1,9621.0,0.0839547112438706,3.5
+LA,89868,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89868,12,0,3818.8571428571427,0.01317530760775513,0.4166666666666667
+LA,89868,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89868,12,0,3818.8571428571427,0.013156167920148449,0.4166666666666667
+LA,90218,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90218,2,0,229.25,0.21895845176575351,8.5
+LA,90285,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90285,4,0,438.80000000000007,-0.06418949516054939,-2.5
+LA,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+MA,9443,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/9443,3,1,187.33333333333331,0.34881339986456966,13.0
+MA,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+MA,30518,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30518,4,1,1285.5,,-0.75
+MA,44803,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/44803,6,1,32.0,0.42597808017449806,16.0
+MA,67280,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67280,4,0,1174.6666666666665,,3.75
+MA,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+MA,72031,Randomized controlled trial,Meets WWC standards without reservations,/Study/72031,2,0,1429.0,-0.004430777047027599,-0.5
+MA,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+MA,79014,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/79014,3,0,963.0,0.23199171528734033,9.0
+MA,79014,Randomized controlled trial,Meets WWC standards with reservations,/Study/79014,3,0,963.0,0.24975953006583604,10.0
+MA,79397,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79397,20,1,7115.0,0.06652589711733413,2.9
+MA,81433,Randomized controlled trial,Meets WWC standards without reservations,/Study/81433,10,0,2297.833333333333,0.3962562693277202,15.2
+MA,81486,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81486,21,0,7444.5,,3.142857142857143
+MA,81563,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81563,5,0,160.0,,27.8
+MA,82125,Randomized controlled trial,Meets WWC standards with reservations,/Study/82125,2,1,83.25,0.11467330185640134,4.5
+MA,82205,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82205,15,0,676.5,1.2091440156793116,35.86666666666667
+MA,82909,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82909,3,0,93.33333333333333,,
+MA,84085,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/84085,10,0,42621.666666666664,-0.04099763288517759,-1.7
+MA,85516,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85516,22,1,37873.22222222222,0.19397960096453054,7.636363636363637
+MA,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+MA,85538,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85538,6,1,463.71428571428567,0.14412486355040896,5.666666666666667
+MA,86044,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86044,12,1,9686.666666666666,0.052381933073295146,2.0833333333333335
+MA,86383,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86383,9,0,3358.0,0.22712244176104246,8.88888888888889
+MA,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+MA,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+MA,88785,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88785,14,1,12982.0,0.15602575373714966,6.142857142857143
+MA,88814,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/88814,3,0,2094.0,0.6756210000585331,24.333333333333332
+MA,88841,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/88841,4,0,36.0,,
+MA,89200,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89200,3,1,707.125,1.0003193162786483,34.0
+MA,89388,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89388,4,1,9621.0,0.0839547112438706,3.5
+MA,89442,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89442,13,0,2185.8571428571427,0.09983846333177503,4.083333333333333
+MA,89783,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89783,5,0,702.5,0.29121776092554824,11.2
+MA,90178,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90178,13,1,600.6666666666666,-0.04919094414430096,-0.9230769230769231
+MA,90718,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90718,1,1,571.3333333333333,0.551825640992102,21.0
+MA,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+MA,94407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/94407,3,0,603.0,0.3463489920090783,13.333333333333334
+MD,1121,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/1121,2,1,571.6666666666666,0.09274873159973471,3.5
+MD,40473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/40473,7,1,1167.4444444444443,0.04607932929627497,1.7142857142857142
+MD,65085,Randomized controlled trial,Meets WWC standards without reservations,/Study/65085,10,1,12289.5,,1.6
+MD,65127,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65127,1,1,104.28571428571428,0.127630114071465,5.0
+MD,78544,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78544,41,1,9842.166666666666,0.033588452187459636,1.7666666666666666
+MD,78548,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78548,30,0,6714.333333333333,,1.2333333333333334
+MD,79013,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79013,5,0,907.5,,5.0
+MD,79332,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79332,14,1,6267.5,,-0.5714285714285714
+MD,80630,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/80630,5,0,1218.5,0.08610687472984331,3.8
+MD,81428,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81428,16,0,1464986.111111111,,0.875
+MD,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+MD,82205,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82205,15,0,676.5,1.2091440156793116,35.86666666666667
+MD,82590,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82590,30,0,16700.600000000002,0.007626804058397247,0.4
+MD,85645,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85645,5,0,22147.0,0.0009991311199635004,-0.2
+MD,86152,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86152,4,1,1049.5,0.14032134158796683,5.5
+MD,86174,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/86174,1,0,42.0,-0.390950027374339,-15.0
+MD,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+MD,87630,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87630,4,0,239.85714285714283,0.2155322373525775,8.333333333333334
+MD,88740,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88740,6,0,1672.5,0.38250415515592134,7.666666666666667
+MD,89235,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89235,10,1,2588.5,0.357605673807994,5.8
+MD,89792,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89792,18,0,9387.0,0.11112002867127946,2.9444444444444446
+MD,89839,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89839,4,0,40.57142857142857,0.07801682713820378,3.0
+MD,89847,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89847,1,0,26.375,-0.157735550869625,-6.0
+MD,89859,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89859,7,0,1158.75,,5.571428571428571
+MD,90091,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90091,6,0,142.375,0.1649411504023994,6.333333333333333
+MD,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+ME,131,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/131,7,0,3539.5,0.24363121583570924,9.285714285714286
+ME,70514,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/70514,3,0,660.0,0.35855162842821636,15.666666666666666
+ME,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+ME,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+ME,87535,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87535,6,0,3393.333333333333,0.199745470330223,5.666666666666667
+ME,88841,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/88841,4,0,36.0,,
+ME,89442,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89442,13,0,2185.8571428571427,0.09983846333177503,4.083333333333333
+ME,89782,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89782,7,0,4152.4,0.12346289954849014,3.4285714285714284
+ME,90089,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90089,2,0,271.66666666666663,0.05885172149853799,2.5
+ME,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+MI,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+MI,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+MI,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+MI,65085,Randomized controlled trial,Meets WWC standards without reservations,/Study/65085,10,1,12289.5,,1.6
+MI,65127,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65127,1,1,104.28571428571428,0.127630114071465,5.0
+MI,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+MI,81003,Randomized controlled trial,Meets WWC standards without reservations,/Study/81003,23,1,887.7142857142857,0.021395209620030203,0.782608695652174
+MI,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+MI,82098,Randomized controlled trial,Meets WWC standards with reservations,/Study/82098,2,0,1580.8571428571427,,2.5
+MI,82100,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82100,2,1,1580.8571428571427,0.07118220383737028,2.5
+MI,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,12,1,2418.0,0.009692974024469093,0.9166666666666666
+MI,82196,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82196,2,1,788.4285714285713,,0.0
+MI,82197,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82197,2,1,1844.3333333333333,,0.0
+MI,84221,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/84221,9,1,1666.0,0.003192531396614089,0.2222222222222222
+MI,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+MI,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+MI,89202,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89202,15,0,2891.6666666666665,0.38368132049246145,12.6
+MI,89429,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89429,1,0,657.5,0.0077146222995748,0.0
+MI,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+MI,89898,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89898,2,0,5724.5,0.02239319736554225,1.0
+MI,90089,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90089,2,0,271.66666666666663,0.05885172149853799,2.5
+MI,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+MI,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+MI,90658,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90658,1,0,2119.0,0.219144425628919,9.0
+MN,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+MN,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+MN,67297,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67297,19,0,608.0,-0.21010672635487915,-11.631578947368421
+MN,70947,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/70947,3,1,1502.3333333333333,0.8575365752542133,30.0
+MN,78621,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78621,16,0,534.0,-0.2619636527979254,-10.1875
+MN,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+MN,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+MN,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,30,1,6030.200000000001,-0.00575970139660081,-1.0666666666666667
+MN,86109,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86109,3,0,225.0,0.15225134074490868,5.666666666666667
+MN,86123,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86123,25,0,705.2,0.04064272609178279,1.52
+MN,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+MN,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+MN,87535,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87535,6,0,3393.333333333333,0.199745470330223,5.666666666666667
+MN,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+MN,89532,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89532,3,0,3304.5,0.1784031020247565,7.0
+MN,89782,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89782,7,0,4152.4,0.12346289954849014,3.4285714285714284
+MN,90262,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90262,3,0,1914.0,0.0743943710415806,3.0
+MN,90356,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90356,36,0,1970097.0,0.07192800117862337,2.875
+MN,90477,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90477,2,0,349.0,0.158377744377868,6.0
+MN,90652,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90652,7,0,535.0,0.5127650509559609,19.142857142857142
+MN,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+MO,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+MO,64592,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/64592,4,1,46.0,0.4033177938130863,15.5
+MO,81003,Randomized controlled trial,Meets WWC standards without reservations,/Study/81003,23,1,887.7142857142857,0.021395209620030203,0.782608695652174
+MO,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+MO,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+MO,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+MO,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,18,1,3612.2000000000003,-0.036665052238740614,-2.388888888888889
+MO,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+MO,86043,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86043,3,1,4921.5,0.10440974808460513,4.0
+MO,86122,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86122,6,0,481.0,1.1562187971676594,32.0
+MO,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+MO,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+MO,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+MO,89868,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89868,12,0,3818.8571428571427,0.01317530760775513,0.4166666666666667
+MO,89868,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89868,12,0,3818.8571428571427,0.013156167920148449,0.4166666666666667
+MO,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+MO,90285,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90285,4,0,438.80000000000007,-0.06418949516054939,-2.5
+MO,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+MO,90654,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90654,2,0,200.0,0.189765669661338,7.5
+MS,1121,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/1121,2,1,571.6666666666666,0.09274873159973471,3.5
+MS,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+MS,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+MS,81638,Randomized controlled trial,Meets WWC standards without reservations,/Study/81638,2,0,148.28571428571428,,6.5
+MS,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+MS,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+MS,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+MS,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,30,1,6030.200000000001,-0.00575970139660081,-1.0666666666666667
+MS,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+MS,82909,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82909,3,0,93.33333333333333,,
+MS,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+MS,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+MS,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+MT,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+MT,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+NC,163,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/163,29,0,16839.333333333332,0.07274427612589737,2.9310344827586206
+NC,500,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/500,24,0,8240.666666666666,0.046296070055547124,1.8333333333333333
+NC,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+NC,32031,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/32031,2,0,3752.333333333333,-0.08780774536079135,-3.5
+NC,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+NC,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+NC,78077,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78077,9,1,760.5,-0.020522128170763387,-0.3333333333333333
+NC,78087,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/78087,10,0,20256.0,,8.3
+NC,79019,Randomized controlled trial,Meets WWC standards without reservations,/Study/79019,21,1,3938.75,0.12056809650149178,4.761904761904762
+NC,81428,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81428,16,0,1464986.111111111,,0.875
+NC,81433,Randomized controlled trial,Meets WWC standards without reservations,/Study/81433,10,0,2297.833333333333,0.3962562693277202,15.2
+NC,81447,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81447,6,0,342.25,0.41,12.666666666666666
+NC,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+NC,82904,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82904,1,1,152.83333333333331,0.191998492358146,6.0
+NC,82904,Randomized controlled trial,Meets WWC standards without reservations,/Study/82904,1,1,113.16666666666666,0.259785612131792,10.0
+NC,85477,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85477,1,0,682.6666666666666,-0.0569978506647449,-2.0
+NC,85516,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85516,22,1,37873.22222222222,0.19397960096453054,7.636363636363637
+NC,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+NC,85538,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85538,6,1,463.71428571428567,0.14412486355040896,5.666666666666667
+NC,85645,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85645,5,0,22147.0,0.0009991311199635004,-0.2
+NC,86123,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86123,25,0,705.2,0.04064272609178279,1.52
+NC,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+NC,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+NC,87630,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87630,4,0,239.85714285714283,0.2155322373525775,8.333333333333334
+NC,88818,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88818,10,0,45459.0,0.19253917065789541,8.5
+NC,89171,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89171,72,1,21627.666666666664,0.028279045182326816,1.1527777777777777
+NC,89371,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89371,56,0,38709.33333333333,0.0027065320354599486,0.15217391304347827
+NC,89372,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89372,9,0,4424.400000000001,0.544690441264266,19.333333333333332
+NC,89868,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89868,12,0,3818.8571428571427,0.01317530760775513,0.4166666666666667
+NC,89868,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89868,12,0,3818.8571428571427,0.013156167920148449,0.4166666666666667
+NC,89964,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89964,2,0,379.66666666666663,-0.0010953407223610497,0.0
+NC,90081,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90081,2,0,121.66666666666666,0.10251965598904345,4.0
+NC,90086,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90086,9,0,8010.999999999999,0.07236802220922357,2.5555555555555554
+NC,90218,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90218,2,0,229.25,0.21895845176575351,8.5
+NC,90949,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90949,8,0,157.33333333333331,0.7166821692698383,25.875
+ND,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+NE,40473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/40473,7,1,1167.4444444444443,0.04607932929627497,1.7142857142857142
+NE,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+NE,81447,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81447,6,0,342.25,0.41,12.666666666666666
+NE,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+NE,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+NE,90301,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90301,33,0,502.40000000000003,0.13139845902177957,3.727272727272727
+NE,90318,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90318,8,0,345507.0,0.23041798564215277,9.125
+NH,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+NH,88841,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/88841,4,0,36.0,,
+NJ,29247,Randomized controlled trial,Meets WWC standards without reservations,/Study/29247,9,1,586.3333333333333,,2.6666666666666665
+NJ,63460,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/63460,3,1,70.66666666666666,,0.0
+NJ,67271,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67271,6,0,1487.142857142857,-0.027289559475774217,-1.0
+NJ,71018,Randomized controlled trial,Meets WWC standards without reservations,/Study/71018,1,0,818.6666666666666,0.0205480031994452,1.0
+NJ,77320,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77320,2,1,850.0,0.06644074410793266,2.5
+NJ,81473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81473,12,0,193.71428571428572,0.5892717660524036,21.181818181818183
+NJ,81569,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81569,2,0,86.66666666666666,0.6000141639602434,22.5
+NJ,82098,Randomized controlled trial,Meets WWC standards with reservations,/Study/82098,2,0,1580.8571428571427,,2.5
+NJ,82100,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82100,2,1,1580.8571428571427,0.07118220383737028,2.5
+NJ,82196,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82196,2,1,788.4285714285713,,0.0
+NJ,82197,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82197,2,1,1844.3333333333333,,0.0
+NJ,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+NJ,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+NJ,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+NJ,88814,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/88814,3,0,2094.0,0.6756210000585331,24.333333333333332
+NJ,89415,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89415,4,0,156.0,-0.005574674608622987,15.0
+NJ,89839,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89839,4,0,40.57142857142857,0.07801682713820378,3.0
+NJ,89847,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89847,1,0,26.375,-0.157735550869625,-6.0
+NJ,90091,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90091,6,0,142.375,0.1649411504023994,6.333333333333333
+NJ,90219,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90219,5,0,6086.5,0.012498808031651251,1.0
+NJ,94627,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/94627,15,0,9592.75,0.027109936536759454,1.0
+NM,163,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/163,29,0,16839.333333333332,0.07274427612589737,2.9310344827586206
+NM,500,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/500,24,0,8240.666666666666,0.046296070055547124,1.8333333333333333
+NM,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+NM,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+NM,67297,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67297,19,0,608.0,-0.21010672635487915,-11.631578947368421
+NM,78621,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78621,16,0,534.0,-0.2619636527979254,-10.1875
+NM,81447,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81447,6,0,342.25,0.41,12.666666666666666
+NM,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+NM,82205,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82205,15,0,676.5,1.2091440156793116,35.86666666666667
+NM,82959,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82959,7,0,4917.5,0.24952666508424354,9.571428571428571
+NM,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+NM,89171,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89171,72,1,21627.666666666664,0.028279045182326816,1.1527777777777777
+NV,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+NV,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+NV,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+NV,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,30,1,6030.200000000001,-0.00575970139660081,-1.0666666666666667
+NV,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+NV,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+NY,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+NY,30135,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30135,4,1,431.22222222222223,,13.75
+NY,30639,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30639,1,1,156.5,,-2.0
+NY,40473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/40473,7,1,1167.4444444444443,0.04607932929627497,1.7142857142857142
+NY,63484,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/63484,2,1,183.5,0.07112031012624301,2.5
+NY,67280,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67280,4,0,1174.6666666666665,,3.75
+NY,67294,Randomized controlled trial,Meets WWC standards without reservations,/Study/67294,14,0,0.0,,0.6428571428571429
+NY,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+NY,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+NY,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+NY,77968,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77968,15,1,2143.0,0.21772486462549834,8.266666666666667
+NY,78510,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/78510,9,1,1294.5,0.104424850921394,8.11111111111111
+NY,78712,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78712,34,1,1953.5,0.3231532575010971,11.911764705882353
+NY,79013,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79013,5,0,907.5,,5.0
+NY,79014,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/79014,3,0,963.0,0.23199171528734033,9.0
+NY,79014,Randomized controlled trial,Meets WWC standards with reservations,/Study/79014,3,0,963.0,0.24975953006583604,10.0
+NY,79330,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79330,18,1,6876.0,,1.2777777777777777
+NY,80616,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/80616,20,0,4386.0,,3.95
+NY,81428,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81428,16,0,1464986.111111111,,0.875
+NY,81473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81473,12,0,193.71428571428572,0.5892717660524036,21.181818181818183
+NY,81646,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81646,8,0,9346.0,0.11493835487594682,3.375
+NY,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+NY,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+NY,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,30,1,6030.200000000001,-0.00575970139660081,-1.0666666666666667
+NY,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+NY,82590,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82590,30,0,16700.600000000002,0.007626804058397247,0.4
+NY,85516,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85516,22,1,37873.22222222222,0.19397960096453054,7.636363636363637
+NY,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+NY,85538,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85538,6,1,463.71428571428567,0.14412486355040896,5.666666666666667
+NY,86152,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86152,4,1,1049.5,0.14032134158796683,5.5
+NY,86174,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/86174,1,0,42.0,-0.390950027374339,-15.0
+NY,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+NY,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+NY,87630,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87630,4,0,239.85714285714283,0.2155322373525775,8.333333333333334
+NY,88785,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88785,14,1,12982.0,0.15602575373714966,6.142857142857143
+NY,88814,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/88814,3,0,2094.0,0.6756210000585331,24.333333333333332
+NY,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+NY,89200,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89200,3,1,707.125,1.0003193162786483,34.0
+NY,89388,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89388,4,1,9621.0,0.0839547112438706,3.5
+NY,89415,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89415,4,0,156.0,-0.005574674608622987,15.0
+NY,89442,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89442,13,0,2185.8571428571427,0.09983846333177503,4.083333333333333
+NY,89839,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89839,4,0,40.57142857142857,0.07801682713820378,3.0
+NY,89847,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89847,1,0,26.375,-0.157735550869625,-6.0
+NY,90012,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90012,9,0,1510.0,-0.47198760002211426,-0.1111111111111111
+NY,90055,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90055,3,0,594.0,,15.0
+NY,90081,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90081,2,0,121.66666666666666,0.10251965598904345,4.0
+NY,90091,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90091,6,0,142.375,0.1649411504023994,6.333333333333333
+NY,90092,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90092,3,0,753.5,,5.0
+NY,90094,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90094,2,0,543.0,0.1854727240795785,7.5
+NY,90167,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90167,18,0,16421.75,-0.1082926915956524,-0.7777777777777778
+NY,90178,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90178,13,1,600.6666666666666,-0.04919094414430096,-0.9230769230769231
+NY,90220,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90220,4,0,9458.0,0.02799473657322205,0.6666666666666666
+NY,90361,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90361,82,0,50245.0,0.3486306938799099,8.512195121951219
+NY,90718,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90718,1,1,571.3333333333333,0.551825640992102,21.0
+NY,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+OH,9443,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/9443,3,1,187.33333333333331,0.34881339986456966,13.0
+OH,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+OH,30710,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30710,2,1,280.0,0.0454642744943638,3.0
+OH,65127,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65127,1,1,104.28571428571428,0.127630114071465,5.0
+OH,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+OH,77320,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77320,2,1,850.0,0.06644074410793266,2.5
+OH,77774,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77774,15,0,1920.75,-0.01749252725814765,-0.8
+OH,78087,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/78087,10,0,20256.0,,8.3
+OH,79870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79870,2,0,283.0,0.1545806841804897,6.0
+OH,79870,Randomized controlled trial,Meets WWC standards with reservations,/Study/79870,2,1,283.0,0.1550845546393858,6.0
+OH,81473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81473,12,0,193.71428571428572,0.5892717660524036,21.181818181818183
+OH,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+OH,81638,Randomized controlled trial,Meets WWC standards without reservations,/Study/81638,2,0,148.28571428571428,,6.5
+OH,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+OH,82198,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82198,7,0,1186.0,0.0069485165094705465,0.14285714285714285
+OH,82209,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82209,1,0,91.33333333333333,0.431203622031817,17.0
+OH,82674,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82674,2,1,527.25,-0.01469072360644005,-0.5
+OH,82924,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/82924,7,1,1393.0,0.45525812958537654,16.857142857142858
+OH,85485,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85485,12,0,1653.0,0.12576162914478797,5.0
+OH,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+OH,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+OH,87523,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87523,4,0,490.0,0.2186632496155815,8.5
+OH,89193,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89193,4,0,438.66666666666663,5.966502660616145,31.25
+OH,89372,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89372,9,0,4424.400000000001,0.544690441264266,19.333333333333332
+OH,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+OH,89865,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89865,1,0,7.5,0.993756540293579,34.0
+OH,90089,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90089,2,0,271.66666666666663,0.05885172149853799,2.5
+OH,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+OH,90285,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90285,4,0,438.80000000000007,-0.06418949516054939,-2.5
+OH,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+OH,90361,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90361,82,0,50245.0,0.3486306938799099,8.512195121951219
+OH,94627,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/94627,15,0,9592.75,0.027109936536759454,1.0
+OK,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+OK,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+OK,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+OK,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+OK,77768,Randomized controlled trial,Meets WWC standards without reservations,/Study/77768,1,0,677.0,0.0554953565258727,2.0
+OK,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+OK,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+OK,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+OR,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+OR,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+OR,30518,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30518,4,1,1285.5,,-0.75
+OR,67284,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67284,3,1,578.125,-0.0166493649416042,-0.6666666666666666
+OR,67284,Randomized controlled trial,Meets WWC standards without reservations,/Study/67284,16,0,4515.5,,-2.5
+OR,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+OR,77775,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77775,3,0,155.4,0.22198067330319501,9.0
+OR,79958,Randomized controlled trial,Meets WWC standards without reservations,/Study/79958,1,0,488.66666666666663,,11.0
+OR,82125,Randomized controlled trial,Meets WWC standards with reservations,/Study/82125,2,1,83.25,0.11467330185640134,4.5
+OR,82674,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82674,2,1,527.25,-0.01469072360644005,-0.5
+OR,82909,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82909,3,0,93.33333333333333,,
+OR,82959,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82959,7,0,4917.5,0.24952666508424354,9.571428571428571
+OR,85497,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/85497,5,0,448.0,-0.023703267353247084,-0.8
+OR,86123,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86123,25,0,705.2,0.04064272609178279,1.52
+OR,86383,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86383,9,0,3358.0,0.22712244176104246,8.88888888888889
+OR,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+OR,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+OR,88818,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88818,10,0,45459.0,0.19253917065789541,8.5
+OR,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+OR,89783,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89783,5,0,702.5,0.29121776092554824,11.2
+OR,89784,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89784,18,0,690.0,0.558431941983726,20.88888888888889
+PA,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+PA,30012,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30012,1,1,207.9,,8.0
+PA,30135,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30135,4,1,431.22222222222223,,13.75
+PA,30710,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30710,2,1,280.0,0.0454642744943638,3.0
+PA,63484,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/63484,2,1,183.5,0.07112031012624301,2.5
+PA,64307,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/64307,7,1,1511.5,0.09188581215146151,1.8571428571428572
+PA,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+PA,71018,Randomized controlled trial,Meets WWC standards without reservations,/Study/71018,1,0,818.6666666666666,0.0205480031994452,1.0
+PA,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+PA,78544,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78544,41,1,9842.166666666666,0.033588452187459636,1.7666666666666666
+PA,78548,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78548,30,0,6714.333333333333,,1.2333333333333334
+PA,79019,Randomized controlled trial,Meets WWC standards without reservations,/Study/79019,21,1,3938.75,0.12056809650149178,4.761904761904762
+PA,80630,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/80630,5,0,1218.5,0.08610687472984331,3.8
+PA,81478,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81478,10,1,875.5833333333333,0.15719305656822333,5.9
+PA,81569,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81569,2,0,86.66666666666666,0.6000141639602434,22.5
+PA,81638,Randomized controlled trial,Meets WWC standards without reservations,/Study/81638,2,0,148.28571428571428,,6.5
+PA,82198,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82198,7,0,1186.0,0.0069485165094705465,0.14285714285714285
+PA,82909,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82909,3,0,93.33333333333333,,
+PA,84082,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/84082,1,0,5086.5,,
+PA,84082,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/84082,8,0,34268.0,0.138327291558888,2.5
+PA,85485,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85485,12,0,1653.0,0.12576162914478797,5.0
+PA,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+PA,85538,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85538,6,1,463.71428571428567,0.14412486355040896,5.666666666666667
+PA,86044,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86044,12,1,9686.666666666666,0.052381933073295146,2.0833333333333335
+PA,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+PA,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+PA,89193,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89193,4,0,438.66666666666663,5.966502660616145,31.25
+PA,89371,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89371,56,0,38709.33333333333,0.0027065320354599486,0.15217391304347827
+PA,89429,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89429,1,0,657.5,0.0077146222995748,0.0
+PA,89839,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89839,4,0,40.57142857142857,0.07801682713820378,3.0
+PA,89847,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89847,1,0,26.375,-0.157735550869625,-6.0
+PA,89859,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89859,7,0,1158.75,,5.571428571428571
+PA,90086,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90086,9,0,8010.999999999999,0.07236802220922357,2.5555555555555554
+PA,90091,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90091,6,0,142.375,0.1649411504023994,6.333333333333333
+PA,90139,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90139,3,0,319.0,-0.15181980837675335,-6.0
+PA,90158,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90158,4,0,402.0,0.33399589488390474,13.25
+PA,90285,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90285,4,0,438.80000000000007,-0.06418949516054939,-2.5
+PA,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+PA,90301,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90301,33,0,502.40000000000003,0.13139845902177957,3.727272727272727
+PA,90477,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90477,2,0,349.0,0.158377744377868,6.0
+PA,90638,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90638,3,0,152.0,0.681465824668987,23.666666666666668
+RI,72031,Randomized controlled trial,Meets WWC standards without reservations,/Study/72031,2,0,1429.0,-0.004430777047027599,-0.5
+RI,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+RI,89200,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89200,3,1,707.125,1.0003193162786483,34.0
+RI,90178,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90178,13,1,600.6666666666666,-0.04919094414430096,-0.9230769230769231
+SC,14409,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14409,2,1,321.75,0.14795002795549989,5.5
+SC,40473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/40473,7,1,1167.4444444444443,0.04607932929627497,1.7142857142857142
+SC,63460,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/63460,3,1,70.66666666666666,,0.0
+SC,65127,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65127,1,1,104.28571428571428,0.127630114071465,5.0
+SC,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+SC,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+SC,82125,Randomized controlled trial,Meets WWC standards with reservations,/Study/82125,2,1,83.25,0.11467330185640134,4.5
+SC,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+SC,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,30,1,6030.200000000001,-0.00575970139660081,-1.0666666666666667
+SC,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+SC,85477,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85477,1,0,682.6666666666666,-0.0569978506647449,-2.0
+SC,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+SC,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+SC,87523,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87523,4,0,490.0,0.2186632496155815,8.5
+SC,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+SC,89372,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89372,9,0,4424.400000000001,0.544690441264266,19.333333333333332
+SC,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+SD,40473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/40473,7,1,1167.4444444444443,0.04607932929627497,1.7142857142857142
+SD,82209,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82209,1,0,91.33333333333333,0.431203622031817,17.0
+SD,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+SD,90318,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90318,8,0,345507.0,0.23041798564215277,9.125
+TN,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+TN,30710,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30710,2,1,280.0,0.0454642744943638,3.0
+TN,65127,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65127,1,1,104.28571428571428,0.127630114071465,5.0
+TN,70947,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/70947,3,1,1502.3333333333333,0.8575365752542133,30.0
+TN,74210,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/74210,1,0,31.5,-0.529338056213275,-20.0
+TN,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+TN,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+TN,79019,Randomized controlled trial,Meets WWC standards without reservations,/Study/79019,21,1,3938.75,0.12056809650149178,4.761904761904762
+TN,81428,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81428,16,0,1464986.111111111,,0.875
+TN,81473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81473,12,0,193.71428571428572,0.5892717660524036,21.181818181818183
+TN,81638,Randomized controlled trial,Meets WWC standards without reservations,/Study/81638,2,0,148.28571428571428,,6.5
+TN,82198,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82198,7,0,1186.0,0.0069485165094705465,0.14285714285714285
+TN,82553,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82553,4,0,994.4000000000001,0.16744942123804749,6.75
+TN,85485,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85485,12,0,1653.0,0.12576162914478797,5.0
+TN,85516,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85516,22,1,37873.22222222222,0.19397960096453054,7.636363636363637
+TN,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+TN,85645,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85645,5,0,22147.0,0.0009991311199635004,-0.2
+TN,85768,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85768,7,0,593.0,0.2283508693914756,8.857142857142858
+TN,86043,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86043,3,1,4921.5,0.10440974808460513,4.0
+TN,86122,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86122,6,0,481.0,1.1562187971676594,32.0
+TN,87212,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87212,6,0,300.0,0.24441654251933267,9.833333333333334
+TN,87213,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87213,18,0,1050.0,0.6024757928928346,22.38888888888889
+TN,87214,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87214,6,0,267.0,0.5330113195273514,20.0
+TN,87215,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87215,7,0,318.5,0.29259017604980814,11.285714285714286
+TN,87216,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87216,5,0,167.5,0.2927753514239938,11.0
+TN,87217,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87217,5,0,165.0,0.2501544116419666,9.2
+TN,87219,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87219,1,0,33.0,0.607318572779359,23.0
+TN,87220,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87220,1,0,34.0,0.615215265948076,23.0
+TN,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+TN,87523,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87523,4,0,490.0,0.2186632496155815,8.5
+TN,87630,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/87630,4,0,239.85714285714283,0.2155322373525775,8.333333333333334
+TN,89407,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89407,6,0,303.0,0.6897432722028739,25.333333333333332
+TN,89435,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89435,1,0,34.0,0.0642842501152275,3.0
+TN,90139,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90139,3,0,319.0,-0.15181980837675335,-6.0
+TN,90158,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90158,4,0,402.0,0.33399589488390474,13.25
+TN,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+TN,90654,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90654,2,0,200.0,0.189765669661338,7.5
+TN,90718,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90718,1,1,571.3333333333333,0.551825640992102,21.0
+TN,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+TX,163,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/163,29,0,16839.333333333332,0.07274427612589737,2.9310344827586206
+TX,500,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/500,24,0,8240.666666666666,0.046296070055547124,1.8333333333333333
+TX,1121,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/1121,2,1,571.6666666666666,0.09274873159973471,3.5
+TX,9443,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/9443,3,1,187.33333333333331,0.34881339986456966,13.0
+TX,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+TX,14409,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14409,2,1,321.75,0.14795002795549989,5.5
+TX,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+TX,30135,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30135,4,1,431.22222222222223,,13.75
+TX,30710,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30710,2,1,280.0,0.0454642744943638,3.0
+TX,40473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/40473,7,1,1167.4444444444443,0.04607932929627497,1.7142857142857142
+TX,65371,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65371,9,1,462.72727272727275,0.3750378161015652,13.0
+TX,67271,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67271,6,0,1487.142857142857,-0.027289559475774217,-1.0
+TX,67280,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67280,4,0,1174.6666666666665,,3.75
+TX,67284,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67284,3,1,578.125,-0.0166493649416042,-0.6666666666666666
+TX,67284,Randomized controlled trial,Meets WWC standards without reservations,/Study/67284,16,0,4515.5,,-2.5
+TX,67294,Randomized controlled trial,Meets WWC standards without reservations,/Study/67294,14,0,0.0,,0.6428571428571429
+TX,67297,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67297,19,0,608.0,-0.21010672635487915,-11.631578947368421
+TX,67301,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/67301,176,0,5455.200000000001,,8.823863636363637
+TX,70947,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/70947,3,1,1502.3333333333333,0.8575365752542133,30.0
+TX,74210,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/74210,1,0,31.5,-0.529338056213275,-20.0
+TX,77028,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77028,6,0,223.71428571428572,,4.833333333333333
+TX,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+TX,77768,Randomized controlled trial,Meets WWC standards without reservations,/Study/77768,1,0,677.0,0.0554953565258727,2.0
+TX,77774,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77774,15,0,1920.75,-0.01749252725814765,-0.8
+TX,78544,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78544,41,1,9842.166666666666,0.033588452187459636,1.7666666666666666
+TX,78548,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78548,30,0,6714.333333333333,,1.2333333333333334
+TX,78621,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78621,16,0,534.0,-0.2619636527979254,-10.1875
+TX,79330,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79330,18,1,6876.0,,1.2777777777777777
+TX,80630,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/80630,5,0,1218.5,0.08610687472984331,3.8
+TX,81003,Randomized controlled trial,Meets WWC standards without reservations,/Study/81003,23,1,887.7142857142857,0.021395209620030203,0.782608695652174
+TX,81447,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81447,6,0,342.25,0.41,12.666666666666666
+TX,81830,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/81830,12,1,1693.6000000000001,0.11020461145858564,4.333333333333333
+TX,82098,Randomized controlled trial,Meets WWC standards with reservations,/Study/82098,2,0,1580.8571428571427,,2.5
+TX,82100,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82100,2,1,1580.8571428571427,0.07118220383737028,2.5
+TX,82128,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82128,6,1,1221.6000000000001,-0.09049112192376868,-3.8333333333333335
+TX,82128,Randomized controlled trial,Meets WWC standards without reservations,/Study/82128,30,1,6030.200000000001,-0.00575970139660081,-1.0666666666666667
+TX,82196,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82196,2,1,788.4285714285713,,0.0
+TX,82197,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82197,2,1,1844.3333333333333,,0.0
+TX,82198,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82198,7,0,1186.0,0.0069485165094705465,0.14285714285714285
+TX,82590,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82590,30,0,16700.600000000002,0.007626804058397247,0.4
+TX,82904,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82904,1,1,152.83333333333331,0.191998492358146,6.0
+TX,82904,Randomized controlled trial,Meets WWC standards without reservations,/Study/82904,1,1,113.16666666666666,0.259785612131792,10.0
+TX,82909,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82909,3,0,93.33333333333333,,
+TX,82935,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82935,11,0,1133.0,0.29514896594353535,11.272727272727273
+TX,85477,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85477,1,0,682.6666666666666,-0.0569978506647449,-2.0
+TX,85485,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85485,12,0,1653.0,0.12576162914478797,5.0
+TX,85516,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85516,22,1,37873.22222222222,0.19397960096453054,7.636363636363637
+TX,85518,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85518,13,1,1953.909090909091,0.23452534013614063,9.307692307692308
+TX,85520,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85520,21,0,4044.0,0.19164762815940029,7.523809523809524
+TX,85538,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85538,6,1,463.71428571428567,0.14412486355040896,5.666666666666667
+TX,85645,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/85645,5,0,22147.0,0.0009991311199635004,-0.2
+TX,86044,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86044,12,1,9686.666666666666,0.052381933073295146,2.0833333333333335
+TX,87212,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87212,6,0,300.0,0.24441654251933267,9.833333333333334
+TX,87213,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87213,18,0,1050.0,0.6024757928928346,22.38888888888889
+TX,87214,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87214,6,0,267.0,0.5330113195273514,20.0
+TX,87215,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87215,7,0,318.5,0.29259017604980814,11.285714285714286
+TX,87216,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87216,5,0,167.5,0.2927753514239938,11.0
+TX,87217,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87217,5,0,165.0,0.2501544116419666,9.2
+TX,87219,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87219,1,0,33.0,0.607318572779359,23.0
+TX,87220,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87220,1,0,34.0,0.615215265948076,23.0
+TX,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+TX,87305,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87305,14,0,2870.0,,
+TX,88740,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88740,6,0,1672.5,0.38250415515592134,7.666666666666667
+TX,88880,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/88880,9,1,1513.5,0.05732518513555702,2.2222222222222223
+TX,89171,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89171,72,1,21627.666666666664,0.028279045182326816,1.1527777777777777
+TX,89193,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89193,4,0,438.66666666666663,5.966502660616145,31.25
+TX,89202,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89202,15,0,2891.6666666666665,0.38368132049246145,12.6
+TX,89235,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89235,10,1,2588.5,0.357605673807994,5.8
+TX,89372,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89372,9,0,4424.400000000001,0.544690441264266,19.333333333333332
+TX,89407,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89407,6,0,303.0,0.6897432722028739,25.333333333333332
+TX,89435,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89435,1,0,34.0,0.0642842501152275,3.0
+TX,89442,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89442,13,0,2185.8571428571427,0.09983846333177503,4.083333333333333
+TX,89470,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89470,6,0,5479.090909090909,-0.004047550582012884,-0.16666666666666666
+TX,89782,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89782,7,0,4152.4,0.12346289954849014,3.4285714285714284
+TX,89848,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/89848,14,0,52110.0,0.017663735813629223,0.5714285714285714
+TX,89868,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89868,12,0,3818.8571428571427,0.01317530760775513,0.4166666666666667
+TX,89868,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89868,12,0,3818.8571428571427,0.013156167920148449,0.4166666666666667
+TX,89881,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89881,30,0,1336.0,0.5355981494918004,19.8
+TX,90004,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90004,15,0,911.5,0.03037338664274841,1.2666666666666666
+TX,90005,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90005,13,0,756.5,0.0009884543358729724,0.0
+TX,90167,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90167,18,0,16421.75,-0.1082926915956524,-0.7777777777777778
+TX,90218,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/90218,2,0,229.25,0.21895845176575351,8.5
+TX,90219,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90219,5,0,6086.5,0.012498808031651251,1.0
+TX,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+TX,90296,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90296,1,0,2128.7000000000003,-0.251943611941047,-10.0
+TX,90477,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90477,2,0,349.0,0.158377744377868,6.0
+TX,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+TX,94407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/94407,3,0,603.0,0.3463489920090783,13.333333333333334
+UT,40473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/40473,7,1,1167.4444444444443,0.04607932929627497,1.7142857142857142
+UT,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+UT,86122,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86122,6,0,481.0,1.1562187971676594,32.0
+UT,86168,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/86168,2,0,76.75,-0.1078970450789562,-4.5
+UT,89372,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89372,9,0,4424.400000000001,0.544690441264266,19.333333333333332
+UT,90654,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90654,2,0,200.0,0.189765669661338,7.5
+VA,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+VA,40473,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/40473,7,1,1167.4444444444443,0.04607932929627497,1.7142857142857142
+VA,44803,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/44803,6,1,32.0,0.42597808017449806,16.0
+VA,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+VA,77321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77321,2,1,278.75,-0.0478485262082611,-2.0
+VA,78772,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/78772,28,0,10219.0,,-0.25
+VA,79870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/79870,2,0,283.0,0.1545806841804897,6.0
+VA,79870,Randomized controlled trial,Meets WWC standards with reservations,/Study/79870,2,1,283.0,0.1550845546393858,6.0
+VA,81563,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81563,5,0,160.0,,27.8
+VA,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+VA,86109,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86109,3,0,225.0,0.15225134074490868,5.666666666666667
+VA,86174,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/86174,1,0,42.0,-0.390950027374339,-15.0
+VA,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+VA,87574,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87574,9,0,1851.0,0.15583956739594917,6.222222222222222
+VA,89839,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89839,4,0,40.57142857142857,0.07801682713820378,3.0
+VA,89847,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89847,1,0,26.375,-0.157735550869625,-6.0
+VA,89859,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89859,7,0,1158.75,,5.571428571428571
+VA,89964,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89964,2,0,379.66666666666663,-0.0010953407223610497,0.0
+VA,90091,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90091,6,0,142.375,0.1649411504023994,6.333333333333333
+VA,90215,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90215,6,0,2853.0,-0.05623210272959903,-2.0
+VA,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+VA,90301,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90301,33,0,502.40000000000003,0.13139845902177957,3.727272727272727
+VA,90317,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90317,7,0,988.9999999999999,0.0034404647697599713,0.2857142857142857
+VA,90647,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90647,3,0,597.0,0.1545692573002733,6.0
+VT,70514,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/70514,3,0,660.0,0.35855162842821636,15.666666666666666
+VT,88841,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/88841,4,0,36.0,,
+WA,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+WA,30518,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/30518,4,1,1285.5,,-0.75
+WA,30639,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30639,1,1,156.5,,-2.0
+WA,30710,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/30710,2,1,280.0,0.0454642744943638,3.0
+WA,77299,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77299,1,1,46.5625,0.112191716858976,4.0
+WA,77321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77321,2,1,278.75,-0.0478485262082611,-2.0
+WA,79019,Randomized controlled trial,Meets WWC standards without reservations,/Study/79019,21,1,3938.75,0.12056809650149178,4.761904761904762
+WA,79958,Randomized controlled trial,Meets WWC standards without reservations,/Study/79958,1,0,488.66666666666663,,11.0
+WA,81433,Randomized controlled trial,Meets WWC standards without reservations,/Study/81433,10,0,2297.833333333333,0.3962562693277202,15.2
+WA,81746,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81746,3,1,220.20000000000002,0.19659720964456398,7.666666666666667
+WA,82198,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82198,7,0,1186.0,0.0069485165094705465,0.14285714285714285
+WA,82909,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/82909,3,0,93.33333333333333,,
+WA,84221,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/84221,9,1,1666.0,0.003192531396614089,0.2222222222222222
+WA,85485,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/85485,12,0,1653.0,0.12576162914478797,5.0
+WA,85497,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/85497,5,0,448.0,-0.023703267353247084,-0.8
+WA,86123,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/86123,25,0,705.2,0.04064272609178279,1.52
+WA,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+WA,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+WA,89200,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89200,3,1,707.125,1.0003193162786483,34.0
+WA,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+WA,90301,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90301,33,0,502.40000000000003,0.13139845902177957,3.727272727272727
+WA,90645,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90645,4,0,3546.5,0.06508510785688593,2.75
+WI,14407,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/14407,8,1,280.54166666666663,0.2946,11.6
+WI,29870,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/29870,1,1,119.60000000000001,,23.0
+WI,67271,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67271,6,0,1487.142857142857,-0.027289559475774217,-1.0
+WI,67284,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/67284,3,1,578.125,-0.0166493649416042,-0.6666666666666666
+WI,67284,Randomized controlled trial,Meets WWC standards without reservations,/Study/67284,16,0,4515.5,,-2.5
+WI,81428,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/81428,16,0,1464986.111111111,,0.875
+WI,82205,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/82205,15,0,676.5,1.2091440156793116,35.86666666666667
+WI,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+WI,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+WI,89532,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89532,3,0,3304.5,0.1784031020247565,7.0
+WI,90167,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90167,18,0,16421.75,-0.1082926915956524,-0.7777777777777778
+WI,90184,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/90184,5,0,3924.0,0.09659737828616281,3.8
+WI,90225,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90225,4,0,464.0,0.1609487213294015,6.5
+WI,90652,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90652,7,0,535.0,0.5127650509559609,19.142857142857142
+WI,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+WI,90949,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90949,8,0,157.33333333333331,0.7166821692698383,25.875
+WV,65127,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/65127,1,1,104.28571428571428,0.127630114071465,5.0
+WV,77775,Quasi-Experimental Design,Meets WWC standards with reservations,/Study/77775,3,0,155.4,0.22198067330319501,9.0
+WV,81482,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/81482,3,0,607.5,0.12957505240926134,5.0
+WV,87293,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/87293,4,0,288.51162790697674,0.3851747268965773,14.75
+WV,87321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/87321,118,0,14108.846153846154,0.18732667746261944,7.0495049504950495
+WV,89839,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/89839,4,0,40.57142857142857,0.07801682713820378,3.0
+WV,89847,Randomized Controlled Trial,Meets WWC standards with reservations,/Study/89847,1,0,26.375,-0.157735550869625,-6.0
+WV,90091,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90091,6,0,142.375,0.1649411504023994,6.333333333333333
+WV,90790,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/90790,9,0,10354.384615384615,0.11986484868768077,4.777777777777778
+WY,77321,Randomized Controlled Trial,Meets WWC standards without reservations,/Study/77321,2,1,278.75,-0.0478485262082611,-2.0

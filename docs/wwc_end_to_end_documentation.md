@@ -1,7 +1,7 @@
 # WWC 2026 ASA Expo: End-to-End Technical Documentation
 
 Last updated: 2026-03-01  
-Workspace: `/Volumes/Auxilary/Side_Projects/ASA_Data_Challenge`
+Workspace: `/Volumes/Auxilary/Side_Projects/ASA Data Challange`
 
 ## 1) Executive Summary
 

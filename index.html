@@ -14,7 +14,7 @@
         radial-gradient(1000px 450px at 110% -10%, #ddd6fe 0%, transparent 70%),
         #f5f8ff;
     }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 22px 36px; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 22px 36px; }
     .hero {
       border-radius: 16px;
       background: linear-gradient(120deg, #0f172a 0%, #1d4ed8 50%, #7c3aed 100%);
@@ -53,14 +53,29 @@
   <div class="wrap">
     <section class="hero">
       <h1>WWC ASA Data Challenge</h1>
-      <div class="muted">Data engineering, subset readiness, modeling outputs, and dashboard artifacts.</div>
+      <div class="muted">Data engineering, EDA, subset readiness, modeling outputs, and dashboard artifacts.</div>
     </section>
 
     <section class="grid">
       <article class="card">
         <h2>Data Readiness Dashboard</h2>
-        <p>Professional dashboard showing data coverage, subset viability, state-level evidence density, and GO/NO-GO recommendations.</p>
+        <p>Dashboard for coverage, subset viability, state-level evidence density, and GO/NO-GO recommendations.</p>
         <a href="./Urvi_Analysis/dashboard/data_readiness_dashboard.html">Open Dashboard</a>
+      </article>
+      <article class="card">
+        <h2>Original Map-Only EDA</h2>
+        <p>USA choropleth-first EDA using original WWC export only, with all-rows and multi-state-only views.</p>
+        <a href="./Urvi_Analysis/dashboard/original_map_only_dashboard.html">Open Map-Only EDA</a>
+      </article>
+      <article class="card">
+        <h2>Original Full State EDA</h2>
+        <p>Full state drilldown dashboard with per-state profile pages for studies, interventions, topics, grades, and outcomes.</p>
+        <a href="./Urvi_Analysis/dashboard/original_full_state_eda_dashboard.html">Open Full State EDA</a>
+      </article>
+      <article class="card">
+        <h2>Multi-State Signal Dashboard</h2>
+        <p>Focused signal checks for multi-state studies, including NY/NJ/CA/TX intervention comparisons.</p>
+        <a href="./Urvi_Analysis/dashboard/multistate_original_signal_dashboard.html">Open Multi-State Signal</a>
       </article>
       <article class="card">
         <h2>In-Depth Documentation</h2>
@@ -69,7 +84,7 @@
       </article>
       <article class="card">
         <h2>Data Products</h2>
-        <p>Ready-to-use subsets: predictive core, inference core, geography context core, and strict demographic subset.</p>
+        <p>Analysis-ready subsets and derived tables for state and intervention-level exploration.</p>
         <a href="./Urvi_Analysis/data_products/index.html">Browse Data Products</a>
       </article>
       <article class="card">

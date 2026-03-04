@@ -303,6 +303,9 @@ def build_figures(
     topic_summary: pd.DataFrame,
     coverage_df: pd.DataFrame,
     iv_support: pd.DataFrame,
+    entity_state_summary: pd.DataFrame,
+    state_effectiveness_summary: pd.DataFrame,
+    intervention_effectiveness_summary: pd.DataFrame,
 ) -> dict[str, str]:
     fig1 = px.bar(
         subset_summary,
@@ -381,6 +384,258 @@ def build_figures(
     fig6.add_vline(x=20, line_color="#a16207", line_dash="dash", annotation_text="20-row min threshold")
     fig6.update_layout(**plot_template(), xaxis_title="Finding rows per intervention", yaxis_title="Count")
 
+    findings_sorted = entity_state_summary.sort_values("findings_count", ascending=False)
+    studies_sorted = entity_state_summary.sort_values("studies_count", ascending=False)
+    iv_sorted = entity_state_summary.sort_values("interventions_count", ascending=False)
+
+    fig7 = go.Figure()
+    fig7.add_trace(
+        go.Bar(
+            x=findings_sorted["state_abbr"],
+            y=findings_sorted["findings_count"],
+            name="Findings",
+            marker_color="#2563eb",
+            hovertemplate=(
+                "State: %{x}<br>Findings: %{y:,.0f}<br>"
+                "Weighted outcome sample: %{customdata[0]:,.0f}<extra></extra>"
+            ),
+            customdata=np.stack([findings_sorted["findings_sample_weighted"]], axis=1),
+        )
+    )
+    fig7.add_trace(
+        go.Scatter(
+            x=findings_sorted["state_abbr"],
+            y=findings_sorted["findings_sample_weighted"],
+            name="Weighted Outcome Sample",
+            mode="lines+markers",
+            yaxis="y2",
+            line={"color": "#dc2626", "width": 2},
+            marker={"size": 6},
+            hovertemplate="State: %{x}<br>Weighted outcome sample: %{y:,.0f}<extra></extra>",
+        )
+    )
+    fig7.update_layout(
+        **plot_template(),
+        title="State Coverage: Findings + Weighted Outcome Sample Size",
+        xaxis_title="State",
+        yaxis={"title": "Findings count"},
+        yaxis2={"title": "Weighted outcome sample size", "overlaying": "y", "side": "right"},
+        legend={"orientation": "h", "y": 1.08, "x": 0},
+    )
+
+    fig8 = go.Figure()
+    fig8.add_trace(
+        go.Bar(
+            x=studies_sorted["state_abbr"],
+            y=studies_sorted["studies_count"],
+            name="Studies",
+            marker_color="#0f766e",
+            hovertemplate=(
+                "State: %{x}<br>Studies: %{y:,.0f}<br>"
+                "Median study sample: %{customdata[0]:,.0f}<extra></extra>"
+            ),
+            customdata=np.stack([studies_sorted["study_sample_median_weighted"]], axis=1),
+        )
+    )
+    fig8.add_trace(
+        go.Scatter(
+            x=studies_sorted["state_abbr"],
+            y=studies_sorted["study_sample_median_weighted"],
+            name="Median Study Sample",
+            mode="lines+markers",
+            yaxis="y2",
+            line={"color": "#f59e0b", "width": 2},
+            marker={"size": 6},
+            hovertemplate="State: %{x}<br>Median study sample: %{y:,.0f}<extra></extra>",
+        )
+    )
+    fig8.update_layout(
+        **plot_template(),
+        title="State Coverage: Studies + Median Study Sample Size",
+        xaxis_title="State",
+        yaxis={"title": "Study count"},
+        yaxis2={"title": "Median weighted study sample", "overlaying": "y", "side": "right"},
+        legend={"orientation": "h", "y": 1.08, "x": 0},
+    )
+
+    fig9 = go.Figure()
+    fig9.add_trace(
+        go.Bar(
+            x=iv_sorted["state_abbr"],
+            y=iv_sorted["interventions_count"],
+            name="Interventions",
+            marker_color="#7c3aed",
+            hovertemplate=(
+                "State: %{x}<br>Interventions: %{y:,.0f}<br>"
+                "Median intervention sample: %{customdata[0]:,.0f}<extra></extra>"
+            ),
+            customdata=np.stack([iv_sorted["intervention_sample_median_weighted"]], axis=1),
+        )
+    )
+    fig9.add_trace(
+        go.Scatter(
+            x=iv_sorted["state_abbr"],
+            y=iv_sorted["intervention_sample_median_weighted"],
+            name="Median Intervention Sample",
+            mode="lines+markers",
+            yaxis="y2",
+            line={"color": "#ef4444", "width": 2},
+            marker={"size": 6},
+            hovertemplate="State: %{x}<br>Median intervention sample: %{y:,.0f}<extra></extra>",
+        )
+    )
+    fig9.update_layout(
+        **plot_template(),
+        title="State Coverage: Interventions + Median Intervention Sample Size",
+        xaxis_title="State",
+        yaxis={"title": "Intervention count"},
+        yaxis2={"title": "Median weighted intervention sample", "overlaying": "y", "side": "right"},
+        legend={"orientation": "h", "y": 1.08, "x": 0},
+    )
+
+    fig10 = px.choropleth(
+        entity_state_summary,
+        locations="state_abbr",
+        locationmode="USA-states",
+        color="findings_count",
+        hover_name="state_name",
+        hover_data={
+            "findings_count": ":,.0f",
+            "studies_count": ":,.0f",
+            "interventions_count": ":,.0f",
+            "findings_sample_weighted": ":,.1f",
+            "study_sample_median_weighted": ":,.1f",
+            "intervention_sample_median_weighted": ":,.1f",
+        },
+        scope="usa",
+        color_continuous_scale="Turbo",
+        title="State Findings Map (with sample-size context in hover)",
+    )
+    fig10.update_layout(**plot_template())
+
+    fig11 = px.choropleth(
+        entity_state_summary,
+        locations="state_abbr",
+        locationmode="USA-states",
+        color="studies_count",
+        hover_name="state_name",
+        hover_data={
+            "studies_count": ":,.0f",
+            "findings_count": ":,.0f",
+            "interventions_count": ":,.0f",
+            "study_sample_median_weighted": ":,.1f",
+            "findings_sample_weighted": ":,.1f",
+            "intervention_sample_median_weighted": ":,.1f",
+        },
+        scope="usa",
+        color_continuous_scale="Turbo",
+        title="State Studies Map (with sample-size context in hover)",
+    )
+    fig11.update_layout(**plot_template())
+
+    fig12 = px.choropleth(
+        entity_state_summary,
+        locations="state_abbr",
+        locationmode="USA-states",
+        color="interventions_count",
+        hover_name="state_name",
+        hover_data={
+            "interventions_count": ":,.0f",
+            "findings_count": ":,.0f",
+            "studies_count": ":,.0f",
+            "intervention_sample_median_weighted": ":,.1f",
+            "study_sample_median_weighted": ":,.1f",
+            "findings_sample_weighted": ":,.1f",
+        },
+        scope="usa",
+        color_continuous_scale="Turbo",
+        title="State Interventions Map (with sample-size context in hover)",
+    )
+    fig12.update_layout(**plot_template())
+
+    fig13 = px.choropleth(
+        state_effectiveness_summary,
+        locations="state_abbr",
+        locationmode="USA-states",
+        color="mean_effect_size_wwc",
+        hover_name="state_name",
+        hover_data={
+            "findings_n": ":,.0f",
+            "mean_effect_size_wwc": ":.3f",
+            "median_effect_size_wwc": ":.3f",
+            "pct_positive_effect_size": ":.1f",
+            "mean_improvement_index": ":.2f",
+            "positive_rating_share": ":.2f",
+            "rating_n": ":,.0f",
+        },
+        scope="usa",
+        color_continuous_scale="RdBu",
+        color_continuous_midpoint=0.0,
+        title="Mean WWC Effect Size by State (numeric)",
+    )
+    fig13.update_layout(**plot_template())
+
+    fig14 = px.choropleth(
+        state_effectiveness_summary,
+        locations="state_abbr",
+        locationmode="USA-states",
+        color="pct_positive_effect_size",
+        hover_name="state_name",
+        hover_data={
+            "findings_n": ":,.0f",
+            "pct_positive_effect_size": ":.1f",
+            "mean_effect_size_wwc": ":.3f",
+            "mean_improvement_index": ":.2f",
+            "positive_rating_share": ":.2f",
+            "rating_n": ":,.0f",
+        },
+        scope="usa",
+        range_color=(0, 100),
+        color_continuous_scale="Turbo",
+        title="% Positive Findings by State (Effect Size > 0)",
+    )
+    fig14.update_layout(**plot_template())
+
+    fig15 = px.choropleth(
+        state_effectiveness_summary,
+        locations="state_abbr",
+        locationmode="USA-states",
+        color="mean_improvement_index",
+        hover_name="state_name",
+        hover_data={
+            "findings_n": ":,.0f",
+            "mean_improvement_index": ":.2f",
+            "mean_effect_size_wwc": ":.3f",
+            "pct_positive_effect_size": ":.1f",
+            "positive_rating_share": ":.2f",
+            "rating_n": ":,.0f",
+        },
+        scope="usa",
+        color_continuous_scale="RdBu",
+        color_continuous_midpoint=0.0,
+        title="Mean Improvement Index by State (numeric)",
+    )
+    fig15.update_layout(**plot_template())
+
+    top_iv = intervention_effectiveness_summary.query("findings_n >= 25").copy()
+    top_iv = top_iv.sort_values("mean_effect_size_wwc", ascending=False).head(25)
+    fig16 = px.bar(
+        top_iv.sort_values("mean_effect_size_wwc"),
+        x="mean_effect_size_wwc",
+        y="intervention_name",
+        orientation="h",
+        color="pct_positive_effect_size",
+        color_continuous_scale="Turbo",
+        hover_data={
+            "findings_n": ":,.0f",
+            "median_effect_size_wwc": ":.3f",
+            "mean_improvement_index": ":.2f",
+            "pct_positive_effect_size": ":.1f",
+        },
+        title="Top U.S. Interventions by Mean Effect Size (min 25 findings)",
+    )
+    fig16.update_layout(**plot_template(), xaxis_title="Mean WWC effect size", yaxis_title="")
+
     return {
         "subset": fig1.to_html(full_html=False, include_plotlyjs="cdn"),
         "req_heat": fig2.to_html(full_html=False, include_plotlyjs=False),
@@ -388,6 +643,16 @@ def build_figures(
         "topics": fig4.to_html(full_html=False, include_plotlyjs=False),
         "cov_dist": fig5.to_html(full_html=False, include_plotlyjs=False),
         "iv_hist": fig6.to_html(full_html=False, include_plotlyjs=False),
+        "state_findings_samples": fig7.to_html(full_html=False, include_plotlyjs=False),
+        "state_studies_samples": fig8.to_html(full_html=False, include_plotlyjs=False),
+        "state_interventions_samples": fig9.to_html(full_html=False, include_plotlyjs=False),
+        "map_findings": fig10.to_html(full_html=False, include_plotlyjs=False),
+        "map_studies": fig11.to_html(full_html=False, include_plotlyjs=False),
+        "map_interventions": fig12.to_html(full_html=False, include_plotlyjs=False),
+        "map_mean_effect": fig13.to_html(full_html=False, include_plotlyjs=False),
+        "map_pos_share": fig14.to_html(full_html=False, include_plotlyjs=False),
+        "map_improve": fig15.to_html(full_html=False, include_plotlyjs=False),
+        "iv_effect_bar": fig16.to_html(full_html=False, include_plotlyjs=False),
     }
 
 
@@ -403,9 +668,22 @@ def build_dashboard(
     state_summary: pd.DataFrame,
     topic_summary: pd.DataFrame,
     iv_support: pd.DataFrame,
+    entity_state_summary: pd.DataFrame,
+    state_effectiveness_summary: pd.DataFrame,
+    intervention_effectiveness_summary: pd.DataFrame,
     meta: dict,
 ) -> str:
-    figs = build_figures(subset_summary, required_cov, state_summary, topic_summary, coverage_df, iv_support)
+    figs = build_figures(
+        subset_summary,
+        required_cov,
+        state_summary,
+        topic_summary,
+        coverage_df,
+        iv_support,
+        entity_state_summary,
+        state_effectiveness_summary,
+        intervention_effectiveness_summary,
+    )
 
     rows = len(base)
     findings = base["f_FindingID"].nunique()
@@ -449,6 +727,15 @@ def build_dashboard(
 
     cov_disp = coverage_df.head(25).copy()
     cov_disp["coverage_pct"] = (cov_disp["coverage"] * 100).round(1).astype(str) + "%"
+    entity_disp = entity_state_summary.sort_values("findings_count", ascending=False).head(20).copy()
+    for c in ["findings_count", "studies_count", "interventions_count"]:
+        entity_disp[c] = entity_disp[c].round(0).astype(int)
+    for c in ["findings_sample_weighted", "study_sample_median_weighted", "intervention_sample_median_weighted"]:
+        entity_disp[c] = entity_disp[c].round(1)
+    eff_disp = state_effectiveness_summary.sort_values("findings_n", ascending=False).head(20).copy()
+    eff_disp["findings_n"] = eff_disp["findings_n"].round(0).astype(int)
+    for c in ["mean_effect_size_wwc", "median_effect_size_wwc", "mean_improvement_index", "positive_rating_share", "pct_positive_effect_size"]:
+        eff_disp[c] = eff_disp[c].round(3)
 
     generated = datetime.now().strftime("%Y-%m-%d %H:%M")
 
@@ -633,6 +920,86 @@ def build_dashboard(
       <div class="card">{figs["iv_hist"]}</div>
     </section>
 
+    <section class="grid2eq">
+      <div class="card">{figs["state_findings_samples"]}</div>
+      <div class="card">{figs["state_studies_samples"]}</div>
+    </section>
+
+    <section class="grid2eq">
+      <div class="card">{figs["state_interventions_samples"]}</div>
+      <div class="card">
+        <h2>State Entity Coverage Snapshot</h2>
+        <p class="muted">Counts are state-level entity counts. Sample-size overlays use weighted allocation across multi-state rows to reduce duplication inflation.</p>
+        {make_html_table(
+            entity_disp,
+            [
+                "state_abbr",
+                "findings_count",
+                "studies_count",
+                "interventions_count",
+                "findings_sample_weighted",
+                "study_sample_median_weighted",
+                "intervention_sample_median_weighted",
+            ],
+        )}
+      </div>
+    </section>
+
+    <section class="grid2eq">
+      <div class="card">{figs["map_findings"]}</div>
+      <div class="card">{figs["map_studies"]}</div>
+    </section>
+
+    <section class="grid2eq">
+      <div class="card">{figs["map_interventions"]}</div>
+      <div class="card">
+        <h2>How To Read The Maps</h2>
+        <ul class="list">
+          <li>Color intensity = state-level evidence density for that specific entity type.</li>
+          <li>Hover tooltip includes weighted sample-size context, so high counts with tiny samples can be flagged.</li>
+          <li>Use these maps to choose stable states for contrastive analysis (for example CA vs TX vs NY vs PA).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid2eq">
+      <div class="card">{figs["map_mean_effect"]}</div>
+      <div class="card">{figs["map_pos_share"]}</div>
+    </section>
+
+    <section class="grid2eq">
+      <div class="card">{figs["map_improve"]}</div>
+      <div class="card">
+        <h2>State Effectiveness Snapshot (Numeric)</h2>
+        <p class="muted">These maps use numeric effectiveness signals, not category counts. Useful for your CA vs TX vs NY comparisons.</p>
+        {make_html_table(
+            eff_disp,
+            [
+                "state_abbr",
+                "findings_n",
+                "mean_effect_size_wwc",
+                "median_effect_size_wwc",
+                "pct_positive_effect_size",
+                "mean_improvement_index",
+                "positive_rating_share",
+                "rating_n",
+            ],
+        )}
+      </div>
+    </section>
+
+    <section class="grid2">
+      <div class="card">{figs["iv_effect_bar"]}</div>
+      <div class="card">
+        <h2>Interpretation Notes</h2>
+        <ul class="list">
+          <li><code>mean_effect_size_wwc</code> is your direct numeric intervention-result signal by state.</li>
+          <li><code>pct_positive_effect_size</code> gives a robust directional signal even when ratings are sparse.</li>
+          <li><code>positive_rating_share</code> uses WWC intervention ratings (where available) and should be treated as lower-coverage support.</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="grid2">
       <div class="card">
         <h2>Subset Readiness Table</h2>
@@ -723,6 +1090,136 @@ def main() -> None:
     state_summary["state_name"] = state_summary["state_abbr"].map(ABBR_TO_STATE)
     state_summary.to_csv(DATA_OUT / "state_coverage_summary.csv", index=False)
 
+    # State entity summary with weighted sample-size overlays.
+    entity = base[
+        [
+            "f_FindingID",
+            "s_StudyID",
+            "s_interventionID",
+            "i_Intervention_Name",
+            "state_tokens",
+            "f_Outcome_Sample_Size",
+            "f_Effect_Size_WWC",
+            "f_Improvement_Index",
+            "i_Effectiveness_Rating",
+        ]
+    ].copy()
+    entity["state_count"] = entity["state_tokens"].apply(lambda x: len(x) if isinstance(x, list) else 0)
+    entity = entity[entity["state_count"] > 0].copy()
+    entity["sample_numeric"] = pd.to_numeric(entity["f_Outcome_Sample_Size"], errors="coerce")
+    entity_exp = entity.explode("state_tokens").rename(columns={"state_tokens": "state_abbr"})
+    entity_exp["row_weight"] = 1.0 / entity_exp["state_count"]
+    entity_exp["sample_weighted"] = entity_exp["sample_numeric"] * entity_exp["row_weight"]
+    entity_exp["effect_size_num"] = pd.to_numeric(entity_exp["f_Effect_Size_WWC"], errors="coerce")
+    entity_exp["improvement_num"] = pd.to_numeric(entity_exp["f_Improvement_Index"], errors="coerce")
+    rating_norm = entity_exp["i_Effectiveness_Rating"].astype(str).str.strip().str.lower()
+    entity_exp["is_positive_rating"] = rating_norm.isin({"positive effects", "potentially positive effects"})
+    entity_exp["has_rating"] = entity_exp["i_Effectiveness_Rating"].notna()
+
+    finding_counts = (
+        entity_exp.groupby("state_abbr")["f_FindingID"]
+        .nunique()
+        .rename("findings_count")
+        .reset_index()
+    )
+    study_counts = (
+        entity_exp.groupby("state_abbr")["s_StudyID"]
+        .nunique()
+        .rename("studies_count")
+        .reset_index()
+    )
+    intervention_counts = (
+        entity_exp.groupby("state_abbr")["s_interventionID"]
+        .nunique()
+        .rename("interventions_count")
+        .reset_index()
+    )
+    finding_samples = (
+        entity_exp.groupby("state_abbr")["sample_weighted"]
+        .sum(min_count=1)
+        .rename("findings_sample_weighted")
+        .reset_index()
+    )
+    study_samples = (
+        entity_exp.groupby(["state_abbr", "s_StudyID"])["sample_weighted"]
+        .sum(min_count=1)
+        .reset_index()
+        .groupby("state_abbr")["sample_weighted"]
+        .median()
+        .rename("study_sample_median_weighted")
+        .reset_index()
+    )
+    intervention_samples = (
+        entity_exp.groupby(["state_abbr", "s_interventionID"])["sample_weighted"]
+        .sum(min_count=1)
+        .reset_index()
+        .groupby("state_abbr")["sample_weighted"]
+        .median()
+        .rename("intervention_sample_median_weighted")
+        .reset_index()
+    )
+    entity_state_summary = (
+        finding_counts.merge(study_counts, on="state_abbr", how="outer")
+        .merge(intervention_counts, on="state_abbr", how="outer")
+        .merge(finding_samples, on="state_abbr", how="left")
+        .merge(study_samples, on="state_abbr", how="left")
+        .merge(intervention_samples, on="state_abbr", how="left")
+        .fillna(0)
+        .sort_values("findings_count", ascending=False)
+    )
+    entity_state_summary["state_name"] = entity_state_summary["state_abbr"].map(ABBR_TO_STATE)
+    entity_state_summary.to_csv(DATA_OUT / "state_entity_sample_summary.csv", index=False)
+
+    # State effectiveness summary using numeric result fields.
+    state_eff = (
+        entity_exp.groupby("state_abbr", as_index=False)
+        .agg(
+            findings_n=("f_FindingID", "nunique"),
+            mean_effect_size_wwc=("effect_size_num", "mean"),
+            median_effect_size_wwc=("effect_size_num", "median"),
+            pct_positive_effect_size=("effect_size_num", lambda s: 100.0 * float((s.dropna() > 0).mean()) if s.notna().any() else np.nan),
+            mean_improvement_index=("improvement_num", "mean"),
+            rating_n=("has_rating", "sum"),
+            positive_rating_share=(
+                "is_positive_rating",
+                lambda s: float(s.mean()),
+            ),
+        )
+        .sort_values("findings_n", ascending=False)
+    )
+    # Limit positive_rating_share to rows with rating present.
+    rating_state = (
+        entity_exp[entity_exp["has_rating"]]
+        .groupby("state_abbr")["is_positive_rating"]
+        .mean()
+        .rename("positive_rating_share")
+        .reset_index()
+    )
+    state_eff = state_eff.drop(columns=["positive_rating_share"]).merge(rating_state, on="state_abbr", how="left")
+    state_eff["state_name"] = state_eff["state_abbr"].map(ABBR_TO_STATE)
+    state_eff.to_csv(DATA_OUT / "state_effectiveness_summary.csv", index=False)
+
+    # U.S.-wide intervention effectiveness summary (not split by state).
+    intervention_eff = (
+        base.groupby(["s_interventionID", "i_Intervention_Name"], dropna=False, as_index=False)
+        .agg(
+            findings_n=("f_FindingID", "nunique"),
+            mean_effect_size_wwc=("f_Effect_Size_WWC", "mean"),
+            median_effect_size_wwc=("f_Effect_Size_WWC", "median"),
+            pct_positive_effect_size=(
+                "f_Effect_Size_WWC",
+                lambda s: 100.0
+                * float((pd.to_numeric(s, errors="coerce").dropna() > 0).mean())
+                if pd.to_numeric(s, errors="coerce").notna().any()
+                else np.nan,
+            ),
+            mean_improvement_index=("f_Improvement_Index", "mean"),
+        )
+        .sort_values("findings_n", ascending=False)
+    )
+    intervention_eff["intervention_name"] = intervention_eff["i_Intervention_Name"].fillna("Unknown intervention")
+    intervention_eff.to_csv(DATA_OUT / "intervention_effectiveness_summary.csv", index=False)
+
     # Topic summary (prefer aggregate topic string; fallback topic flags already embedded in base).
     topic_tokens = (
         base["s_Topic"]
@@ -755,6 +1252,9 @@ def main() -> None:
         state_summary=state_summary,
         topic_summary=topic_summary,
         iv_support=iv_support,
+        entity_state_summary=entity_state_summary,
+        state_effectiveness_summary=state_eff,
+        intervention_effectiveness_summary=intervention_eff,
         meta=meta,
     )
     out_html = DASH_OUT / "data_readiness_dashboard.html"

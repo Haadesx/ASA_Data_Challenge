@@ -1,0 +1,1345 @@
+state_abbr,f_Outcome_Domain,findings_n
+AK,Academic achievement,4
+AK,General Mathematics Achievement,9
+AL,Academic achievement,9
+AL,Algebra,4
+AL,Alphabetics,5
+AL,Cognition,5
+AL,Comprehension,5
+AL,English language arts achievement,4
+AL,General Mathematics Achievement,14
+AL,General academic achievement (college),4
+AL,Intrapersonal Competencies,7
+AL,Reading achievement,1
+AL,Science Achievement,10
+AL,Student Behavior,1
+AL,Student emotional status,5
+AL,Student engagement in school,4
+AL,Writing Conventions,1
+AL,Writing Quality,3
+AR,Academic achievement,9
+AR,Cognition,4
+AR,English language arts achievement,13
+AR,General Mathematics Achievement,108
+AR,General academic achievement (college),4
+AR,Intrapersonal Competencies,7
+AR,Reading achievement,91
+AR,Science Achievement,2
+AR,Social Studies Achievement,2
+AR,Student Behavior,1
+AR,Student emotional status,4
+AR,Student engagement in school,4
+AZ,Academic achievement,28
+AZ,Alphabetics,10
+AZ,Completing school,4
+AZ,Comprehension,21
+AZ,English language arts achievement,4
+AZ,English language proficiency,3
+AZ,General Literacy Achievement,13
+AZ,General Mathematics Achievement,6
+AZ,Proficiency in a Language Other Than English,11
+AZ,Progressing in College,4
+AZ,Progressing in school (secondary school),3
+AZ,Reading Fluency,13
+AZ,Reading achievement,1
+AZ,Receptive Communication,1
+AZ,School Attendance,1
+AZ,Science Achievement,14
+AZ,Student Discipline,1
+AZ,Vocabulary,1
+CA,Academic achievement,68
+CA,Access and enrollment,10
+CA,Alphabetics,18
+CA,Attainment,11
+CA,Behavior,10
+CA,Cognition,3
+CA,College Degree Attainment,30
+CA,College Enrollment,42
+CA,College Readiness,2
+CA,Completing school,13
+CA,Comprehension,41
+CA,Credit accumulation,1
+CA,Credit accumulation and persistence,5
+CA,Earnings,16
+CA,Earth/Space Sciences,1
+CA,Employment,30
+CA,English language arts achievement,12
+CA,English language development,5
+CA,English language proficiency,9
+CA,Expressive Communication,1
+CA,External behavior,2
+CA,Functional Skills,1
+CA,General Literacy Achievement,15
+CA,General Mathematics Achievement,166
+CA,General social studies achievement ,3
+CA,High School Completion,16
+CA,"Industry-Recognized Credential, Certificate, or License",3
+CA,"Industry-recognized credential, certificate, or license completion",3
+CA,Instructional practice,1
+CA,Intrapersonal Competencies,16
+CA,"Knowledge, attitudes, & values",4
+CA,Labor market outcomes,10
+CA,Language,4
+CA,Life sciences,4
+CA,Literacy Achievement,17
+CA,Mathematics,7
+CA,Oral language,3
+CA,Other academic performance,1
+CA,Phonological processing,3
+CA,Physical sciences,2
+CA,Postsecondary degree attainment,6
+CA,Print knowledge,4
+CA,Progress in developmental education,7
+CA,Progressing in College,48
+CA,Progressing in school,20
+CA,Progressing in school (secondary school),8
+CA,Progressing in secondary school or adult education,2
+CA,Reading & Literacy Related,10
+CA,Reading Comprehension,8
+CA,Reading Fluency,19
+CA,Reading achievement,132
+CA,School Attendance,1
+CA,School Climate,8
+CA,School leader retention at the school,1
+CA,Science Achievement,19
+CA,Secondary school academic achievement,5
+CA,Secondary school attendance,2
+CA,Self-regulation,1
+CA,Short-Term Earnings,3
+CA,Short-Term Employment,5
+CA,Social Studies Achievement,3
+CA,Social outcomes,1
+CA,Social-Emotional Learning,2
+CA,Social-emotional development,16
+CA,Staying in School,4
+CA,Staying in Secondary School,1
+CA,Student Behavior,10
+CA,Student Discipline,13
+CA,Student engagement in school,1
+CA,Student progression,2
+CA,Teacher Retention in the School,5
+CA,Teacher and leader effectiveness,8
+CA,Teacher retention in the profession,5
+CA,Teacher retention in the school district,5
+CA,Vocabulary,1
+CA,Writing Conventions,1
+CA,Writing Quality,4
+CO,Academic achievement,7
+CO,College Degree Attainment,22
+CO,College Enrollment,25
+CO,College Readiness,14
+CO,Completing school,5
+CO,Comprehension,2
+CO,Earnings,11
+CO,Employment,20
+CO,English language arts achievement,13
+CO,General Literacy Achievement,4
+CO,General Mathematics Achievement,27
+CO,High School Completion,9
+CO,"Industry-Recognized Credential, Certificate, or License",3
+CO,Instructional practice,1
+CO,Intrapersonal Competencies,12
+CO,"Knowledge, attitudes, & values",4
+CO,Literacy Achievement,2
+CO,Progressing in school (secondary school),4
+CO,Progressing in secondary school or adult education,1
+CO,Reading Comprehension,1
+CO,Reading achievement,38
+CO,Science Achievement,4
+CO,Social Studies Achievement,4
+CO,Staying in Secondary School,6
+CO,Student Discipline,12
+CO,Student progression,2
+CO,Teacher and leader effectiveness,8
+CO,Word reading ,2
+CT,Academic achievement,5
+CT,Algebra,6
+CT,Completing school,4
+CT,Comprehension,2
+CT,Credit accumulation,2
+CT,Earnings (short-run),3
+CT,Employment (short-run),2
+CT,Encoding,1
+CT,General Mathematics Achievement,59
+CT,"Industry-recognized credential, certificate, or license (short-run)",1
+CT,"Industry-recognized credential, certificate, or license completion",3
+CT,Letter identification,2
+CT,Phonology,3
+CT,Short-Term Earnings,6
+CT,Short-Term Employment,2
+CT,Word reading ,5
+DC,Academic achievement,12
+DC,Access and enrollment,3
+DC,Alphabetics,13
+DC,Attainment,14
+DC,Behavior,10
+DC,College Degree Attainment,26
+DC,College Enrollment,51
+DC,College Readiness,1
+DC,Completing school,8
+DC,Comprehension,11
+DC,Credit accumulation,6
+DC,Earnings,16
+DC,Earth/Space Sciences,1
+DC,Employment,30
+DC,English language arts achievement,13
+DC,General Literacy Achievement,3
+DC,General Mathematics Achievement,126
+DC,General science achievement ,1
+DC,Geometry and Measurement,1
+DC,Graduating school,1
+DC,High School Completion,16
+DC,"Industry-Recognized Credential, Certificate, or License",3
+DC,Intrapersonal Competencies,12
+DC,Labor market outcomes,15
+DC,Life sciences,4
+DC,Literacy Achievement,9
+DC,Number and Operations,2
+DC,Physical sciences,2
+DC,Progressing in College,19
+DC,Progressing in school,31
+DC,Progressing in school (secondary school),8
+DC,Reading & Literacy Related,4
+DC,Reading Comprehension,3
+DC,Reading Fluency,7
+DC,Reading achievement,101
+DC,School Attendance,1
+DC,School leader retention at the school,1
+DC,Science Achievement,5
+DC,Secondary school academic achievement,2
+DC,Self-regulation,16
+DC,Short-Term Employment,2
+DC,Social Studies Achievement,5
+DC,Social-Emotional Learning,8
+DC,Staying in School,2
+DC,Staying in Secondary School,1
+DC,Student Discipline,13
+DC,Student engagement in school,1
+DC,Student progression,2
+DC,Writing Quality,1
+DE,Cognition,9
+DE,Expressive Communication,4
+DE,Functional Skills,16
+DE,General Mathematics Achievement,1
+DE,General science achievement ,1
+DE,Geometry and Measurement,1
+DE,Life sciences,3
+DE,Number and Operations,2
+DE,Receptive Communication,4
+FL,Academic achievement,26
+FL,Access and enrollment,4
+FL,Alphabetics,6
+FL,Attainment,11
+FL,Behavior,5
+FL,Cognition,3
+FL,College Degree Attainment,4
+FL,College Enrollment,5
+FL,College Readiness,1
+FL,Completing school,7
+FL,Comprehension,19
+FL,Credit accumulation and persistence,3
+FL,Earnings,5
+FL,Educator discipline practice,1
+FL,Employment,10
+FL,English language arts achievement,1
+FL,English language proficiency,6
+FL,Expressive Communication,1
+FL,External behavior,2
+FL,Functional Skills,1
+FL,General Literacy Achievement,5
+FL,General Mathematics Achievement,67
+FL,High School Completion,7
+FL,Instructional practice,9
+FL,"Knowledge, attitudes, & values",5
+FL,Labor market outcomes,10
+FL,Literacy Achievement,1
+FL,Numbers and Operations,3
+FL,Oral language,3
+FL,Other academic performance,1
+FL,Phonological processing,3
+FL,Print knowledge,4
+FL,Problem behavior,3
+FL,Progress in developmental education,1
+FL,Progressing in College,11
+FL,Progressing in school,10
+FL,Progressing in school (secondary school),1
+FL,Reading Comprehension,1
+FL,Reading achievement,2
+FL,School engagement,8
+FL,Social-emotional competence,14
+FL,Staying in School,2
+FL,Staying in Secondary School,1
+FL,Student Behavior,4
+FL,Teacher instruction,9
+FL,Teacher retention,1
+FL,Teacher retention in the school district,1
+FL,Vocabulary,1
+FL,Word reading ,2
+GA,Academic achievement,22
+GA,Access and enrollment,29
+GA,Alphabetics,28
+GA,Cognition,4
+GA,College Degree Attainment,22
+GA,College Enrollment,31
+GA,College Readiness,1
+GA,Completing school,5
+GA,Comprehension,13
+GA,Credit accumulation,13
+GA,Earnings,11
+GA,Earnings (short-run),3
+GA,Employment,20
+GA,Employment (short-run),2
+GA,English language arts achievement,16
+GA,Expressive Communication,1
+GA,Functional Skills,1
+GA,General Literacy Achievement,1
+GA,General Mathematics Achievement,130
+GA,General academic achievement (college),4
+GA,High School Completion,9
+GA,"Industry-Recognized Credential, Certificate, or License",3
+GA,"Industry-recognized credential, certificate, or license (short-run)",1
+GA,"Industry-recognized credential, certificate, or license completion",2
+GA,Intrapersonal Competencies,19
+GA,Oral language,2
+GA,Phonological processing,1
+GA,Print knowledge,3
+GA,Progressing in College,10
+GA,Progressing in school (secondary school),4
+GA,Reading Comprehension,1
+GA,Reading Fluency,4
+GA,Reading achievement,102
+GA,Reading and listening comprehension,1
+GA,Science Achievement,4
+GA,Short-Term Earnings,6
+GA,Short-Term Employment,4
+GA,Social Studies Achievement,4
+GA,Student Behavior,5
+GA,Student Discipline,12
+GA,Student emotional status,4
+GA,Student engagement in school,4
+GA,Student progression,2
+GA,Vocabulary,1
+GA,Word reading ,3
+GA,Writing Quality,1
+HI,Academic achievement,4
+IA,Academic achievement,6
+IA,College Degree Attainment,22
+IA,College Enrollment,25
+IA,Earnings,11
+IA,Employment,20
+IA,General Mathematics Achievement,17
+IA,High School Completion,9
+IA,"Industry-Recognized Credential, Certificate, or License",3
+IA,Intrapersonal Competencies,12
+IA,Progressing in College,4
+IA,Progressing in school (secondary school),4
+IA,Student Discipline,12
+ID,Academic achievement,4
+ID,Comprehension,2
+ID,General Mathematics Achievement,17
+ID,Writing Conventions,1
+ID,Writing Quality,3
+IL,Academic achievement,13
+IL,Alphabetics,15
+IL,Behavior,2
+IL,College Degree Attainment,22
+IL,College Enrollment,25
+IL,College Readiness,1
+IL,Completing school,6
+IL,Compliant Student Behavior,2
+IL,Comprehension,13
+IL,Credit accumulation,15
+IL,Earnings,11
+IL,Earnings (long-run),5
+IL,Earnings (short-run),2
+IL,Employment,21
+IL,Employment (long-run),5
+IL,Employment (short-run),2
+IL,English language arts achievement,8
+IL,English language proficiency,9
+IL,External behavior,2
+IL,General Literacy Achievement,14
+IL,General Mathematics Achievement,139
+IL,High School Completion,9
+IL,"Industry-Recognized Credential, Certificate, or License",4
+IL,"Industry-recognized credential, certificate, or license completion",14
+IL,Instructional practice,8
+IL,Intrapersonal Competencies,12
+IL,"Knowledge, attitudes, & values",9
+IL,Literacy Achievement,16
+IL,Other academic performance,1
+IL,Primary school academic achievement,1
+IL,Proficiency in a Language Other Than English,11
+IL,Progressing in school,1
+IL,Progressing in school (secondary school),7
+IL,Reading Fluency,1
+IL,Reading achievement,137
+IL,School Attendance,4
+IL,School leader retention at the school,1
+IL,Secondary school academic achievement,1
+IL,Short-Term Earnings,4
+IL,Short-Term Employment,6
+IL,Staying in Secondary School,1
+IL,Student Behavior,9
+IL,Student Discipline,14
+IL,Student engagement in school,1
+IL,Student social functioning,7
+IL,Teacher and leader effectiveness,8
+IL,Teacher instruction,8
+IL,Teacher retention,1
+IL,Teacher retention in the school district,1
+IN,Academic achievement,10
+IN,Alphabetics,6
+IN,College Degree Attainment,7
+IN,College Enrollment,12
+IN,College Readiness,7
+IN,Compliant Student Behavior,2
+IN,Comprehension,18
+IN,Earnings,10
+IN,Employment,11
+IN,General Mathematics Achievement,14
+IN,"Industry-Recognized Credential, Certificate, or License",1
+IN,Mathematics,1
+IN,Progressing in College,16
+IN,Reading & Literacy Related,1
+IN,Reading Fluency,12
+IN,Reading achievement,4
+IN,School Attendance,3
+IN,Staying in Secondary School,1
+IN,Student Behavior,46
+IN,Student Discipline,1
+IN,Student social functioning,7
+KS,Academic achievement,6
+KS,Alphabetics,5
+KS,Behavior,4
+KS,College Degree Attainment,22
+KS,College Enrollment,25
+KS,Comprehension,16
+KS,Credit accumulation,14
+KS,Earnings,11
+KS,Employment,20
+KS,General Mathematics Achievement,11
+KS,High School Completion,9
+KS,"Industry-Recognized Credential, Certificate, or License",3
+KS,"Industry-recognized credential, certificate, or license completion",14
+KS,Intrapersonal Competencies,12
+KS,Oral language,2
+KS,Phonological processing,1
+KS,Print knowledge,3
+KS,Progressing in College,4
+KS,Progressing in school (secondary school),4
+KS,Reading Fluency,12
+KS,Reading achievement,2
+KS,Short-Term Earnings,4
+KS,Short-Term Employment,4
+KS,Student Discipline,12
+KY,Academic achievement,12
+KY,Algebra,6
+KY,Alphabetics,1
+KY,College Degree Attainment,22
+KY,College Enrollment,25
+KY,Completing school,1
+KY,Compliant Student Behavior,2
+KY,Comprehension,2
+KY,Credit accumulation,14
+KY,Earnings,11
+KY,Employment,20
+KY,General Literacy Achievement,1
+KY,General Mathematics Achievement,74
+KY,High School Completion,9
+KY,"Industry-Recognized Credential, Certificate, or License",3
+KY,"Industry-recognized credential, certificate, or license completion",14
+KY,Intrapersonal Competencies,12
+KY,Language,2
+KY,Mathematics,1
+KY,Progressing in school (secondary school),4
+KY,Progressing in secondary school or adult education,1
+KY,Reading & Literacy Related,1
+KY,Secondary school academic achievement,2
+KY,Short-Term Earnings,4
+KY,Short-Term Employment,4
+KY,Student Behavior,46
+KY,Student Discipline,12
+KY,Student social functioning,7
+KY,Writing Conventions,1
+KY,Writing Quality,3
+LA,Academic achievement,29
+LA,Algebra,6
+LA,Alphabetics,2
+LA,Behavior,1
+LA,Cognition,5
+LA,College Degree Attainment,22
+LA,College Enrollment,25
+LA,College Readiness,1
+LA,Comprehension,3
+LA,Credit accumulation,14
+LA,Earnings,11
+LA,Earnings (long-run),5
+LA,Earnings (short-run),2
+LA,Employment,20
+LA,Employment (long-run),5
+LA,Employment (short-run),2
+LA,English language arts achievement,10
+LA,General Mathematics Achievement,23
+LA,General academic achievement (college),4
+LA,High School Completion,9
+LA,"Industry-Recognized Credential, Certificate, or License",3
+LA,"Industry-recognized credential, certificate, or license completion",14
+LA,Intrapersonal Competencies,19
+LA,"Knowledge, attitudes, & values",4
+LA,Literacy Achievement,8
+LA,Progressing in College,3
+LA,Progressing in school,1
+LA,Progressing in school (secondary school),4
+LA,Reading achievement,7
+LA,Receptive Communication,1
+LA,Secondary school academic achievement,1
+LA,Short-Term Earnings,4
+LA,Short-Term Employment,4
+LA,Student Behavior,1
+LA,Student Discipline,12
+LA,Student emotional status,5
+LA,Student engagement in school,4
+LA,Teacher Retention in the School,5
+LA,Teacher retention in the profession,5
+LA,Teacher retention in the school district,5
+LA,Vocabulary,1
+MA,Academic achievement,12
+MA,Access and enrollment,49
+MA,Alphabetics,4
+MA,Cognition,1
+MA,College Degree Attainment,22
+MA,College Enrollment,35
+MA,Completing school,6
+MA,Comprehension,5
+MA,Credit accumulation,15
+MA,Credit accumulation and persistence,4
+MA,Earnings,11
+MA,Employment,20
+MA,English language arts achievement,21
+MA,English language development,5
+MA,General Literacy Achievement,2
+MA,General Mathematics Achievement,130
+MA,General academic achievement (high school),5
+MA,High School Completion,9
+MA,"Industry-Recognized Credential, Certificate, or License",3
+MA,"Industry-recognized credential, certificate, or license completion",2
+MA,Intrapersonal Competencies,12
+MA,Mathematics,1
+MA,Medium-Term Earnings,1
+MA,Medium-Term Employment,2
+MA,Number and Operations,4
+MA,Progressing in College,13
+MA,Progressing in school,2
+MA,Progressing in school (secondary school),7
+MA,Reading Comprehension,1
+MA,Reading Fluency,2
+MA,Reading achievement,99
+MA,School Attendance,1
+MA,Science Achievement,14
+MA,Short-Term Earnings,3
+MA,Short-Term Employment,8
+MA,Social Studies Achievement,6
+MA,Staying in School,2
+MA,Student Discipline,13
+MA,Student progression,2
+MA,Word reading ,2
+MA,Writing Quality,1
+MD,Academic achievement,25
+MD,Access and enrollment,15
+MD,Attainment,11
+MD,Behavior,10
+MD,College Degree Attainment,4
+MD,College Enrollment,14
+MD,College Readiness,1
+MD,Completing school,9
+MD,Comprehension,6
+MD,Credit accumulation and persistence,7
+MD,Earnings,5
+MD,Earnings (short-run),3
+MD,Earth/Space Sciences,1
+MD,Employment,10
+MD,Employment (short-run),2
+MD,English language arts achievement,1
+MD,General Literacy Achievement,3
+MD,General Mathematics Achievement,17
+MD,General academic achievement (high school),5
+MD,General science achievement ,1
+MD,Geometry and Measurement,1
+MD,High School Completion,7
+MD,"Industry-recognized credential, certificate, or license (short-run)",1
+MD,"Industry-recognized credential, certificate, or license completion",2
+MD,"Knowledge, attitudes, & values",1
+MD,Labor market outcomes,10
+MD,Life sciences,4
+MD,Literacy Achievement,10
+MD,Number and Operations,2
+MD,Physical sciences,2
+MD,Progress in developmental education,7
+MD,Progressing in College,32
+MD,Progressing in school,11
+MD,Progressing in school (secondary school),4
+MD,Reading achievement,1
+MD,School Attendance,1
+MD,School leader retention at the school,1
+MD,Science Achievement,1
+MD,Secondary school academic achievement,2
+MD,Short-Term Earnings,6
+MD,Short-Term Employment,2
+MD,Social Studies Achievement,1
+MD,Staying in School,2
+MD,Staying in Secondary School,1
+MD,Student Discipline,1
+MD,Student engagement in school,1
+ME,Academic achievement,6
+ME,College Degree Attainment,22
+ME,College Enrollment,32
+ME,Completing school,1
+ME,Comprehension,2
+ME,Earnings,11
+ME,Employment,20
+ME,English language arts achievement,2
+ME,General Literacy Achievement,2
+ME,General Mathematics Achievement,10
+ME,High School Completion,9
+ME,"Industry-Recognized Credential, Certificate, or License",3
+ME,Intrapersonal Competencies,12
+ME,Mathematics,2
+ME,Progressing in College,6
+ME,Progressing in school,7
+ME,Progressing in school (secondary school),7
+ME,Progressing in secondary school or adult education,1
+ME,Reading achievement,1
+ME,School Attendance,1
+ME,Secondary school academic achievement,2
+ME,Student Discipline,13
+ME,Writing Quality,1
+MI,Academic achievement,6
+MI,Algebra,6
+MI,Behavior,10
+MI,College Degree Attainment,22
+MI,College Enrollment,25
+MI,College Readiness,1
+MI,Completing school,2
+MI,Comprehension,15
+MI,Earnings,11
+MI,Employment,20
+MI,General Literacy Achievement,1
+MI,General Mathematics Achievement,35
+MI,High School Completion,9
+MI,"Industry-Recognized Credential, Certificate, or License",3
+MI,"Industry-recognized credential, certificate, or license completion",3
+MI,Intrapersonal Competencies,12
+MI,"Knowledge, attitudes, & values",1
+MI,Literacy Achievement,5
+MI,Mathematics,2
+MI,Physical sciences,1
+MI,Postsecondary degree attainment,6
+MI,Progressing in College,4
+MI,Progressing in school (secondary school),4
+MI,Reading Comprehension,1
+MI,Reading Fluency,12
+MI,Short-Term Earnings,3
+MI,Short-Term Employment,3
+MI,Student Discipline,12
+MI,Writing Conventions,1
+MI,Writing Quality,3
+MN,Academic achievement,6
+MN,Alphabetics,9
+MN,College Degree Attainment,28
+MN,College Enrollment,31
+MN,Completing school,1
+MN,Comprehension,2
+MN,Earnings,21
+MN,Employment,30
+MN,English language arts achievement,2
+MN,General Literacy Achievement,1
+MN,General Mathematics Achievement,73
+MN,High School Completion,9
+MN,"Industry-Recognized Credential, Certificate, or License",3
+MN,Intrapersonal Competencies,12
+MN,Literacy Achievement,1
+MN,Primary school academic achievement,1
+MN,Problem behavior,3
+MN,Progressing in College,7
+MN,Progressing in school,2
+MN,Progressing in school (secondary school),7
+MN,Progressing in secondary school or adult education,1
+MN,Reading Fluency,2
+MN,Reading achievement,37
+MN,School Attendance,1
+MN,School engagement,8
+MN,Secondary school academic achievement,2
+MN,Social-emotional competence,14
+MN,Student Discipline,13
+MO,Academic achievement,4
+MO,Access and enrollment,3
+MO,Alphabetics,7
+MO,Behavior,4
+MO,Cognition,4
+MO,College Degree Attainment,22
+MO,College Enrollment,25
+MO,College Readiness,1
+MO,Comprehension,16
+MO,Earnings,11
+MO,Employment,20
+MO,English language arts achievement,4
+MO,General Mathematics Achievement,53
+MO,General academic achievement (college),4
+MO,High School Completion,9
+MO,"Industry-Recognized Credential, Certificate, or License",3
+MO,Intrapersonal Competencies,19
+MO,Progressing in school (secondary school),4
+MO,Reading Fluency,12
+MO,Receptive Communication,1
+MO,School engagement,1
+MO,Student Behavior,6
+MO,Student Discipline,12
+MO,Student emotional status,4
+MO,Student engagement in school,4
+MO,Teacher Practice,2
+MO,Vocabulary,1
+MO,Writing Conventions,1
+MO,Writing Quality,3
+MS,Academic achievement,3
+MS,Alphabetics,5
+MS,College Degree Attainment,22
+MS,College Enrollment,25
+MS,Completing school,1
+MS,Comprehension,5
+MS,Earnings,11
+MS,Employment,20
+MS,English language arts achievement,5
+MS,General Mathematics Achievement,63
+MS,High School Completion,9
+MS,"Industry-Recognized Credential, Certificate, or License",3
+MS,Intrapersonal Competencies,12
+MS,Progressing in school,1
+MS,Progressing in school (secondary school),4
+MS,Reading Comprehension,1
+MS,Reading achievement,2
+MS,Student Discipline,12
+MS,Word reading ,2
+MS,Writing Conventions,1
+MS,Writing Quality,3
+MT,Academic achievement,4
+MT,General Mathematics Achievement,8
+NC,Academic achievement,44
+NC,Access and enrollment,3
+NC,Alphabetics,8
+NC,Cognition,5
+NC,College Degree Attainment,25
+NC,College Enrollment,31
+NC,Completing school,1
+NC,Comprehension,10
+NC,Earnings,11
+NC,Emotional/internal behavior,2
+NC,Employment,20
+NC,English language arts achievement,17
+NC,English language proficiency,1
+NC,External behavior,11
+NC,Financial aid enrollment,7
+NC,General Literacy Achievement,3
+NC,General Mathematics Achievement,35
+NC,General academic achievement (college),4
+NC,High School Completion,9
+NC,"Industry-Recognized Credential, Certificate, or License",3
+NC,Instructional practice,1
+NC,Intrapersonal Competencies,19
+NC,Language,2
+NC,Literacy Achievement,9
+NC,Oral language,2
+NC,Phonological processing,1
+NC,Postsecondary degree attainment,3
+NC,Print knowledge,3
+NC,Problem behavior,3
+NC,Progressing in College,26
+NC,Progressing in school,1
+NC,Progressing in school (secondary school),4
+NC,Reading achievement,5
+NC,School Climate,8
+NC,School engagement,8
+NC,School leader retention at the school,1
+NC,Science Achievement,139
+NC,Secondary school academic achievement,1
+NC,Social Studies Achievement,4
+NC,Social outcomes,6
+NC,Social-emotional competence,14
+NC,Student Behavior,1
+NC,Student Discipline,16
+NC,Student emotional status,5
+NC,Student engagement in school,5
+NC,Student progression,2
+ND,College Readiness,1
+NE,Academic achievement,4
+NE,Alphabetics,3
+NE,Cognition,9
+NE,College Degree Attainment,2
+NE,College Enrollment,5
+NE,Comprehension,9
+NE,Expressive Communication,4
+NE,Functional Skills,16
+NE,General Mathematics Achievement,1
+NE,High School Completion,1
+NE,Literacy Achievement,1
+NE,Receptive Communication,4
+NE,Writing Conventions,1
+NE,Writing Quality,3
+NH,Academic achievement,4
+NH,College Enrollment,1
+NH,Completing school,1
+NH,General Literacy Achievement,1
+NH,General Mathematics Achievement,1
+NJ,Academic achievement,4
+NJ,Algebra,6
+NJ,College Degree Attainment,23
+NJ,College Enrollment,31
+NJ,Credit accumulation,2
+NJ,Earnings,11
+NJ,Earth/Space Sciences,1
+NJ,Employment,20
+NJ,English language arts achievement,4
+NJ,General Literacy Achievement,4
+NJ,General Mathematics Achievement,17
+NJ,General science achievement ,1
+NJ,Geometry and Measurement,1
+NJ,High School Completion,9
+NJ,"Industry-Recognized Credential, Certificate, or License",3
+NJ,"Industry-recognized credential, certificate, or license completion",1
+NJ,Instructional practice,1
+NJ,Intrapersonal Competencies,12
+NJ,"Knowledge, attitudes, & values",4
+NJ,Life sciences,4
+NJ,Number and Operations,2
+NJ,Oral language,2
+NJ,Phonological processing,1
+NJ,Physical sciences,2
+NJ,Print knowledge,3
+NJ,Progressing in College,8
+NJ,Progressing in school (secondary school),4
+NJ,Reading achievement,3
+NJ,Science Achievement,2
+NJ,Social Studies Achievement,2
+NJ,Student Discipline,12
+NJ,Student progression,2
+NJ,Teacher Practice,4
+NJ,Teacher and leader effectiveness,8
+NJ,Teacher instruction,2
+NM,Academic achievement,4
+NM,Access and enrollment,5
+NM,Alphabetics,3
+NM,Completing school,6
+NM,Comprehension,3
+NM,General Mathematics Achievement,11
+NM,General academic achievement (high school),5
+NM,Letter identification,2
+NM,Phonology,1
+NM,Reading achievement,35
+NM,Science Achievement,125
+NM,Word reading ,4
+NV,Academic achievement,4
+NV,General Mathematics Achievement,58
+NY,Academic achievement,21
+NY,Access and enrollment,12
+NY,Alphabetics,28
+NY,College Degree Attainment,60
+NY,College Enrollment,78
+NY,Completing school,8
+NY,Comprehension,13
+NY,Credit accumulation,3
+NY,Credit accumulation and persistence,15
+NY,Earnings,11
+NY,Earth/Space Sciences,1
+NY,Employment,20
+NY,English language arts achievement,20
+NY,English language proficiency,2
+NY,General Literacy Achievement,11
+NY,General Mathematics Achievement,197
+NY,General science achievement ,1
+NY,Geometry and Measurement,1
+NY,High School Completion,9
+NY,"Industry-Recognized Credential, Certificate, or License",3
+NY,"Industry-recognized credential, certificate, or license completion",2
+NY,Intrapersonal Competencies,14
+NY,"Knowledge, attitudes, & values",4
+NY,Language,6
+NY,Life sciences,4
+NY,Literacy Achievement,10
+NY,Mathematics,7
+NY,Medium-Term Earnings,1
+NY,Medium-Term Employment,2
+NY,Number and Operations,2
+NY,Oral language,2
+NY,Phonological processing,1
+NY,Physical sciences,2
+NY,Print knowledge,3
+NY,Progress in developmental education,7
+NY,Progressing in College,32
+NY,Progressing in school (secondary school),7
+NY,Progressing in secondary school or adult education,1
+NY,Reading & Literacy Related,9
+NY,Reading Comprehension,9
+NY,Reading Fluency,11
+NY,Reading achievement,113
+NY,School Attendance,1
+NY,School leader retention at the school,1
+NY,Science Achievement,4
+NY,Secondary school attendance,2
+NY,Self-regulation,1
+NY,Short-Term Earnings,3
+NY,Short-Term Employment,8
+NY,Social Studies Achievement,4
+NY,Social-Emotional Learning,2
+NY,Student Behavior,2
+NY,Student Discipline,13
+NY,Student engagement in school,1
+NY,Student progression,2
+NY,Teacher Practice,4
+NY,Teacher and leader effectiveness,8
+NY,Writing Quality,1
+OH,Academic achievement,6
+OH,Access and enrollment,5
+OH,Alphabetics,16
+OH,Attainment,3
+OH,College Degree Attainment,61
+OH,College Enrollment,81
+OH,College Readiness,1
+OH,Completing school,4
+OH,Comprehension,10
+OH,Credit accumulation,5
+OH,Earnings,11
+OH,Educator discipline practice,1
+OH,Employment,20
+OH,Financial aid enrollment,7
+OH,General Literacy Achievement,1
+OH,General Mathematics Achievement,23
+OH,Graduating school,1
+OH,High School Completion,9
+OH,"Industry-Recognized Credential, Certificate, or License",3
+OH,Intrapersonal Competencies,12
+OH,"Knowledge, attitudes, & values",5
+OH,Labor market outcomes,5
+OH,Language,1
+OH,Language development,1
+OH,Literacy Achievement,1
+OH,Mathematics,2
+OH,Postsecondary degree attainment,3
+OH,Progressing in College,12
+OH,Progressing in school,1
+OH,Progressing in school (secondary school),4
+OH,Reading & Literacy Related,1
+OH,Reading achievement,1
+OH,Reading and listening comprehension,1
+OH,Receptive Communication,1
+OH,Short-Term Earnings,2
+OH,Short-Term Employment,2
+OH,Student Discipline,12
+OH,Teacher Retention in the School,5
+OH,Teacher and leader effectiveness,8
+OH,Teacher retention in the profession,5
+OH,Teacher retention in the school district,5
+OH,Vocabulary,1
+OH,Word reading ,1
+OH,Writing Conventions,1
+OH,Writing Quality,3
+OK,College Degree Attainment,22
+OK,College Enrollment,25
+OK,Comprehension,1
+OK,Earnings,11
+OK,Employment,20
+OK,English language arts achievement,4
+OK,General Mathematics Achievement,100
+OK,High School Completion,9
+OK,"Industry-Recognized Credential, Certificate, or License",3
+OK,Intrapersonal Competencies,12
+OK,Progressing in school (secondary school),4
+OK,Reading achievement,91
+OK,Student Discipline,12
+OK,Writing Conventions,1
+OK,Writing Quality,3
+OR,Academic achievement,22
+OR,Alphabetics,4
+OR,Cognition,1
+OR,College Degree Attainment,22
+OR,College Enrollment,25
+OR,Completing school,1
+OR,Compliant Student Behavior,2
+OR,Comprehension,5
+OR,Earnings,11
+OR,Employment,20
+OR,External behavior,2
+OR,General Literacy Achievement,3
+OR,General Mathematics Achievement,15
+OR,High School Completion,9
+OR,"Industry-Recognized Credential, Certificate, or License",3
+OR,Intrapersonal Competencies,12
+OR,Letter identification,2
+OR,Number and Operations,4
+OR,Other academic performance,1
+OR,Phonology,1
+OR,Problem behavior,5
+OR,Progressing in College,4
+OR,Progressing in school,2
+OR,Progressing in school (secondary school),4
+OR,Reading Comprehension,1
+OR,Reading Fluency,2
+OR,Reading achievement,3
+OR,School engagement,8
+OR,Self-care/daily living,1
+OR,Social outcomes,1
+OR,Social-emotional competence,15
+OR,Staying in School,2
+OR,Student Behavior,9
+OR,Student Discipline,16
+OR,Student social functioning,7
+OR,Word reading ,6
+PA,Academic achievement,40
+PA,Access and enrollment,15
+PA,Alphabetics,7
+PA,Attainment,14
+PA,Behavior,2
+PA,Cognition,9
+PA,College Degree Attainment,29
+PA,College Enrollment,30
+PA,College Readiness,2
+PA,Completing school,13
+PA,Comprehension,5
+PA,Credit accumulation,5
+PA,Earnings,16
+PA,Earth/Space Sciences,1
+PA,Emotional/internal behavior,2
+PA,Employment,30
+PA,English language arts achievement,8
+PA,Expressive Communication,4
+PA,External behavior,11
+PA,Functional Skills,16
+PA,General Literacy Achievement,2
+PA,General Mathematics Achievement,113
+PA,General science achievement ,1
+PA,Geometry and Measurement,1
+PA,Graduating school,1
+PA,High School Completion,16
+PA,"Industry-Recognized Credential, Certificate, or License",3
+PA,Intrapersonal Competencies,14
+PA,"Knowledge, attitudes, & values",5
+PA,Labor market outcomes,15
+PA,Language,5
+PA,Life sciences,4
+PA,Number and Operations,2
+PA,Numbers and Operations,3
+PA,Physical sciences,2
+PA,Progressing in College,30
+PA,Progressing in school,11
+PA,Progressing in school (secondary school),5
+PA,Reading Comprehension,4
+PA,Reading achievement,94
+PA,Receptive Communication,5
+PA,Science Achievement,3
+PA,Secondary school academic achievement,1
+PA,Self-regulation,2
+PA,Short-Term Earnings,2
+PA,Short-Term Employment,2
+PA,Social Studies Achievement,3
+PA,Social outcomes,6
+PA,Staying in School,2
+PA,Staying in Secondary School,1
+PA,Student Behavior,4
+PA,Student Discipline,12
+PA,Student progression,2
+PA,Teacher instruction,2
+PA,Vocabulary,1
+PA,Word reading ,2
+RI,Academic achievement,4
+RI,Comprehension,2
+RI,Credit accumulation,1
+RI,"Industry-recognized credential, certificate, or license completion",1
+RI,Medium-Term Earnings,1
+RI,Medium-Term Employment,2
+RI,Short-Term Earnings,3
+RI,Short-Term Employment,8
+SC,Academic achievement,4
+SC,Alphabetics,1
+SC,College Degree Attainment,22
+SC,College Enrollment,31
+SC,Comprehension,6
+SC,Earnings,11
+SC,Employment,20
+SC,English language arts achievement,4
+SC,General Literacy Achievement,1
+SC,General Mathematics Achievement,73
+SC,High School Completion,9
+SC,"Industry-Recognized Credential, Certificate, or License",3
+SC,Intrapersonal Competencies,12
+SC,"Knowledge, attitudes, & values",1
+SC,Literacy Achievement,1
+SC,Postsecondary degree attainment,3
+SC,Progressing in school,1
+SC,Progressing in school (secondary school),4
+SC,Reading and listening comprehension,1
+SC,Student Discipline,12
+SC,Word reading ,1
+SC,Writing Conventions,1
+SC,Writing Quality,3
+SD,Academic achievement,4
+SD,College Degree Attainment,2
+SD,College Enrollment,5
+SD,Comprehension,6
+SD,High School Completion,1
+SD,Literacy Achievement,2
+TN,Academic achievement,10
+TN,Access and enrollment,5
+TN,Algebra and Algebraic Reasoning,8
+TN,Alphabetics,4
+TN,Attainment,3
+TN,Behavior,4
+TN,Completing school,4
+TN,Credit accumulation,5
+TN,Emotional/internal behavior,2
+TN,English language arts achievement,17
+TN,External behavior,11
+TN,General Literacy Achievement,2
+TN,General Mathematics Achievement,39
+TN,Graduating school,1
+TN,"Knowledge, attitudes, & values",5
+TN,Labor market outcomes,5
+TN,Language,5
+TN,Literacy Achievement,9
+TN,Mathematics,1
+TN,Progressing in school,1
+TN,Progressing in school (secondary school),3
+TN,Reading achievement,6
+TN,Reading and listening comprehension,1
+TN,School Attendance,1
+TN,School engagement,1
+TN,School leader retention at the school,1
+TN,Science Achievement,4
+TN,Secondary school academic achievement,1
+TN,Self-regulation,2
+TN,Social Studies Achievement,4
+TN,Social outcomes,6
+TN,Student Behavior,5
+TN,Student Discipline,1
+TN,Student engagement in school,1
+TN,Student progression,2
+TN,Teacher Practice,2
+TN,Teacher and leader effectiveness,8
+TN,Teacher instruction,3
+TN,Whole Numbers Computation,21
+TN,Whole Numbers Magnitude Understanding/Relative Magnitude Understanding,3
+TN,Whole Numbers Word Problems/Problem Solving,21
+TN,Word reading ,1
+TN,Writing Conventions,1
+TN,Writing Quality,3
+TX,Academic achievement,35
+TX,Access and enrollment,24
+TX,Algebra,6
+TX,Algebra and Algebraic Reasoning,8
+TX,Alphabetics,15
+TX,Attainment,14
+TX,Cognition,6
+TX,College Degree Attainment,4
+TX,College Enrollment,17
+TX,College Readiness,9
+TX,Completing school,13
+TX,Comprehension,33
+TX,Credit accumulation,5
+TX,Credit accumulation and persistence,9
+TX,Earnings,5
+TX,Earnings (short-run),3
+TX,Employment,10
+TX,Employment (short-run),2
+TX,Encoding,1
+TX,English language arts achievement,17
+TX,English language proficiency,9
+TX,General Literacy Achievement,23
+TX,General Mathematics Achievement,210
+TX,General academic achievement (college),4
+TX,Graduating school,1
+TX,High School Completion,7
+TX,"Industry-recognized credential, certificate, or license (short-run)",1
+TX,"Industry-recognized credential, certificate, or license completion",5
+TX,Instructional practice,1
+TX,Intrapersonal Competencies,9
+TX,Labor market outcomes,15
+TX,Letter identification,2
+TX,Literacy Achievement,1
+TX,Phonology,3
+TX,Postsecondary degree attainment,9
+TX,Proficiency in a Language Other Than English,11
+TX,Progress in developmental education,7
+TX,Progressing in College,33
+TX,Progressing in school,13
+TX,Progressing in school (secondary school),4
+TX,Progressing in secondary school or adult education,2
+TX,Reading & Literacy Related,4
+TX,Reading Comprehension,7
+TX,Reading Fluency,13
+TX,Reading achievement,144
+TX,School Attendance,1
+TX,Science Achievement,129
+TX,Secondary school academic achievement,3
+TX,Self-regulation,16
+TX,Short-Term Earnings,11
+TX,Short-Term Employment,7
+TX,Social Studies Achievement,6
+TX,Social-Emotional Learning,8
+TX,Social-emotional development,16
+TX,Staying in School,2
+TX,Staying in Secondary School,7
+TX,Student Behavior,3
+TX,Student Discipline,1
+TX,Student emotional status,5
+TX,Student engagement in school,4
+TX,Student progression,2
+TX,Teacher Retention in the School,5
+TX,Teacher retention in the profession,5
+TX,Teacher retention in the school district,5
+TX,Whole Numbers Computation,21
+TX,Whole Numbers Magnitude Understanding/Relative Magnitude Understanding,3
+TX,Whole Numbers Word Problems/Problem Solving,21
+TX,Word reading ,7
+TX,Writing Conventions,1
+TX,Writing Quality,4
+UT,Academic achievement,2
+UT,College Enrollment,6
+UT,Comprehension,6
+UT,General Mathematics Achievement,1
+UT,Literacy Achievement,1
+UT,Postsecondary degree attainment,3
+UT,School engagement,1
+UT,Student Behavior,5
+UT,Teacher Practice,2
+VA,Academic achievement,11
+VA,Alphabetics,2
+VA,Cognition,9
+VA,College Enrollment,6
+VA,Comprehension,10
+VA,Earth/Space Sciences,1
+VA,Employment,1
+VA,English language development,5
+VA,English language proficiency,1
+VA,Expressive Communication,4
+VA,Functional Skills,16
+VA,General Literacy Achievement,2
+VA,General Mathematics Achievement,20
+VA,General science achievement ,1
+VA,General social studies achievement ,3
+VA,Geometry and Measurement,1
+VA,"Industry-Recognized Credential, Certificate, or License",1
+VA,Instructional practice,1
+VA,Language,1
+VA,Language development,1
+VA,Life sciences,8
+VA,Literacy Achievement,1
+VA,Number and Operations,2
+VA,Physical sciences,2
+VA,Progressing in school,20
+VA,Reading & Literacy Related,1
+VA,Reading achievement,3
+VA,Receptive Communication,4
+VA,School Attendance,3
+VA,Science Achievement,1
+VA,Secondary school academic achievement,4
+VA,Social Studies Achievement,2
+VA,Staying in Secondary School,1
+VA,Student Discipline,1
+VA,Writing Conventions,1
+VA,Writing Quality,3
+VT,College Enrollment,1
+VT,Completing school,1
+VT,General Literacy Achievement,1
+VT,General Mathematics Achievement,4
+WA,Academic achievement,4
+WA,Access and enrollment,2
+WA,Attainment,3
+WA,Cognition,10
+WA,College Degree Attainment,22
+WA,College Enrollment,25
+WA,Completing school,5
+WA,Comprehension,4
+WA,Credit accumulation,6
+WA,Earnings,11
+WA,Emotional/internal behavior,2
+WA,Employment,20
+WA,Expressive Communication,4
+WA,External behavior,11
+WA,Functional Skills,16
+WA,General Literacy Achievement,4
+WA,General Mathematics Achievement,14
+WA,Graduating school,1
+WA,High School Completion,9
+WA,"Industry-Recognized Credential, Certificate, or License",3
+WA,Intrapersonal Competencies,12
+WA,Labor market outcomes,5
+WA,Literacy Achievement,5
+WA,Problem behavior,5
+WA,Progressing in school,3
+WA,Progressing in school (secondary school),4
+WA,Reading Comprehension,1
+WA,Reading achievement,2
+WA,Receptive Communication,4
+WA,School engagement,8
+WA,Science Achievement,10
+WA,Self-care/daily living,1
+WA,Short-Term Employment,2
+WA,Social outcomes,7
+WA,Social-emotional competence,15
+WA,Staying in School,2
+WA,Student Discipline,12
+WA,Word reading ,2
+WA,Writing Conventions,1
+WA,Writing Quality,3
+WI,Academic achievement,22
+WI,Access and enrollment,5
+WI,Alphabetics,4
+WI,College Degree Attainment,22
+WI,College Enrollment,25
+WI,Completing school,6
+WI,Comprehension,3
+WI,Earnings,11
+WI,Earth/Space Sciences,1
+WI,Employment,20
+WI,General Literacy Achievement,7
+WI,General Mathematics Achievement,22
+WI,General academic achievement (high school),5
+WI,High School Completion,9
+WI,"Industry-Recognized Credential, Certificate, or License",3
+WI,Intrapersonal Competencies,14
+WI,Literacy Achievement,9
+WI,Physical sciences,1
+WI,Progressing in College,3
+WI,Progressing in school (secondary school),7
+WI,Reading Comprehension,6
+WI,Reading Fluency,2
+WI,Reading achievement,3
+WI,School Attendance,1
+WI,School Climate,8
+WI,Science Achievement,3
+WI,Student Behavior,2
+WI,Student Discipline,13
+WI,Writing Conventions,1
+WI,Writing Quality,3
+WV,Academic achievement,6
+WV,College Degree Attainment,22
+WV,College Enrollment,25
+WV,Comprehension,3
+WV,Earnings,11
+WV,Earth/Space Sciences,1
+WV,Employment,20
+WV,External behavior,2
+WV,General Literacy Achievement,1
+WV,General Mathematics Achievement,1
+WV,General science achievement ,1
+WV,Geometry and Measurement,1
+WV,High School Completion,9
+WV,"Industry-Recognized Credential, Certificate, or License",3
+WV,Intrapersonal Competencies,12
+WV,"Knowledge, attitudes, & values",1
+WV,Life sciences,4
+WV,Number and Operations,2
+WV,Other academic performance,1
+WV,Physical sciences,2
+WV,Progressing in school (secondary school),7
+WV,School Attendance,1
+WV,Student Discipline,13
+WY,General Mathematics Achievement,2

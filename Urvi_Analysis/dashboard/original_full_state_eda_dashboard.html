@@ -1,0 +1,1430 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Original WWC Full State EDA</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f8fc; color: #0f172a; }
+    .wrap { max-width: 1550px; margin: 0 auto; padding: 20px; }
+    .hero { background: linear-gradient(120deg,#0f172a 0%,#1d4ed8 50%,#0891b2 100%); color: #fff; border-radius: 14px; padding: 20px; }
+    .kpis { margin-top: 12px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+    .kpi { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; padding: 10px; }
+    .kpi .l { font-size: 12px; color: #cbd5e1; }
+    .kpi .v { font-size: 22px; font-weight: 700; color: #fff; }
+    .card { background: #fff; border: 1px solid #dbe2ea; border-radius: 12px; padding: 14px; margin-top: 14px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid #e2e8f0; padding: 7px; text-align: left; }
+    th { font-size: 12px; text-transform: uppercase; color: #475569; }
+    @media (max-width: 1200px) { .grid2, .grid3 { grid-template-columns: 1fr; } .kpis { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Original WWC Full State EDA</h1>
+      <p>Generated 2026-03-04 14:43. Uses only the original export file. Includes all rows and a multi-state-only lens to reduce signal blur.</p>
+      <div class="kpis">
+        <div class="kpi"><div class="l">Findings (state-coded)</div><div class="v">8,859</div></div>
+        <div class="kpi"><div class="l">Studies</div><div class="v">1,011</div></div>
+        <div class="kpi"><div class="l">Interventions</div><div class="v">160</div></div>
+        <div class="kpi"><div class="l">Multi-state findings</div><div class="v">2,314</div></div>
+        <div class="kpi"><div class="l">Multi-state share</div><div class="v">26.12%</div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>All Rows Maps</h2>
+      <div class="grid3">
+        <div><div>                            <div id="5d042f14-7c3b-44eb-9444-43ed404f5750" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("5d042f14-7c3b-44eb-9444-43ed404f5750")) {                    Plotly.newPlot(                        "5d042f14-7c3b-44eb-9444-43ed404f5750",                        [{"coloraxis":"coloraxis","customdata":{"dtype":"f8","bdata":"AAAAAABQnEAAAAAAAABlQAAAAAAAgEVAJjxYBbxpJkDCZNQUBrXAP103NrSQ0lFA2GJxRHIqFUAAAAAAABCcQAAAAAAAwGVAAAAAAACAREC1RGSLVLQmQH7YlcsfccQ\u002f+krSsyueUkB7e3t7e3sXQAAAAAAAHJtAAAAAAACAX0AAAAAAAAA7QJVpcYLB3yhA3ro\u002fPIc5yD8zGumGwjlUQAey\u002f+H0OBpAAAAAAACokEAAAAAAAABUQAAAAAAAADhADsa8D6faF0AWTe8gXmbCP6Qf\u002fehH31FAS6k6NAfMFUAAAAAAANiNQAAAAAAAgFBAAAAAAAAALkCVcsKl4QQYQI0mEGDB+Mc\u002ft23btm17UkA1547ZBc0YQAAAAAAACIhAAAAAAABAUEAAAAAAAAAsQDscjdctZgZA9TaoyUzHxD+qqqqqqqpQQGxsbGxs7BlAAAAAAADYhkAAAAAAAMBZQAAAAAAAAEZAp7v+HzQMFkDBb7F6LujEP6aejN8u9VFAU+YVMWVeFUAAAAAAAICGQAAAAAAAAFBAAAAAAAAALkBjYt6IeXQHQGRuMCJr\u002f8k\u002fLGQhC1nIU0Dtc0hNMN4eQAAAAAAAWIRAAAAAAAAAQUAAAAAAAAAYQBALdIllpfU\u002fxmhcqGGswj8s2lgpe\u002fxSQKf8Uaf8URZAAAAAAAAog0AAAAAAAIBLQAAAAAAAADJAVtXeJ0PKDUCydnR+aYjOP\u002fbWhmnuglJAivcspTN0HUAAAAAAAOCCQAAAAAAAgENAAAAAAAAAMUAbbc\u002fN9oj2P2iabXSVrcc\u002fX29QyNcbU0DukznfhCocQAAAAAAAIIBAAAAAAADAUEAAAAAAAAAxQInqFp\u002flPQ5AESrVBgW8yj90HaM417FSQLO62VVGCBxAAAAAAACQf0AAAAAAAABIQAAAAAAAADdAPO\u002feavurB0Dz9X6r0OzIP5W9wppQT1BAMMLlOj0hGUAAAAAAAFB9QAAAAAAAgElAAAAAAAAAM0Bk+wpnJicIQCV80JGbONA\u002fnJdFfAKpU0B9etyM\u002fWEeQAAAAAAAIHtAAAAAAACAQkAAAAAAAAAwQMNwQtp55wNAI+sVOnuFwT8EkdYL2GZQQGVO\u002f5CfuhNAAAAAAAAAe0AAAAAAAABFQAAAAAAAAChAo77okZzZA0CSKGte1qnOP8prKK+hvFNAq7QV\u002flKeIEAAAAAAABB5QAAAAAAAAEFAAAAAAAAAIEAqnx+3ts34P7jB66Aq8MI\u002fXOnegDLxUUDidsOMIW4TQAAAAAAAQHdAAAAAAAAAQEAAAAAAAAAkQJoXV26Ww\u002fE\u002fniQILi+IvD+qqqqqqqpQQPQvbQQOVw5AAAAAAACgdkAAAAAAAABAQAAAAAAAACRA2ZlIWk2B8T99bXsSdXrKP7RuMEU+61JAuxK1K1E7H0AAAAAAABB2QAAAAAAAAEFAAAAAAAAAJEBd2NmVNRf2P1EUUBfFMck\u002f7MRO7MROUUBvetOb3vQaQAAAAAAAAHVAAAAAAACAQEAAAAAAAAAUQKFq2jRAefY\u002fnJbHtnqXzD9Z4glSjyVSQNBpA5020B1AAAAAAACwdEAAAAAAAAAoQAAAAAAAAAhAnBdlCLnP2j+2OehVvHnIP6esKWvKmlJAJr4vavk3IEAAAAAAAPBzQAAAAAAAAEFAAAAAAAAAJEABgVjMlBP3P0o6Xavk2MQ\u002fCil5lhH9UkC2hK8ZproWQAAAAAAAcHJAAAAAAAAAOUAAAAAAAAAuQOlDxrs0k+U\u002flnbMXnfGwj+AB5e9oSdRQMZmQbXnZBRAAAAAAADgcUAAAAAAAABAQAAAAAAAACBAzte9Eiwy\u002fD8wvAzdB0fLP4fyGspraFNA+byXz3v5HEAAAAAAAGBxQAAAAAAAADdAAAAAAAAAKEBxwazZ5pfpPyJ9Z6AYuMc\u002fKsg2BBSfUkBiJ3ZiJ3YZQAAAAAAAwG9AAAAAAAAANEAAAAAAAAAYQNsr7665VvM\u002fWSqNm88lvj8AAAAAAABOQHStsuGIaQ9AAAAAAADAb0AAAAAAAAAiQAAAAAAAAABAmZVwRg8U1j\u002fzsA2xmGLAPwAAAAAAGFVA6mHgLDw\u002fIEAAAAAAACBtQAAAAAAAACxAAAAAAAAAIEDJwKKbPC\u002fbP9A\u002fxc0SU8U\u002fcckQrKPNUEA33lHN+jMYQAAAAAAAgGxAAAAAAACAQkAAAAAAAAAmQKijyxPWc\u002fU\u002fbS9ZfWBluz916TF\u002fr41SQEaMGDFixBBAAAAAAADAakAAAAAAAAAsQAAAAAAAACBAerQK+Vcdyj\u002fUG5xfltDBP7W0tLS0NFFATyLTsN0sE0AAAAAAAIBmQAAAAAAAADtAAAAAAAAAIkDU2\u002fW4UmDoPzNBeiaDR8w\u002fTCWmElOJU0Dpkz7pkz4dQAAAAAAAwGVAAAAAAAAAJkAAAAAAAAAAADA3Q719Xco\u002ft30l2DyHxz\u002f3NMJyTyNTQAAAAAAAgBtAAAAAAADgY0AAAAAAAAAcQAAAAAAAAABADjjRJipfzT\u002fZ7VpK4PPIP8DIGRZcKlJA5umj1SREHUAAAAAAAEBjQAAAAAAAAChAAAAAAAAA8D+JskeuNT\u002fEP7Rj2nQ8wcY\u002fzDvgSNEQUkDtOZm+ShgbQAAAAAAAAF9AAAAAAAAAMkAAAAAAAAAcQOWnJPGNyto\u002fbBBfclhgwT8vuuiiiy5SQEoppZRSShRAAAAAAADAWkAAAAAAAAA2QAAAAAAAABhA18tVQAhR2T+KCMuBZKjGP87Wod9sHVRAsRM7sRM7HUAAAAAAAIBVQAAAAAAAADVAAAAAAAAAEEDiFvM2wmjnPyeOYC0UkNc\u002fAAAAAADgVUDBgQMHDhwqQAAAAAAAQFVAAAAAAAAAJkAAAAAAAAAUQBH\u002fpgxcfdk\u002fQxg2KTonxz\u002fmnkZY7mlWQDk5OTk5ORlAAAAAAABAUkAAAAAAAAAgQAAAAAAAABRAOBg\u002feZVayD++oqUlKtywPzGdxXQW001AHMdxHMdxBUAAAAAAAABOQAAAAAAAABRAAAAAAAAACEBoBPHTZE7hP0T0Vx0Dz8Y\u002fvzy2Img4UkBF0HBS9+UZQAAAAAAAAEZAAAAAAAAAFEAAAAAAAADwP2j6NESnO78\u002fWziIV0sJvj\u002fbtm3btm1VQC+66KKLLgxAAAAAAAAAQUAAAAAAAAAYQAAAAAAAAAhAGLD7g5KCuT+dBbvPXELPPymllFJKKVRAEUIIIYQQIkAAAAAAAABAQAAAAAAAABRAAAAAAAAAAEAC1Pd\u002fk0vUP4KISTfW88M\u002f0UUXXXTRT0AAAAAAAJAqQAAAAAAAAD9AAAAAAAAACEAAAAAAAAAAACobPKD1JNM\u002fw+\u002fLxzM40j\u002flNZTXUF5WQNhQXkN5DSVAAAAAAAAAPUAAAAAAAAAYQAAAAAAAAABArldDELgDwj+BjWqxU7\u002fNP0mSJEmSpFNAbtu2bds2IUAAAAAAAAA5QAAAAAAAABRAAAAAAAAA8D9mQfyjUCTKP9kfdFBIfq4\u002fchzHcRzHS0BiGIZhGIYJQAAAAAAAADRAAAAAAAAAEEAAAAAAAADwP2h3BNiyE64\u002fbZiZ1F97yj8AAAAAAMBXQJqZmZmZGSBAAAAAAAAALEAAAAAAAAAAQAAAAAAAAPA\u002fREDw8osPwj9j7\u002fMwPwjkP27btm3bNldASZIkSZKkNkAAAAAAAAAoQAAAAAAAAABAAAAAAAAA8D8h+9jKebZzP5sxq3xFbtU\u002fAAAAAAAAWUAAAAAAAAAqQAAAAAAAAPA\u002fAAAAAAAA8D8AAAAAAAAAANSXDgWDflI\u002fMERuGdgf0L8AAAAAAAAAAAAAAAAAACTA","shape":"51, 7"},"geo":"geo","hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003estate_abbr=%{location}\u003cbr\u003efindings_n=%{z:,.0f}\u003cbr\u003estudies_n=%{customdata[1]:,.0f}\u003cbr\u003einterventions_n=%{customdata[2]:,.0f}\u003cbr\u003econtribution_share_pct=%{customdata[3]:.2f}\u003cbr\u003emean_effect_size_wwc=%{customdata[4]:.3f}\u003cbr\u003epct_positive_effect_size=%{customdata[5]:.2f}\u003cbr\u003emean_improvement_index=%{customdata[6]:.2f}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Texas","California","New York","Pennsylvania","North Carolina","Illinois","Florida","Massachusetts","District of Columbia","Ohio","Georgia","Tennessee","Washington","Maryland","Michigan","Oregon","Louisiana","Minnesota","Kentucky","Colorado","Wisconsin","Oklahoma","New Jersey","Missouri","Indiana","South Carolina","New Mexico","Arkansas","Kansas","Virginia","Mississippi","Arizona","Maine","Iowa","West Virginia","Connecticut","Alabama","Utah","Nebraska","Nevada","Alaska","Delaware","Idaho","Hawaii","Vermont","Rhode Island","New Hampshire","South Dakota","Wyoming","Montana","North Dakota"],"locationmode":"USA-states","locations":["TX","CA","NY","PA","NC","IL","FL","MA","DC","OH","GA","TN","WA","MD","MI","OR","LA","MN","KY","CO","WI","OK","NJ","MO","IN","SC","NM","AR","KS","VA","MS","AZ","ME","IA","WV","CT","AL","UT","NE","NV","AK","DE","ID","HI","VT","RI","NH","SD","WY","MT","ND"],"name":"","z":{"dtype":"i2","bdata":"FAcEB8cGKgS7AwED2wLQAosCZQJcAgQC+QHVAbIBsAGRAXQBagFhAVABSwE\u002fAScBHgEWAf4A\u002fgDpAOQA1gC0AK4AnwCaAHwAawBWAFUASQA8ACwAIgAgAB8AHQAZABQADgAMAAEA"},"type":"choropleth"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"geo":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"center":{},"scope":"usa"},"coloraxis":{"colorbar":{"title":{"text":"findings_n"}},"colorscale":[[0.0,"#30123b"],[0.07142857142857142,"#4145ab"],[0.14285714285714285,"#4675ed"],[0.21428571428571427,"#39a2fc"],[0.2857142857142857,"#1bcfd4"],[0.35714285714285715,"#24eca6"],[0.42857142857142855,"#61fc6c"],[0.5,"#a4fc3b"],[0.5714285714285714,"#d1e834"],[0.6428571428571429,"#f3c63a"],[0.7142857142857143,"#fe9b2d"],[0.7857142857142857,"#f36315"],[0.8571428571428571,"#d93806"],[0.9285714285714286,"#b11901"],[1.0,"#7a0402"]]},"legend":{"tracegroupgap":0},"title":{"text":"All Rows: Findings by State"},"paper_bgcolor":"#ffffff","plot_bgcolor":"#ffffff"},                        {"responsive": true}                    )                };            </script>        </div></div>
+        <div><div>                            <div id="ab2cdf32-7af2-4561-8188-0ea762d174cc" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("ab2cdf32-7af2-4561-8188-0ea762d174cc")) {                    Plotly.newPlot(                        "ab2cdf32-7af2-4561-8188-0ea762d174cc",                        [{"coloraxis":"coloraxis","customdata":{"dtype":"f8","bdata":"AAAAAABQnEAAAAAAAABlQAAAAAAAgEVAJjxYBbxpJkDCZNQUBrXAP103NrSQ0lFA2GJxRHIqFUAAAAAAABCcQAAAAAAAwGVAAAAAAACAREC1RGSLVLQmQH7YlcsfccQ\u002f+krSsyueUkB7e3t7e3sXQAAAAAAAHJtAAAAAAACAX0AAAAAAAAA7QJVpcYLB3yhA3ro\u002fPIc5yD8zGumGwjlUQAey\u002f+H0OBpAAAAAAACokEAAAAAAAABUQAAAAAAAADhADsa8D6faF0AWTe8gXmbCP6Qf\u002fehH31FAS6k6NAfMFUAAAAAAANiNQAAAAAAAgFBAAAAAAAAALkCVcsKl4QQYQI0mEGDB+Mc\u002ft23btm17UkA1547ZBc0YQAAAAAAACIhAAAAAAABAUEAAAAAAAAAsQDscjdctZgZA9TaoyUzHxD+qqqqqqqpQQGxsbGxs7BlAAAAAAADYhkAAAAAAAMBZQAAAAAAAAEZAp7v+HzQMFkDBb7F6LujEP6aejN8u9VFAU+YVMWVeFUAAAAAAAICGQAAAAAAAAFBAAAAAAAAALkBjYt6IeXQHQGRuMCJr\u002f8k\u002fLGQhC1nIU0Dtc0hNMN4eQAAAAAAAWIRAAAAAAAAAQUAAAAAAAAAYQBALdIllpfU\u002fxmhcqGGswj8s2lgpe\u002fxSQKf8Uaf8URZAAAAAAAAog0AAAAAAAIBLQAAAAAAAADJAVtXeJ0PKDUCydnR+aYjOP\u002fbWhmnuglJAivcspTN0HUAAAAAAAOCCQAAAAAAAgENAAAAAAAAAMUAbbc\u002fN9oj2P2iabXSVrcc\u002fX29QyNcbU0DukznfhCocQAAAAAAAIIBAAAAAAADAUEAAAAAAAAAxQInqFp\u002flPQ5AESrVBgW8yj90HaM417FSQLO62VVGCBxAAAAAAACQf0AAAAAAAABIQAAAAAAAADdAPO\u002feavurB0Dz9X6r0OzIP5W9wppQT1BAMMLlOj0hGUAAAAAAAFB9QAAAAAAAgElAAAAAAAAAM0Bk+wpnJicIQCV80JGbONA\u002fnJdFfAKpU0B9etyM\u002fWEeQAAAAAAAIHtAAAAAAACAQkAAAAAAAAAwQMNwQtp55wNAI+sVOnuFwT8EkdYL2GZQQGVO\u002f5CfuhNAAAAAAAAAe0AAAAAAAABFQAAAAAAAAChAo77okZzZA0CSKGte1qnOP8prKK+hvFNAq7QV\u002flKeIEAAAAAAABB5QAAAAAAAAEFAAAAAAAAAIEAqnx+3ts34P7jB66Aq8MI\u002fXOnegDLxUUDidsOMIW4TQAAAAAAAQHdAAAAAAAAAQEAAAAAAAAAkQJoXV26Ww\u002fE\u002fniQILi+IvD+qqqqqqqpQQPQvbQQOVw5AAAAAAACgdkAAAAAAAABAQAAAAAAAACRA2ZlIWk2B8T99bXsSdXrKP7RuMEU+61JAuxK1K1E7H0AAAAAAABB2QAAAAAAAAEFAAAAAAAAAJEBd2NmVNRf2P1EUUBfFMck\u002f7MRO7MROUUBvetOb3vQaQAAAAAAAAHVAAAAAAACAQEAAAAAAAAAUQKFq2jRAefY\u002fnJbHtnqXzD9Z4glSjyVSQNBpA5020B1AAAAAAACwdEAAAAAAAAAoQAAAAAAAAAhAnBdlCLnP2j+2OehVvHnIP6esKWvKmlJAJr4vavk3IEAAAAAAAPBzQAAAAAAAAEFAAAAAAAAAJEABgVjMlBP3P0o6Xavk2MQ\u002fCil5lhH9UkC2hK8ZproWQAAAAAAAcHJAAAAAAAAAOUAAAAAAAAAuQOlDxrs0k+U\u002flnbMXnfGwj+AB5e9oSdRQMZmQbXnZBRAAAAAAADgcUAAAAAAAABAQAAAAAAAACBAzte9Eiwy\u002fD8wvAzdB0fLP4fyGspraFNA+byXz3v5HEAAAAAAAGBxQAAAAAAAADdAAAAAAAAAKEBxwazZ5pfpPyJ9Z6AYuMc\u002fKsg2BBSfUkBiJ3ZiJ3YZQAAAAAAAwG9AAAAAAAAANEAAAAAAAAAYQNsr7665VvM\u002fWSqNm88lvj8AAAAAAABOQHStsuGIaQ9AAAAAAADAb0AAAAAAAAAiQAAAAAAAAABAmZVwRg8U1j\u002fzsA2xmGLAPwAAAAAAGFVA6mHgLDw\u002fIEAAAAAAACBtQAAAAAAAACxAAAAAAAAAIEDJwKKbPC\u002fbP9A\u002fxc0SU8U\u002fcckQrKPNUEA33lHN+jMYQAAAAAAAgGxAAAAAAACAQkAAAAAAAAAmQKijyxPWc\u002fU\u002fbS9ZfWBluz916TF\u002fr41SQEaMGDFixBBAAAAAAADAakAAAAAAAAAsQAAAAAAAACBAerQK+Vcdyj\u002fUG5xfltDBP7W0tLS0NFFATyLTsN0sE0AAAAAAAIBmQAAAAAAAADtAAAAAAAAAIkDU2\u002fW4UmDoPzNBeiaDR8w\u002fTCWmElOJU0Dpkz7pkz4dQAAAAAAAwGVAAAAAAAAAJkAAAAAAAAAAADA3Q719Xco\u002ft30l2DyHxz\u002f3NMJyTyNTQAAAAAAAgBtAAAAAAADgY0AAAAAAAAAcQAAAAAAAAABADjjRJipfzT\u002fZ7VpK4PPIP8DIGRZcKlJA5umj1SREHUAAAAAAAEBjQAAAAAAAAChAAAAAAAAA8D+JskeuNT\u002fEP7Rj2nQ8wcY\u002fzDvgSNEQUkDtOZm+ShgbQAAAAAAAAF9AAAAAAAAAMkAAAAAAAAAcQOWnJPGNyto\u002fbBBfclhgwT8vuuiiiy5SQEoppZRSShRAAAAAAADAWkAAAAAAAAA2QAAAAAAAABhA18tVQAhR2T+KCMuBZKjGP87Wod9sHVRAsRM7sRM7HUAAAAAAAIBVQAAAAAAAADVAAAAAAAAAEEDiFvM2wmjnPyeOYC0UkNc\u002fAAAAAADgVUDBgQMHDhwqQAAAAAAAQFVAAAAAAAAAJkAAAAAAAAAUQBH\u002fpgxcfdk\u002fQxg2KTonxz\u002fmnkZY7mlWQDk5OTk5ORlAAAAAAABAUkAAAAAAAAAgQAAAAAAAABRAOBg\u002feZVayD++oqUlKtywPzGdxXQW001AHMdxHMdxBUAAAAAAAABOQAAAAAAAABRAAAAAAAAACEBoBPHTZE7hP0T0Vx0Dz8Y\u002fvzy2Img4UkBF0HBS9+UZQAAAAAAAAEZAAAAAAAAAFEAAAAAAAADwP2j6NESnO78\u002fWziIV0sJvj\u002fbtm3btm1VQC+66KKLLgxAAAAAAAAAQUAAAAAAAAAYQAAAAAAAAAhAGLD7g5KCuT+dBbvPXELPPymllFJKKVRAEUIIIYQQIkAAAAAAAABAQAAAAAAAABRAAAAAAAAAAEAC1Pd\u002fk0vUP4KISTfW88M\u002f0UUXXXTRT0AAAAAAAJAqQAAAAAAAAD9AAAAAAAAACEAAAAAAAAAAACobPKD1JNM\u002fw+\u002fLxzM40j\u002flNZTXUF5WQNhQXkN5DSVAAAAAAAAAPUAAAAAAAAAYQAAAAAAAAABArldDELgDwj+BjWqxU7\u002fNP0mSJEmSpFNAbtu2bds2IUAAAAAAAAA5QAAAAAAAABRAAAAAAAAA8D9mQfyjUCTKP9kfdFBIfq4\u002fchzHcRzHS0BiGIZhGIYJQAAAAAAAADRAAAAAAAAAEEAAAAAAAADwP2h3BNiyE64\u002fbZiZ1F97yj8AAAAAAMBXQJqZmZmZGSBAAAAAAAAALEAAAAAAAAAAQAAAAAAAAPA\u002fREDw8osPwj9j7\u002fMwPwjkP27btm3bNldASZIkSZKkNkAAAAAAAAAoQAAAAAAAAABAAAAAAAAA8D8h+9jKebZzP5sxq3xFbtU\u002fAAAAAAAAWUAAAAAAAAAqQAAAAAAAAPA\u002fAAAAAAAA8D8AAAAAAAAAANSXDgWDflI\u002fMERuGdgf0L8AAAAAAAAAAAAAAAAAACTA","shape":"51, 7"},"geo":"geo","hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003estate_abbr=%{location}\u003cbr\u003efindings_n=%{customdata[0]:,.0f}\u003cbr\u003estudies_n=%{customdata[1]:,.0f}\u003cbr\u003einterventions_n=%{customdata[2]:,.0f}\u003cbr\u003econtribution_share_pct=%{customdata[3]:.2f}\u003cbr\u003emean_effect_size_wwc=%{z:.3f}\u003cbr\u003epct_positive_effect_size=%{customdata[5]:.2f}\u003cbr\u003emean_improvement_index=%{customdata[6]:.2f}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Texas","California","New York","Pennsylvania","North Carolina","Illinois","Florida","Massachusetts","District of Columbia","Ohio","Georgia","Tennessee","Washington","Maryland","Michigan","Oregon","Louisiana","Minnesota","Kentucky","Colorado","Wisconsin","Oklahoma","New Jersey","Missouri","Indiana","South Carolina","New Mexico","Arkansas","Kansas","Virginia","Mississippi","Arizona","Maine","Iowa","West Virginia","Connecticut","Alabama","Utah","Nebraska","Nevada","Alaska","Delaware","Idaho","Hawaii","Vermont","Rhode Island","New Hampshire","South Dakota","Wyoming","Montana","North Dakota"],"locationmode":"USA-states","locations":["TX","CA","NY","PA","NC","IL","FL","MA","DC","OH","GA","TN","WA","MD","MI","OR","LA","MN","KY","CO","WI","OK","NJ","MO","IN","SC","NM","AR","KS","VA","MS","AZ","ME","IA","WV","CT","AL","UT","NE","NV","AK","DE","ID","HI","VT","RI","NH","SD","WY","MT","ND"],"name":"","z":{"dtype":"f8","bdata":"wmTUFAa1wD9+2JXLH3HEP966PzyHOcg\u002fFk3vIF5mwj+NJhBgwfjHP\u002fU2qMlMx8Q\u002fwW+xei7oxD9kbjAia\u002f\u002fJP8ZoXKhhrMI\u002fsnZ0fmmIzj9omm10la3HPxEq1QYFvMo\u002f8\u002fV+q9DsyD8lfNCRmzjQPyPrFTp7hcE\u002fkihrXtapzj+4weugKvDCP54kCC4viLw\u002ffW17EnV6yj9RFFAXxTHJP5yWx7Z6l8w\u002ftjnoVbx5yD9KOl2r5NjEP5Z2zF53xsI\u002fMLwM3QdHyz8ifWegGLjHP1kqjZvPJb4\u002f87ANsZhiwD\u002fQP8XNElPFP20vWX1gZbs\u002f1BucX5bQwT8zQXomg0fMP7d9Jdg8h8c\u002f2e1aSuDzyD+0Y9p0PMHGP2wQX3JYYME\u002figjLgWSoxj8njmAtFJDXP0MYNik6J8c\u002fvqKlJSrcsD9E9FcdA8\u002fGP1s4iFdLCb4\u002fnQW7z1xCzz+CiEk31vPDP8Pvy8czONI\u002fgY1qsVO\u002fzT\u002fZH3RQSH6uP22YmdRfe8o\u002fY+\u002fzMD8I5D+bMat8RW7VPzBEbhnYH9C\u002f"},"type":"choropleth"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"geo":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"center":{},"scope":"usa"},"coloraxis":{"colorbar":{"title":{"text":"mean_effect_size_wwc"}},"colorscale":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"cmid":0.0},"legend":{"tracegroupgap":0},"title":{"text":"All Rows: Mean Effect Size by State"},"paper_bgcolor":"#ffffff","plot_bgcolor":"#ffffff"},                        {"responsive": true}                    )                };            </script>        </div></div>
+        <div><div>                            <div id="272218aa-9400-44ae-997c-4931996bfe76" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("272218aa-9400-44ae-997c-4931996bfe76")) {                    Plotly.newPlot(                        "272218aa-9400-44ae-997c-4931996bfe76",                        [{"coloraxis":"coloraxis","customdata":{"dtype":"f8","bdata":"AAAAAABQnEAAAAAAAABlQAAAAAAAgEVAJjxYBbxpJkDCZNQUBrXAP103NrSQ0lFA2GJxRHIqFUAAAAAAABCcQAAAAAAAwGVAAAAAAACAREC1RGSLVLQmQH7YlcsfccQ\u002f+krSsyueUkB7e3t7e3sXQAAAAAAAHJtAAAAAAACAX0AAAAAAAAA7QJVpcYLB3yhA3ro\u002fPIc5yD8zGumGwjlUQAey\u002f+H0OBpAAAAAAACokEAAAAAAAABUQAAAAAAAADhADsa8D6faF0AWTe8gXmbCP6Qf\u002fehH31FAS6k6NAfMFUAAAAAAANiNQAAAAAAAgFBAAAAAAAAALkCVcsKl4QQYQI0mEGDB+Mc\u002ft23btm17UkA1547ZBc0YQAAAAAAACIhAAAAAAABAUEAAAAAAAAAsQDscjdctZgZA9TaoyUzHxD+qqqqqqqpQQGxsbGxs7BlAAAAAAADYhkAAAAAAAMBZQAAAAAAAAEZAp7v+HzQMFkDBb7F6LujEP6aejN8u9VFAU+YVMWVeFUAAAAAAAICGQAAAAAAAAFBAAAAAAAAALkBjYt6IeXQHQGRuMCJr\u002f8k\u002fLGQhC1nIU0Dtc0hNMN4eQAAAAAAAWIRAAAAAAAAAQUAAAAAAAAAYQBALdIllpfU\u002fxmhcqGGswj8s2lgpe\u002fxSQKf8Uaf8URZAAAAAAAAog0AAAAAAAIBLQAAAAAAAADJAVtXeJ0PKDUCydnR+aYjOP\u002fbWhmnuglJAivcspTN0HUAAAAAAAOCCQAAAAAAAgENAAAAAAAAAMUAbbc\u002fN9oj2P2iabXSVrcc\u002fX29QyNcbU0DukznfhCocQAAAAAAAIIBAAAAAAADAUEAAAAAAAAAxQInqFp\u002flPQ5AESrVBgW8yj90HaM417FSQLO62VVGCBxAAAAAAACQf0AAAAAAAABIQAAAAAAAADdAPO\u002feavurB0Dz9X6r0OzIP5W9wppQT1BAMMLlOj0hGUAAAAAAAFB9QAAAAAAAgElAAAAAAAAAM0Bk+wpnJicIQCV80JGbONA\u002fnJdFfAKpU0B9etyM\u002fWEeQAAAAAAAIHtAAAAAAACAQkAAAAAAAAAwQMNwQtp55wNAI+sVOnuFwT8EkdYL2GZQQGVO\u002f5CfuhNAAAAAAAAAe0AAAAAAAABFQAAAAAAAAChAo77okZzZA0CSKGte1qnOP8prKK+hvFNAq7QV\u002flKeIEAAAAAAABB5QAAAAAAAAEFAAAAAAAAAIEAqnx+3ts34P7jB66Aq8MI\u002fXOnegDLxUUDidsOMIW4TQAAAAAAAQHdAAAAAAAAAQEAAAAAAAAAkQJoXV26Ww\u002fE\u002fniQILi+IvD+qqqqqqqpQQPQvbQQOVw5AAAAAAACgdkAAAAAAAABAQAAAAAAAACRA2ZlIWk2B8T99bXsSdXrKP7RuMEU+61JAuxK1K1E7H0AAAAAAABB2QAAAAAAAAEFAAAAAAAAAJEBd2NmVNRf2P1EUUBfFMck\u002f7MRO7MROUUBvetOb3vQaQAAAAAAAAHVAAAAAAACAQEAAAAAAAAAUQKFq2jRAefY\u002fnJbHtnqXzD9Z4glSjyVSQNBpA5020B1AAAAAAACwdEAAAAAAAAAoQAAAAAAAAAhAnBdlCLnP2j+2OehVvHnIP6esKWvKmlJAJr4vavk3IEAAAAAAAPBzQAAAAAAAAEFAAAAAAAAAJEABgVjMlBP3P0o6Xavk2MQ\u002fCil5lhH9UkC2hK8ZproWQAAAAAAAcHJAAAAAAAAAOUAAAAAAAAAuQOlDxrs0k+U\u002flnbMXnfGwj+AB5e9oSdRQMZmQbXnZBRAAAAAAADgcUAAAAAAAABAQAAAAAAAACBAzte9Eiwy\u002fD8wvAzdB0fLP4fyGspraFNA+byXz3v5HEAAAAAAAGBxQAAAAAAAADdAAAAAAAAAKEBxwazZ5pfpPyJ9Z6AYuMc\u002fKsg2BBSfUkBiJ3ZiJ3YZQAAAAAAAwG9AAAAAAAAANEAAAAAAAAAYQNsr7665VvM\u002fWSqNm88lvj8AAAAAAABOQHStsuGIaQ9AAAAAAADAb0AAAAAAAAAiQAAAAAAAAABAmZVwRg8U1j\u002fzsA2xmGLAPwAAAAAAGFVA6mHgLDw\u002fIEAAAAAAACBtQAAAAAAAACxAAAAAAAAAIEDJwKKbPC\u002fbP9A\u002fxc0SU8U\u002fcckQrKPNUEA33lHN+jMYQAAAAAAAgGxAAAAAAACAQkAAAAAAAAAmQKijyxPWc\u002fU\u002fbS9ZfWBluz916TF\u002fr41SQEaMGDFixBBAAAAAAADAakAAAAAAAAAsQAAAAAAAACBAerQK+Vcdyj\u002fUG5xfltDBP7W0tLS0NFFATyLTsN0sE0AAAAAAAIBmQAAAAAAAADtAAAAAAAAAIkDU2\u002fW4UmDoPzNBeiaDR8w\u002fTCWmElOJU0Dpkz7pkz4dQAAAAAAAwGVAAAAAAAAAJkAAAAAAAAAAADA3Q719Xco\u002ft30l2DyHxz\u002f3NMJyTyNTQAAAAAAAgBtAAAAAAADgY0AAAAAAAAAcQAAAAAAAAABADjjRJipfzT\u002fZ7VpK4PPIP8DIGRZcKlJA5umj1SREHUAAAAAAAEBjQAAAAAAAAChAAAAAAAAA8D+JskeuNT\u002fEP7Rj2nQ8wcY\u002fzDvgSNEQUkDtOZm+ShgbQAAAAAAAAF9AAAAAAAAAMkAAAAAAAAAcQOWnJPGNyto\u002fbBBfclhgwT8vuuiiiy5SQEoppZRSShRAAAAAAADAWkAAAAAAAAA2QAAAAAAAABhA18tVQAhR2T+KCMuBZKjGP87Wod9sHVRAsRM7sRM7HUAAAAAAAIBVQAAAAAAAADVAAAAAAAAAEEDiFvM2wmjnPyeOYC0UkNc\u002fAAAAAADgVUDBgQMHDhwqQAAAAAAAQFVAAAAAAAAAJkAAAAAAAAAUQBH\u002fpgxcfdk\u002fQxg2KTonxz\u002fmnkZY7mlWQDk5OTk5ORlAAAAAAABAUkAAAAAAAAAgQAAAAAAAABRAOBg\u002feZVayD++oqUlKtywPzGdxXQW001AHMdxHMdxBUAAAAAAAABOQAAAAAAAABRAAAAAAAAACEBoBPHTZE7hP0T0Vx0Dz8Y\u002fvzy2Img4UkBF0HBS9+UZQAAAAAAAAEZAAAAAAAAAFEAAAAAAAADwP2j6NESnO78\u002fWziIV0sJvj\u002fbtm3btm1VQC+66KKLLgxAAAAAAAAAQUAAAAAAAAAYQAAAAAAAAAhAGLD7g5KCuT+dBbvPXELPPymllFJKKVRAEUIIIYQQIkAAAAAAAABAQAAAAAAAABRAAAAAAAAAAEAC1Pd\u002fk0vUP4KISTfW88M\u002f0UUXXXTRT0AAAAAAAJAqQAAAAAAAAD9AAAAAAAAACEAAAAAAAAAAACobPKD1JNM\u002fw+\u002fLxzM40j\u002flNZTXUF5WQNhQXkN5DSVAAAAAAAAAPUAAAAAAAAAYQAAAAAAAAABArldDELgDwj+BjWqxU7\u002fNP0mSJEmSpFNAbtu2bds2IUAAAAAAAAA5QAAAAAAAABRAAAAAAAAA8D9mQfyjUCTKP9kfdFBIfq4\u002fchzHcRzHS0BiGIZhGIYJQAAAAAAAADRAAAAAAAAAEEAAAAAAAADwP2h3BNiyE64\u002fbZiZ1F97yj8AAAAAAMBXQJqZmZmZGSBAAAAAAAAALEAAAAAAAAAAQAAAAAAAAPA\u002fREDw8osPwj9j7\u002fMwPwjkP27btm3bNldASZIkSZKkNkAAAAAAAAAoQAAAAAAAAABAAAAAAAAA8D8h+9jKebZzP5sxq3xFbtU\u002fAAAAAAAAWUAAAAAAAAAqQAAAAAAAAPA\u002fAAAAAAAA8D8AAAAAAAAAANSXDgWDflI\u002fMERuGdgf0L8AAAAAAAAAAAAAAAAAACTA","shape":"51, 7"},"geo":"geo","hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003estate_abbr=%{location}\u003cbr\u003efindings_n=%{customdata[0]:,.0f}\u003cbr\u003estudies_n=%{customdata[1]:,.0f}\u003cbr\u003einterventions_n=%{customdata[2]:,.0f}\u003cbr\u003econtribution_share_pct=%{customdata[3]:.2f}\u003cbr\u003emean_effect_size_wwc=%{customdata[4]:.3f}\u003cbr\u003epct_positive_effect_size=%{z:.2f}\u003cbr\u003emean_improvement_index=%{customdata[6]:.2f}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Texas","California","New York","Pennsylvania","North Carolina","Illinois","Florida","Massachusetts","District of Columbia","Ohio","Georgia","Tennessee","Washington","Maryland","Michigan","Oregon","Louisiana","Minnesota","Kentucky","Colorado","Wisconsin","Oklahoma","New Jersey","Missouri","Indiana","South Carolina","New Mexico","Arkansas","Kansas","Virginia","Mississippi","Arizona","Maine","Iowa","West Virginia","Connecticut","Alabama","Utah","Nebraska","Nevada","Alaska","Delaware","Idaho","Hawaii","Vermont","Rhode Island","New Hampshire","South Dakota","Wyoming","Montana","North Dakota"],"locationmode":"USA-states","locations":["TX","CA","NY","PA","NC","IL","FL","MA","DC","OH","GA","TN","WA","MD","MI","OR","LA","MN","KY","CO","WI","OK","NJ","MO","IN","SC","NM","AR","KS","VA","MS","AZ","ME","IA","WV","CT","AL","UT","NE","NV","AK","DE","ID","HI","VT","RI","NH","SD","WY","MT","ND"],"name":"","z":{"dtype":"f8","bdata":"XTc2tJDSUUD6StKzK55SQDMa6YbCOVRApB\u002f96EffUUC3bdu2bXtSQKqqqqqqqlBApp6M3y71UUAsZCELWchTQCzaWCl7\u002fFJA9taGae6CUkBfb1DI1xtTQHQdozjXsVJAlb3CmlBPUECcl0V8AqlTQASR1gvYZlBAymsor6G8U0Bc6d6AMvFRQKqqqqqqqlBAtG4wRT7rUkDsxE7sxE5RQFniCVKPJVJAp6wpa8qaUkAKKXmWEf1SQIAHl72hJ1FAh\u002fIaymtoU0AqyDYEFJ9SQAAAAAAAAE5AAAAAAAAYVUBxyRCso81QQHXpMX+vjVJAtbS0tLQ0UUBMJaYSU4lTQPc0wnJPI1NAwMgZFlwqUkDMO+BI0RBSQC+66KKLLlJAztah32wdVEAAAAAAAOBVQOaeRljuaVZAMZ3FdBbTTUC\u002fPLYiaDhSQNu2bdu2bVVAKaWUUkopVEDRRRdddNFPQOU1lNdQXlZASZIkSZKkU0ByHMdxHMdLQAAAAAAAwFdAbtu2bds2V0AAAAAAAABZQAAAAAAAAAAA"},"type":"choropleth"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"geo":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"center":{},"scope":"usa"},"coloraxis":{"colorbar":{"title":{"text":"pct_positive_effect_size"}},"colorscale":[[0.0,"#30123b"],[0.07142857142857142,"#4145ab"],[0.14285714285714285,"#4675ed"],[0.21428571428571427,"#39a2fc"],[0.2857142857142857,"#1bcfd4"],[0.35714285714285715,"#24eca6"],[0.42857142857142855,"#61fc6c"],[0.5,"#a4fc3b"],[0.5714285714285714,"#d1e834"],[0.6428571428571429,"#f3c63a"],[0.7142857142857143,"#fe9b2d"],[0.7857142857142857,"#f36315"],[0.8571428571428571,"#d93806"],[0.9285714285714286,"#b11901"],[1.0,"#7a0402"]]},"legend":{"tracegroupgap":0},"title":{"text":"All Rows: % Positive Findings by State"},"paper_bgcolor":"#ffffff","plot_bgcolor":"#ffffff"},                        {"responsive": true}                    )                };            </script>        </div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Multi-State Only Maps</h2>
+      <div class="grid3">
+        <div><div>                            <div id="8dca615e-184b-4061-9c60-b2e858b51b48" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("8dca615e-184b-4061-9c60-b2e858b51b48")) {                    Plotly.newPlot(                        "8dca615e-184b-4061-9c60-b2e858b51b48",                        [{"coloraxis":"coloraxis","customdata":{"dtype":"f8","bdata":"AAAAAACskEAAAAAAAEBVQAAAAAAAADdAOwuaWolqJUCCCbUvmKjBPwZQIYy\u002fZVFAAAAAAADoE0AAAAAAAECPQAAAAAAAwFRAAAAAAAAAN0CZ1CKmrx8iQMndTnjttbw\u002fmCKfdYPZUEBvMkyX5MUTQAAAAAAAoIlAAAAAAACASkAAAAAAAAAyQAs89b0UJSBAAH8wCTdFxj+\u002fPxUHrblSQI2cNHLSyBlAAAAAAAAYhEAAAAAAAABAQAAAAAAAABhAnmmydrNVE0CSb87gLM\u002fCP\u002f4l4nKT51JA45Zxy7hlFkAAAAAAAACEQAAAAAAAAERAAAAAAAAAJkC5uILmaa8RQIos6HlqqsQ\u002fntiJndiJUUCaFvysOt0XQAAAAAAAqINAAAAAAACAQkAAAAAAAAAmQCvYv4kirRJAFoGsaVYXxj+51Hb2cJ5QQMWjNOM\u002fAhtAAAAAAADIgUAAAAAAAAA\u002fQAAAAAAAAC5AyQXvKmMJD0AN+5ajtHDHP++YGtg7ZlNAHh4eHh4+HEAAAAAAAGiBQAAAAAAAgEFAAAAAAAAAJkBtQY4rvLgQQMI+u\u002f0sqs0\u002fhDRIgzQIVECjiy666MIgQAAAAAAA2IBAAAAAAACAQEAAAAAAAAAgQCzCHJ6bCxRAfm9QCx6qvz+6f76XQm5RQPnx48ePHxNAAAAAAADAdkAAAAAAAAA\u002fQAAAAAAAACZAde3jePj2C0BOVtYKmpTRP7mnEZZ7GlJAI0FNhWjDH0AAAAAAAHB0QAAAAAAAADRAAAAAAAAAHECZp5r5W3ICQCeO9crZOrk\u002f+oQXEoQqUEAPoYfQQ+gJQAAAAAAA4HNAAAAAAAAAIEAAAAAAAAAAQHl7ueI0rPA\u002fpGy48xojyD97GmG5p1FSQDdgqKZjLiBAAAAAAADQc0AAAAAAAAA3QAAAAAAAACJAntiOdnnzAUBvTaO+OQbKP3PGnDFnzFJASLTC5kCiHUAAAAAAAHBzQAAAAAAAgEFAAAAAAAAAM0BjzmeT8ZwHQDUoVrgvhLk\u002fAAAAAADAUkCQM8XStRUIQAAAAAAAYHNAAAAAAAAAN0AAAAAAAAAYQE+SWXDNBABAJOAljsZLwD\u002fiIHp8Fw5QQOUByTpXHhBAAAAAAACAcUAAAAAAAAA2QAAAAAAAACRAOZbSBV2t+T\u002ft2p\u002f5x27EP8yQ38uQ31FA7pW3JNSQFkAAAAAAAIBwQAAAAAAAADtAAAAAAAAAIkD9qDUyUZgFQDztvgsot8k\u002f7g0oE1e6U0C\u002f7\u002fu+7\u002fsRQAAAAAAAcHBAAAAAAAAANEAAAAAAAAAYQIFJAcO\u002fV\u002fY\u002fomG3wMJ1xT9o8mWDJl9QQP8Q8P4Q8BZAAAAAAABAcEAAAAAAAAAxQAAAAAAAACJA+wNKV0kZ8T\u002fF23OQ21HDP27btm3b9lBArJEIiI8mFEAAAAAAAGBvQAAAAAAAADRAAAAAAAAAHEA6AldYhtb6PxpwVwtKc8k\u002f9LKITyAVUkAAAAAAAAAbQAAAAAAAIG9AAAAAAAAAIEAAAAAAAAAAQClhgs6WrPE\u002f6uzLAWzvwT9gHlsRNJxVQJyPwfkYnCBAAAAAAABgbkAAAAAAAIBDQAAAAAAAACJAz3xDZo5lBUBlqROyTkTTP3E+BudjcFZAlnsaYbknJEAAAAAAACBuQAAAAAAAAC5AAAAAAAAACEDfTw8MDFr0P02cqUH2AtE\u002fo76zUd9ZUkAQmjcQmjcgQAAAAAAA4G1AAAAAAAAAOEAAAAAAAAAmQEV\u002fsauMkvE\u002fgVhCz4OBxD8FL6fg5ZRQQDDEitL4yBZAAAAAAAAgbEAAAAAAAAAwQAAAAAAAACJAgHOftoaw6D9GeW0yDOnFP0GPlJBTAVJAip3YiZ0YF0AAAAAAAIBrQAAAAAAAACRAAAAAAAAAGEBYIba0nwfxPyTmqZBoZ8Y\u002fg76gL+hLUUALWchCFrIZQAAAAAAAAGtAAAAAAAAANUAAAAAAAAAUQDsd+KzQIPE\u002fZBQfbrw9yT+LoOGk7stRQE422WSTTRxAAAAAAABAakAAAAAAAAAqQAAAAAAAACBAlXWfnoZ24z9FLBas++TBP8\u002fzPM\u002fzHFFA4HNLnPo9E0AAAAAAAIBpQAAAAAAAAChAAAAAAAAAEECLPrZkh7sDQPKGN9Pdh7s\u002f5lu+5Vu+TUB6oHJ2C78KQAAAAAAAwGdAAAAAAAAANEAAAAAAAAAYQIlEPYOyyARAyEOP4kfPyz9aWlpaWtpTQNMv\u002fdIv\u002fR5AAAAAAACgZUAAAAAAAAAkQAAAAAAAAAAAXiNNpPrZ5z+3fSXYPIfHP\u002fc0wnJPI1NAnPxN\u002fiZ\u002fG0AAAAAAAEBjQAAAAAAAADdAAAAAAAAAHEB+lqwYcPb+P2Q3\u002fsUoEMI\u002fJO6IO+IOVEAq8lk3mCITQAAAAAAAoGJAAAAAAAAAIkAAAAAAAADwPydTECWa7dg\u002f+RZmC34kxz8ffPDBB19SQG2yySabbBtAAAAAAAAgYkAAAAAAAAAUQAAAAAAAAABAJ+eXVMmA0T8k12S9PuTJP5mZmZmZmVFAPQrXo3A9HkAAAAAAAGBhQAAAAAAAADNAAAAAAAAAHEA2UlCm8k\u002fyP3b39BhGd80\u002fXXTRRRfdUkCDS2V71wEdQAAAAAAAgFpAAAAAAAAALEAAAAAAAAAcQJUTm79sZOo\u002flGaNl77HwD8AAAAAAIBRQGG8lX0OqRNAAAAAAACAVEAAAAAAAAAuQAAAAAAAABBABfdui0PH2z\u002fn2nZmXw\u002fFPyd2Yid2YlRAPgNR6cieHUAAAAAAAIBPQAAAAAAAABxAAAAAAAAAAEC+KmaIil7iP3fAYzDBdsY\u002fx3Ecx3GcV0Dsuq7ruq4XQAAAAAAAAE9AAAAAAAAAFEAAAAAAAAAQQGj+ueLuMdA\u002fhbQuJxUhrT8AAAAAAABPQKWUUkoppfQ\u002fAAAAAACAREAAAAAAAAAQQAAAAAAAAAAAgRR20ZiY1T8+yS733PW+P9dQXkN5DVVAcD4G52NwDkAAAAAAAAA7QAAAAAAAABhAAAAAAAAAAEBhva2ZiQ\u002fQP\u002fTZlcdDxds\u002fO7ETO7ETV0AndmIndmIrQAAAAAAAADtAAAAAAAAAFEAAAAAAAAAIQMWv9ZHPOLQ\u002fh1rP13\u002f10z+qqqqqqupWQAAAAAAAACdAAAAAAAAANkAAAAAAAAAQQAAAAAAAAPA\u002fXq+5BiM\u002fzj\u002f7FssaLKLBP8MwDMMwDFNAbtu2bdu2FUAAAAAAAAA0QAAAAAAAABBAAAAAAAAA8D\u002febK44c8nMP22YmdRfe8o\u002fAAAAAADAV0CamZmZmRkgQAAAAAAAACpAAAAAAAAAAEAAAAAAAADwP+QGGb9XKaQ\u002f60ua2rgz2D92Yid2YidVQDuxEzuxEytAAAAAAAAAKEAAAAAAAAAAQAAAAAAAAPA\u002fxavD4Abekj+bMat8RW7VPwAAAAAAAFlAAAAAAAAAKkAAAAAAAAAgQAAAAAAAAABAAAAAAAAAAABEuZ1cNy+oP9gO0eWzptg\u002fAAAAAAAAWUAAAAAAAIAtQAAAAAAAABxAAAAAAAAAAEAAAAAAAAAAAFlK8FphqLs\u002f\u002f7WBh4Ly1j8AAAAAAABZQFVVVVVVVS9AAAAAAAAAEEAAAAAAAADwPwAAAAAAAAAAiyEf0kt3cD\u002fYDtHls6bYPwAAAAAAAFlAAAAAAACALUAAAAAAAAAAQAAAAAAAAPA\u002fAAAAAAAA8D8T1VniTSCWPwPbcx6af6i\u002fAAAAAAAASUAAAAAAAAAAwAAAAAAAAPA\u002fAAAAAAAA8D8AAAAAAAAAAEN34YFxs3E\u002fMERuGdgf0L8AAAAAAAAAAAAAAAAAACTA","shape":"51, 7"},"geo":"geo","hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003estate_abbr=%{location}\u003cbr\u003efindings_n=%{z:,.0f}\u003cbr\u003estudies_n=%{customdata[1]:,.0f}\u003cbr\u003einterventions_n=%{customdata[2]:,.0f}\u003cbr\u003econtribution_share_pct=%{customdata[3]:.2f}\u003cbr\u003emean_effect_size_wwc=%{customdata[4]:.3f}\u003cbr\u003epct_positive_effect_size=%{customdata[5]:.2f}\u003cbr\u003emean_improvement_index=%{customdata[6]:.2f}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Texas","California","New York","District of Columbia","Pennsylvania","Illinois","Georgia","Massachusetts","North Carolina","Ohio","Minnesota","Oklahoma","Kentucky","Florida","Louisiana","Washington","Maryland","Colorado","Missouri","Oregon","Arkansas","Tennessee","Wisconsin","Michigan","South Carolina","Kansas","New Jersey","Mississippi","New Mexico","Indiana","Maine","Virginia","West Virginia","Iowa","Arizona","Connecticut","Alabama","Nebraska","Nevada","Delaware","Utah","Idaho","Rhode Island","South Dakota","Alaska","Montana","New Hampshire","Vermont","Hawaii","Wyoming","North Dakota"],"locationmode":"USA-states","locations":["TX","CA","NY","DC","PA","IL","GA","MA","NC","OH","MN","OK","KY","FL","LA","WA","MD","CO","MO","OR","AR","TN","WI","MI","SC","KS","NJ","MS","NM","IN","ME","VA","WV","IA","AZ","CT","AL","NE","NV","DE","UT","ID","RI","SD","AK","MT","NH","VT","HI","WY","ND"],"name":"","z":{"dtype":"i2","bdata":"KwToAzQDgwKAAnUCOQItAhsCbAFHAT4BPQE3ATYBGAEIAQcBBAH7APkA8wDxAO8A4QDcANgA0gDMAL4ArQCaAJUAkQCLAGoAUgA\u002fAD4AKQAbABsAFgAUAA0ADAAIAAcABAACAAEA"},"type":"choropleth"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"geo":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"center":{},"scope":"usa"},"coloraxis":{"colorbar":{"title":{"text":"findings_n"}},"colorscale":[[0.0,"#30123b"],[0.07142857142857142,"#4145ab"],[0.14285714285714285,"#4675ed"],[0.21428571428571427,"#39a2fc"],[0.2857142857142857,"#1bcfd4"],[0.35714285714285715,"#24eca6"],[0.42857142857142855,"#61fc6c"],[0.5,"#a4fc3b"],[0.5714285714285714,"#d1e834"],[0.6428571428571429,"#f3c63a"],[0.7142857142857143,"#fe9b2d"],[0.7857142857142857,"#f36315"],[0.8571428571428571,"#d93806"],[0.9285714285714286,"#b11901"],[1.0,"#7a0402"]]},"legend":{"tracegroupgap":0},"title":{"text":"Multi-State Only: Findings by State"},"paper_bgcolor":"#ffffff","plot_bgcolor":"#ffffff"},                        {"responsive": true}                    )                };            </script>        </div></div>
+        <div><div>                            <div id="0a4c0eea-9e87-48e6-bb61-0b19990019c2" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("0a4c0eea-9e87-48e6-bb61-0b19990019c2")) {                    Plotly.newPlot(                        "0a4c0eea-9e87-48e6-bb61-0b19990019c2",                        [{"coloraxis":"coloraxis","customdata":{"dtype":"f8","bdata":"AAAAAACskEAAAAAAAEBVQAAAAAAAADdAOwuaWolqJUCCCbUvmKjBPwZQIYy\u002fZVFAAAAAAADoE0AAAAAAAECPQAAAAAAAwFRAAAAAAAAAN0CZ1CKmrx8iQMndTnjttbw\u002fmCKfdYPZUEBvMkyX5MUTQAAAAAAAoIlAAAAAAACASkAAAAAAAAAyQAs89b0UJSBAAH8wCTdFxj+\u002fPxUHrblSQI2cNHLSyBlAAAAAAAAYhEAAAAAAAABAQAAAAAAAABhAnmmydrNVE0CSb87gLM\u002fCP\u002f4l4nKT51JA45Zxy7hlFkAAAAAAAACEQAAAAAAAAERAAAAAAAAAJkC5uILmaa8RQIos6HlqqsQ\u002fntiJndiJUUCaFvysOt0XQAAAAAAAqINAAAAAAACAQkAAAAAAAAAmQCvYv4kirRJAFoGsaVYXxj+51Hb2cJ5QQMWjNOM\u002fAhtAAAAAAADIgUAAAAAAAAA\u002fQAAAAAAAAC5AyQXvKmMJD0AN+5ajtHDHP++YGtg7ZlNAHh4eHh4+HEAAAAAAAGiBQAAAAAAAgEFAAAAAAAAAJkBtQY4rvLgQQMI+u\u002f0sqs0\u002fhDRIgzQIVECjiy666MIgQAAAAAAA2IBAAAAAAACAQEAAAAAAAAAgQCzCHJ6bCxRAfm9QCx6qvz+6f76XQm5RQPnx48ePHxNAAAAAAADAdkAAAAAAAAA\u002fQAAAAAAAACZAde3jePj2C0BOVtYKmpTRP7mnEZZ7GlJAI0FNhWjDH0AAAAAAAHB0QAAAAAAAADRAAAAAAAAAHECZp5r5W3ICQCeO9crZOrk\u002f+oQXEoQqUEAPoYfQQ+gJQAAAAAAA4HNAAAAAAAAAIEAAAAAAAAAAQHl7ueI0rPA\u002fpGy48xojyD97GmG5p1FSQDdgqKZjLiBAAAAAAADQc0AAAAAAAAA3QAAAAAAAACJAntiOdnnzAUBvTaO+OQbKP3PGnDFnzFJASLTC5kCiHUAAAAAAAHBzQAAAAAAAgEFAAAAAAAAAM0BjzmeT8ZwHQDUoVrgvhLk\u002fAAAAAADAUkCQM8XStRUIQAAAAAAAYHNAAAAAAAAAN0AAAAAAAAAYQE+SWXDNBABAJOAljsZLwD\u002fiIHp8Fw5QQOUByTpXHhBAAAAAAACAcUAAAAAAAAA2QAAAAAAAACRAOZbSBV2t+T\u002ft2p\u002f5x27EP8yQ38uQ31FA7pW3JNSQFkAAAAAAAIBwQAAAAAAAADtAAAAAAAAAIkD9qDUyUZgFQDztvgsot8k\u002f7g0oE1e6U0C\u002f7\u002fu+7\u002fsRQAAAAAAAcHBAAAAAAAAANEAAAAAAAAAYQIFJAcO\u002fV\u002fY\u002fomG3wMJ1xT9o8mWDJl9QQP8Q8P4Q8BZAAAAAAABAcEAAAAAAAAAxQAAAAAAAACJA+wNKV0kZ8T\u002fF23OQ21HDP27btm3b9lBArJEIiI8mFEAAAAAAAGBvQAAAAAAAADRAAAAAAAAAHEA6AldYhtb6PxpwVwtKc8k\u002f9LKITyAVUkAAAAAAAAAbQAAAAAAAIG9AAAAAAAAAIEAAAAAAAAAAQClhgs6WrPE\u002f6uzLAWzvwT9gHlsRNJxVQJyPwfkYnCBAAAAAAABgbkAAAAAAAIBDQAAAAAAAACJAz3xDZo5lBUBlqROyTkTTP3E+BudjcFZAlnsaYbknJEAAAAAAACBuQAAAAAAAAC5AAAAAAAAACEDfTw8MDFr0P02cqUH2AtE\u002fo76zUd9ZUkAQmjcQmjcgQAAAAAAA4G1AAAAAAAAAOEAAAAAAAAAmQEV\u002fsauMkvE\u002fgVhCz4OBxD8FL6fg5ZRQQDDEitL4yBZAAAAAAAAgbEAAAAAAAAAwQAAAAAAAACJAgHOftoaw6D9GeW0yDOnFP0GPlJBTAVJAip3YiZ0YF0AAAAAAAIBrQAAAAAAAACRAAAAAAAAAGEBYIba0nwfxPyTmqZBoZ8Y\u002fg76gL+hLUUALWchCFrIZQAAAAAAAAGtAAAAAAAAANUAAAAAAAAAUQDsd+KzQIPE\u002fZBQfbrw9yT+LoOGk7stRQE422WSTTRxAAAAAAABAakAAAAAAAAAqQAAAAAAAACBAlXWfnoZ24z9FLBas++TBP8\u002fzPM\u002fzHFFA4HNLnPo9E0AAAAAAAIBpQAAAAAAAAChAAAAAAAAAEECLPrZkh7sDQPKGN9Pdh7s\u002f5lu+5Vu+TUB6oHJ2C78KQAAAAAAAwGdAAAAAAAAANEAAAAAAAAAYQIlEPYOyyARAyEOP4kfPyz9aWlpaWtpTQNMv\u002fdIv\u002fR5AAAAAAACgZUAAAAAAAAAkQAAAAAAAAAAAXiNNpPrZ5z+3fSXYPIfHP\u002fc0wnJPI1NAnPxN\u002fiZ\u002fG0AAAAAAAEBjQAAAAAAAADdAAAAAAAAAHEB+lqwYcPb+P2Q3\u002fsUoEMI\u002fJO6IO+IOVEAq8lk3mCITQAAAAAAAoGJAAAAAAAAAIkAAAAAAAADwPydTECWa7dg\u002f+RZmC34kxz8ffPDBB19SQG2yySabbBtAAAAAAAAgYkAAAAAAAAAUQAAAAAAAAABAJ+eXVMmA0T8k12S9PuTJP5mZmZmZmVFAPQrXo3A9HkAAAAAAAGBhQAAAAAAAADNAAAAAAAAAHEA2UlCm8k\u002fyP3b39BhGd80\u002fXXTRRRfdUkCDS2V71wEdQAAAAAAAgFpAAAAAAAAALEAAAAAAAAAcQJUTm79sZOo\u002flGaNl77HwD8AAAAAAIBRQGG8lX0OqRNAAAAAAACAVEAAAAAAAAAuQAAAAAAAABBABfdui0PH2z\u002fn2nZmXw\u002fFPyd2Yid2YlRAPgNR6cieHUAAAAAAAIBPQAAAAAAAABxAAAAAAAAAAEC+KmaIil7iP3fAYzDBdsY\u002fx3Ecx3GcV0Dsuq7ruq4XQAAAAAAAAE9AAAAAAAAAFEAAAAAAAAAQQGj+ueLuMdA\u002fhbQuJxUhrT8AAAAAAABPQKWUUkoppfQ\u002fAAAAAACAREAAAAAAAAAQQAAAAAAAAAAAgRR20ZiY1T8+yS733PW+P9dQXkN5DVVAcD4G52NwDkAAAAAAAAA7QAAAAAAAABhAAAAAAAAAAEBhva2ZiQ\u002fQP\u002fTZlcdDxds\u002fO7ETO7ETV0AndmIndmIrQAAAAAAAADtAAAAAAAAAFEAAAAAAAAAIQMWv9ZHPOLQ\u002fh1rP13\u002f10z+qqqqqqupWQAAAAAAAACdAAAAAAAAANkAAAAAAAAAQQAAAAAAAAPA\u002fXq+5BiM\u002fzj\u002f7FssaLKLBP8MwDMMwDFNAbtu2bdu2FUAAAAAAAAA0QAAAAAAAABBAAAAAAAAA8D\u002febK44c8nMP22YmdRfe8o\u002fAAAAAADAV0CamZmZmRkgQAAAAAAAACpAAAAAAAAAAEAAAAAAAADwP+QGGb9XKaQ\u002f60ua2rgz2D92Yid2YidVQDuxEzuxEytAAAAAAAAAKEAAAAAAAAAAQAAAAAAAAPA\u002fxavD4Abekj+bMat8RW7VPwAAAAAAAFlAAAAAAAAAKkAAAAAAAAAgQAAAAAAAAABAAAAAAAAAAABEuZ1cNy+oP9gO0eWzptg\u002fAAAAAAAAWUAAAAAAAIAtQAAAAAAAABxAAAAAAAAAAEAAAAAAAAAAAFlK8FphqLs\u002f\u002f7WBh4Ly1j8AAAAAAABZQFVVVVVVVS9AAAAAAAAAEEAAAAAAAADwPwAAAAAAAAAAiyEf0kt3cD\u002fYDtHls6bYPwAAAAAAAFlAAAAAAACALUAAAAAAAAAAQAAAAAAAAPA\u002fAAAAAAAA8D8T1VniTSCWPwPbcx6af6i\u002fAAAAAAAASUAAAAAAAAAAwAAAAAAAAPA\u002fAAAAAAAA8D8AAAAAAAAAAEN34YFxs3E\u002fMERuGdgf0L8AAAAAAAAAAAAAAAAAACTA","shape":"51, 7"},"geo":"geo","hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003estate_abbr=%{location}\u003cbr\u003efindings_n=%{customdata[0]:,.0f}\u003cbr\u003estudies_n=%{customdata[1]:,.0f}\u003cbr\u003einterventions_n=%{customdata[2]:,.0f}\u003cbr\u003econtribution_share_pct=%{customdata[3]:.2f}\u003cbr\u003emean_effect_size_wwc=%{z:.3f}\u003cbr\u003epct_positive_effect_size=%{customdata[5]:.2f}\u003cbr\u003emean_improvement_index=%{customdata[6]:.2f}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Texas","California","New York","District of Columbia","Pennsylvania","Illinois","Georgia","Massachusetts","North Carolina","Ohio","Minnesota","Oklahoma","Kentucky","Florida","Louisiana","Washington","Maryland","Colorado","Missouri","Oregon","Arkansas","Tennessee","Wisconsin","Michigan","South Carolina","Kansas","New Jersey","Mississippi","New Mexico","Indiana","Maine","Virginia","West Virginia","Iowa","Arizona","Connecticut","Alabama","Nebraska","Nevada","Delaware","Utah","Idaho","Rhode Island","South Dakota","Alaska","Montana","New Hampshire","Vermont","Hawaii","Wyoming","North Dakota"],"locationmode":"USA-states","locations":["TX","CA","NY","DC","PA","IL","GA","MA","NC","OH","MN","OK","KY","FL","LA","WA","MD","CO","MO","OR","AR","TN","WI","MI","SC","KS","NJ","MS","NM","IN","ME","VA","WV","IA","AZ","CT","AL","NE","NV","DE","UT","ID","RI","SD","AK","MT","NH","VT","HI","WY","ND"],"name":"","z":{"dtype":"f8","bdata":"ggm1L5iowT\u002fJ3U547bW8PwB\u002fMAk3RcY\u002fkm\u002fO4CzPwj+KLOh5aqrEPxaBrGlWF8Y\u002fDfuWo7Rwxz\u002fCPrv9LKrNP35vUAseqr8\u002fTlbWCpqU0T8njvXK2Tq5P6RsuPMaI8g\u002fb02jvjkGyj81KFa4L4S5PyTgJY7GS8A\u002f7dqf+cduxD887b4LKLfJP6Jht8DCdcU\u002fxdtzkNtRwz8acFcLSnPJP+rsywFs78E\u002fZakTsk5E0z9NnKlB9gLRP4FYQs+DgcQ\u002fRnltMgzpxT8k5qmQaGfGP2QUH268Pck\u002fRSwWrPvkwT\u002fyhjfT3Ye7P8hDj+JHz8s\u002ft30l2DyHxz9kN\u002f7FKBDCP\u002fkWZgt+JMc\u002fJNdkvT7kyT929\u002fQYRnfNP5RmjZe+x8A\u002f59p2Zl8PxT93wGMwwXbGP4W0LicVIa0\u002fPsku99z1vj\u002f02ZXHQ8XbP4daz9d\u002f9dM\u002f+xbLGiyiwT9tmJnUX3vKP+tLmtq4M9g\u002fmzGrfEVu1T\u002fYDtHls6bYP\u002f+1gYeC8tY\u002f2A7R5bOm2D8D23Memn+ovzBEbhnYH9C\u002f"},"type":"choropleth"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"geo":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"center":{},"scope":"usa"},"coloraxis":{"colorbar":{"title":{"text":"mean_effect_size_wwc"}},"colorscale":[[0.0,"rgb(103,0,31)"],[0.1,"rgb(178,24,43)"],[0.2,"rgb(214,96,77)"],[0.3,"rgb(244,165,130)"],[0.4,"rgb(253,219,199)"],[0.5,"rgb(247,247,247)"],[0.6,"rgb(209,229,240)"],[0.7,"rgb(146,197,222)"],[0.8,"rgb(67,147,195)"],[0.9,"rgb(33,102,172)"],[1.0,"rgb(5,48,97)"]],"cmid":0.0},"legend":{"tracegroupgap":0},"title":{"text":"Multi-State Only: Mean Effect Size by State"},"paper_bgcolor":"#ffffff","plot_bgcolor":"#ffffff"},                        {"responsive": true}                    )                };            </script>        </div></div>
+        <div><div>                            <div id="fb801388-b6f5-4524-8826-ecb1a46a86c2" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("fb801388-b6f5-4524-8826-ecb1a46a86c2")) {                    Plotly.newPlot(                        "fb801388-b6f5-4524-8826-ecb1a46a86c2",                        [{"coloraxis":"coloraxis","customdata":{"dtype":"f8","bdata":"AAAAAACskEAAAAAAAEBVQAAAAAAAADdAOwuaWolqJUCCCbUvmKjBPwZQIYy\u002fZVFAAAAAAADoE0AAAAAAAECPQAAAAAAAwFRAAAAAAAAAN0CZ1CKmrx8iQMndTnjttbw\u002fmCKfdYPZUEBvMkyX5MUTQAAAAAAAoIlAAAAAAACASkAAAAAAAAAyQAs89b0UJSBAAH8wCTdFxj+\u002fPxUHrblSQI2cNHLSyBlAAAAAAAAYhEAAAAAAAABAQAAAAAAAABhAnmmydrNVE0CSb87gLM\u002fCP\u002f4l4nKT51JA45Zxy7hlFkAAAAAAAACEQAAAAAAAAERAAAAAAAAAJkC5uILmaa8RQIos6HlqqsQ\u002fntiJndiJUUCaFvysOt0XQAAAAAAAqINAAAAAAACAQkAAAAAAAAAmQCvYv4kirRJAFoGsaVYXxj+51Hb2cJ5QQMWjNOM\u002fAhtAAAAAAADIgUAAAAAAAAA\u002fQAAAAAAAAC5AyQXvKmMJD0AN+5ajtHDHP++YGtg7ZlNAHh4eHh4+HEAAAAAAAGiBQAAAAAAAgEFAAAAAAAAAJkBtQY4rvLgQQMI+u\u002f0sqs0\u002fhDRIgzQIVECjiy666MIgQAAAAAAA2IBAAAAAAACAQEAAAAAAAAAgQCzCHJ6bCxRAfm9QCx6qvz+6f76XQm5RQPnx48ePHxNAAAAAAADAdkAAAAAAAAA\u002fQAAAAAAAACZAde3jePj2C0BOVtYKmpTRP7mnEZZ7GlJAI0FNhWjDH0AAAAAAAHB0QAAAAAAAADRAAAAAAAAAHECZp5r5W3ICQCeO9crZOrk\u002f+oQXEoQqUEAPoYfQQ+gJQAAAAAAA4HNAAAAAAAAAIEAAAAAAAAAAQHl7ueI0rPA\u002fpGy48xojyD97GmG5p1FSQDdgqKZjLiBAAAAAAADQc0AAAAAAAAA3QAAAAAAAACJAntiOdnnzAUBvTaO+OQbKP3PGnDFnzFJASLTC5kCiHUAAAAAAAHBzQAAAAAAAgEFAAAAAAAAAM0BjzmeT8ZwHQDUoVrgvhLk\u002fAAAAAADAUkCQM8XStRUIQAAAAAAAYHNAAAAAAAAAN0AAAAAAAAAYQE+SWXDNBABAJOAljsZLwD\u002fiIHp8Fw5QQOUByTpXHhBAAAAAAACAcUAAAAAAAAA2QAAAAAAAACRAOZbSBV2t+T\u002ft2p\u002f5x27EP8yQ38uQ31FA7pW3JNSQFkAAAAAAAIBwQAAAAAAAADtAAAAAAAAAIkD9qDUyUZgFQDztvgsot8k\u002f7g0oE1e6U0C\u002f7\u002fu+7\u002fsRQAAAAAAAcHBAAAAAAAAANEAAAAAAAAAYQIFJAcO\u002fV\u002fY\u002fomG3wMJ1xT9o8mWDJl9QQP8Q8P4Q8BZAAAAAAABAcEAAAAAAAAAxQAAAAAAAACJA+wNKV0kZ8T\u002fF23OQ21HDP27btm3b9lBArJEIiI8mFEAAAAAAAGBvQAAAAAAAADRAAAAAAAAAHEA6AldYhtb6PxpwVwtKc8k\u002f9LKITyAVUkAAAAAAAAAbQAAAAAAAIG9AAAAAAAAAIEAAAAAAAAAAQClhgs6WrPE\u002f6uzLAWzvwT9gHlsRNJxVQJyPwfkYnCBAAAAAAABgbkAAAAAAAIBDQAAAAAAAACJAz3xDZo5lBUBlqROyTkTTP3E+BudjcFZAlnsaYbknJEAAAAAAACBuQAAAAAAAAC5AAAAAAAAACEDfTw8MDFr0P02cqUH2AtE\u002fo76zUd9ZUkAQmjcQmjcgQAAAAAAA4G1AAAAAAAAAOEAAAAAAAAAmQEV\u002fsauMkvE\u002fgVhCz4OBxD8FL6fg5ZRQQDDEitL4yBZAAAAAAAAgbEAAAAAAAAAwQAAAAAAAACJAgHOftoaw6D9GeW0yDOnFP0GPlJBTAVJAip3YiZ0YF0AAAAAAAIBrQAAAAAAAACRAAAAAAAAAGEBYIba0nwfxPyTmqZBoZ8Y\u002fg76gL+hLUUALWchCFrIZQAAAAAAAAGtAAAAAAAAANUAAAAAAAAAUQDsd+KzQIPE\u002fZBQfbrw9yT+LoOGk7stRQE422WSTTRxAAAAAAABAakAAAAAAAAAqQAAAAAAAACBAlXWfnoZ24z9FLBas++TBP8\u002fzPM\u002fzHFFA4HNLnPo9E0AAAAAAAIBpQAAAAAAAAChAAAAAAAAAEECLPrZkh7sDQPKGN9Pdh7s\u002f5lu+5Vu+TUB6oHJ2C78KQAAAAAAAwGdAAAAAAAAANEAAAAAAAAAYQIlEPYOyyARAyEOP4kfPyz9aWlpaWtpTQNMv\u002fdIv\u002fR5AAAAAAACgZUAAAAAAAAAkQAAAAAAAAAAAXiNNpPrZ5z+3fSXYPIfHP\u002fc0wnJPI1NAnPxN\u002fiZ\u002fG0AAAAAAAEBjQAAAAAAAADdAAAAAAAAAHEB+lqwYcPb+P2Q3\u002fsUoEMI\u002fJO6IO+IOVEAq8lk3mCITQAAAAAAAoGJAAAAAAAAAIkAAAAAAAADwPydTECWa7dg\u002f+RZmC34kxz8ffPDBB19SQG2yySabbBtAAAAAAAAgYkAAAAAAAAAUQAAAAAAAAABAJ+eXVMmA0T8k12S9PuTJP5mZmZmZmVFAPQrXo3A9HkAAAAAAAGBhQAAAAAAAADNAAAAAAAAAHEA2UlCm8k\u002fyP3b39BhGd80\u002fXXTRRRfdUkCDS2V71wEdQAAAAAAAgFpAAAAAAAAALEAAAAAAAAAcQJUTm79sZOo\u002flGaNl77HwD8AAAAAAIBRQGG8lX0OqRNAAAAAAACAVEAAAAAAAAAuQAAAAAAAABBABfdui0PH2z\u002fn2nZmXw\u002fFPyd2Yid2YlRAPgNR6cieHUAAAAAAAIBPQAAAAAAAABxAAAAAAAAAAEC+KmaIil7iP3fAYzDBdsY\u002fx3Ecx3GcV0Dsuq7ruq4XQAAAAAAAAE9AAAAAAAAAFEAAAAAAAAAQQGj+ueLuMdA\u002fhbQuJxUhrT8AAAAAAABPQKWUUkoppfQ\u002fAAAAAACAREAAAAAAAAAQQAAAAAAAAAAAgRR20ZiY1T8+yS733PW+P9dQXkN5DVVAcD4G52NwDkAAAAAAAAA7QAAAAAAAABhAAAAAAAAAAEBhva2ZiQ\u002fQP\u002fTZlcdDxds\u002fO7ETO7ETV0AndmIndmIrQAAAAAAAADtAAAAAAAAAFEAAAAAAAAAIQMWv9ZHPOLQ\u002fh1rP13\u002f10z+qqqqqqupWQAAAAAAAACdAAAAAAAAANkAAAAAAAAAQQAAAAAAAAPA\u002fXq+5BiM\u002fzj\u002f7FssaLKLBP8MwDMMwDFNAbtu2bdu2FUAAAAAAAAA0QAAAAAAAABBAAAAAAAAA8D\u002febK44c8nMP22YmdRfe8o\u002fAAAAAADAV0CamZmZmRkgQAAAAAAAACpAAAAAAAAAAEAAAAAAAADwP+QGGb9XKaQ\u002f60ua2rgz2D92Yid2YidVQDuxEzuxEytAAAAAAAAAKEAAAAAAAAAAQAAAAAAAAPA\u002fxavD4Abekj+bMat8RW7VPwAAAAAAAFlAAAAAAAAAKkAAAAAAAAAgQAAAAAAAAABAAAAAAAAAAABEuZ1cNy+oP9gO0eWzptg\u002fAAAAAAAAWUAAAAAAAIAtQAAAAAAAABxAAAAAAAAAAEAAAAAAAAAAAFlK8FphqLs\u002f\u002f7WBh4Ly1j8AAAAAAABZQFVVVVVVVS9AAAAAAAAAEEAAAAAAAADwPwAAAAAAAAAAiyEf0kt3cD\u002fYDtHls6bYPwAAAAAAAFlAAAAAAACALUAAAAAAAAAAQAAAAAAAAPA\u002fAAAAAAAA8D8T1VniTSCWPwPbcx6af6i\u002fAAAAAAAASUAAAAAAAAAAwAAAAAAAAPA\u002fAAAAAAAA8D8AAAAAAAAAAEN34YFxs3E\u002fMERuGdgf0L8AAAAAAAAAAAAAAAAAACTA","shape":"51, 7"},"geo":"geo","hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003estate_abbr=%{location}\u003cbr\u003efindings_n=%{customdata[0]:,.0f}\u003cbr\u003estudies_n=%{customdata[1]:,.0f}\u003cbr\u003einterventions_n=%{customdata[2]:,.0f}\u003cbr\u003econtribution_share_pct=%{customdata[3]:.2f}\u003cbr\u003emean_effect_size_wwc=%{customdata[4]:.3f}\u003cbr\u003epct_positive_effect_size=%{z:.2f}\u003cbr\u003emean_improvement_index=%{customdata[6]:.2f}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Texas","California","New York","District of Columbia","Pennsylvania","Illinois","Georgia","Massachusetts","North Carolina","Ohio","Minnesota","Oklahoma","Kentucky","Florida","Louisiana","Washington","Maryland","Colorado","Missouri","Oregon","Arkansas","Tennessee","Wisconsin","Michigan","South Carolina","Kansas","New Jersey","Mississippi","New Mexico","Indiana","Maine","Virginia","West Virginia","Iowa","Arizona","Connecticut","Alabama","Nebraska","Nevada","Delaware","Utah","Idaho","Rhode Island","South Dakota","Alaska","Montana","New Hampshire","Vermont","Hawaii","Wyoming","North Dakota"],"locationmode":"USA-states","locations":["TX","CA","NY","DC","PA","IL","GA","MA","NC","OH","MN","OK","KY","FL","LA","WA","MD","CO","MO","OR","AR","TN","WI","MI","SC","KS","NJ","MS","NM","IN","ME","VA","WV","IA","AZ","CT","AL","NE","NV","DE","UT","ID","RI","SD","AK","MT","NH","VT","HI","WY","ND"],"name":"","z":{"dtype":"f8","bdata":"BlAhjL9lUUCYIp91g9lQQL8\u002fFQetuVJA\u002fiXicpPnUkCe2Imd2IlRQLnUdvZwnlBA75ga2DtmU0CENEiDNAhUQLp\u002fvpdCblFAuacRlnsaUkD6hBcShCpQQHsaYbmnUVJAc8acMWfMUkAAAAAAAMBSQOIgenwXDlBAzJDfy5DfUUDuDSgTV7pTQGjyZYMmX1BAbtu2bdv2UED0sohPIBVSQGAeWxE0nFVAcT4G52NwVkCjvrNR31lSQAUvp+DllFBAQY+UkFMBUkCDvqAv6EtRQIug4aTuy1FAz\u002fM8z\u002fMcUUDmW77lW75NQFpaWlpa2lNA9zTCck8jU0Ak7og74g5UQB988MEHX1JAmZmZmZmZUUBddNFFF91SQAAAAAAAgFFAJ3ZiJ3ZiVEDHcRzHcZxXQAAAAAAAAE9A11BeQ3kNVUA7sRM7sRNXQKqqqqqq6lZAwzAMwzAMU0AAAAAAAMBXQHZiJ3ZiJ1VAAAAAAAAAWUAAAAAAAABZQAAAAAAAAFlAAAAAAAAAWUAAAAAAAABJQAAAAAAAAAAA"},"type":"choropleth"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"geo":{"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"center":{},"scope":"usa"},"coloraxis":{"colorbar":{"title":{"text":"pct_positive_effect_size"}},"colorscale":[[0.0,"#30123b"],[0.07142857142857142,"#4145ab"],[0.14285714285714285,"#4675ed"],[0.21428571428571427,"#39a2fc"],[0.2857142857142857,"#1bcfd4"],[0.35714285714285715,"#24eca6"],[0.42857142857142855,"#61fc6c"],[0.5,"#a4fc3b"],[0.5714285714285714,"#d1e834"],[0.6428571428571429,"#f3c63a"],[0.7142857142857143,"#fe9b2d"],[0.7857142857142857,"#f36315"],[0.8571428571428571,"#d93806"],[0.9285714285714286,"#b11901"],[1.0,"#7a0402"]]},"legend":{"tracegroupgap":0},"title":{"text":"Multi-State Only: % Positive Findings by State"},"paper_bgcolor":"#ffffff","plot_bgcolor":"#ffffff"},                        {"responsive": true}                    )                };            </script>        </div></div>
+      </div>
+    </section>
+
+    <section class="grid2">
+      <div class="card">
+        <h2>State Breakdown (All Rows)</h2>
+        <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>state_abbr</th>
+      <th>state_name</th>
+      <th>findings_n</th>
+      <th>studies_n</th>
+      <th>interventions_n</th>
+      <th>contribution_share_pct</th>
+      <th>mean_effect_size_wwc</th>
+      <th>pct_positive_effect_size</th>
+      <th>mean_improvement_index</th>
+      <th>all_profile</th>
+      <th>ms_profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TX</td>
+      <td>Texas</td>
+      <td>1812</td>
+      <td>168</td>
+      <td>43</td>
+      <td>11.207</td>
+      <td>0.131</td>
+      <td>71.290</td>
+      <td>5.291</td>
+      <td><a href='state_profiles_original/TX_all_rows.html'>TX all</a></td>
+      <td><a href='state_profiles_original/TX_multistate_only.html'>TX multi</a></td>
+    </tr>
+    <tr>
+      <td>CA</td>
+      <td>California</td>
+      <td>1796</td>
+      <td>174</td>
+      <td>41</td>
+      <td>11.352</td>
+      <td>0.160</td>
+      <td>74.471</td>
+      <td>5.871</td>
+      <td><a href='state_profiles_original/CA_all_rows.html'>CA all</a></td>
+      <td><a href='state_profiles_original/CA_multistate_only.html'>CA multi</a></td>
+    </tr>
+    <tr>
+      <td>NY</td>
+      <td>New York</td>
+      <td>1735</td>
+      <td>126</td>
+      <td>27</td>
+      <td>12.437</td>
+      <td>0.189</td>
+      <td>80.902</td>
+      <td>6.556</td>
+      <td><a href='state_profiles_original/NY_all_rows.html'>NY all</a></td>
+      <td><a href='state_profiles_original/NY_multistate_only.html'>NY multi</a></td>
+    </tr>
+    <tr>
+      <td>PA</td>
+      <td>Pennsylvania</td>
+      <td>1066</td>
+      <td>80</td>
+      <td>24</td>
+      <td>5.964</td>
+      <td>0.144</td>
+      <td>71.489</td>
+      <td>5.449</td>
+      <td><a href='state_profiles_original/PA_all_rows.html'>PA all</a></td>
+      <td><a href='state_profiles_original/PA_multistate_only.html'>PA multi</a></td>
+    </tr>
+    <tr>
+      <td>NC</td>
+      <td>North Carolina</td>
+      <td>955</td>
+      <td>66</td>
+      <td>15</td>
+      <td>6.005</td>
+      <td>0.187</td>
+      <td>73.929</td>
+      <td>6.200</td>
+      <td><a href='state_profiles_original/NC_all_rows.html'>NC all</a></td>
+      <td><a href='state_profiles_original/NC_multistate_only.html'>NC multi</a></td>
+    </tr>
+    <tr>
+      <td>IL</td>
+      <td>Illinois</td>
+      <td>769</td>
+      <td>65</td>
+      <td>14</td>
+      <td>2.800</td>
+      <td>0.162</td>
+      <td>66.667</td>
+      <td>6.481</td>
+      <td><a href='state_profiles_original/IL_all_rows.html'>IL all</a></td>
+      <td><a href='state_profiles_original/IL_multistate_only.html'>IL multi</a></td>
+    </tr>
+    <tr>
+      <td>FL</td>
+      <td>Florida</td>
+      <td>731</td>
+      <td>103</td>
+      <td>44</td>
+      <td>5.512</td>
+      <td>0.163</td>
+      <td>71.831</td>
+      <td>5.342</td>
+      <td><a href='state_profiles_original/FL_all_rows.html'>FL all</a></td>
+      <td><a href='state_profiles_original/FL_multistate_only.html'>FL multi</a></td>
+    </tr>
+    <tr>
+      <td>MA</td>
+      <td>Massachusetts</td>
+      <td>720</td>
+      <td>64</td>
+      <td>15</td>
+      <td>2.932</td>
+      <td>0.203</td>
+      <td>79.130</td>
+      <td>7.717</td>
+      <td><a href='state_profiles_original/MA_all_rows.html'>MA all</a></td>
+      <td><a href='state_profiles_original/MA_multistate_only.html'>MA multi</a></td>
+    </tr>
+    <tr>
+      <td>DC</td>
+      <td>District of Columbia</td>
+      <td>651</td>
+      <td>34</td>
+      <td>6</td>
+      <td>1.353</td>
+      <td>0.146</td>
+      <td>75.945</td>
+      <td>5.580</td>
+      <td><a href='state_profiles_original/DC_all_rows.html'>DC all</a></td>
+      <td><a href='state_profiles_original/DC_multistate_only.html'>DC multi</a></td>
+    </tr>
+    <tr>
+      <td>OH</td>
+      <td>Ohio</td>
+      <td>613</td>
+      <td>55</td>
+      <td>18</td>
+      <td>3.724</td>
+      <td>0.239</td>
+      <td>74.046</td>
+      <td>7.363</td>
+      <td><a href='state_profiles_original/OH_all_rows.html'>OH all</a></td>
+      <td><a href='state_profiles_original/OH_multistate_only.html'>OH multi</a></td>
+    </tr>
+    <tr>
+      <td>GA</td>
+      <td>Georgia</td>
+      <td>604</td>
+      <td>39</td>
+      <td>17</td>
+      <td>1.408</td>
+      <td>0.185</td>
+      <td>76.435</td>
+      <td>7.042</td>
+      <td><a href='state_profiles_original/GA_all_rows.html'>GA all</a></td>
+      <td><a href='state_profiles_original/GA_multistate_only.html'>GA multi</a></td>
+    </tr>
+    <tr>
+      <td>TN</td>
+      <td>Tennessee</td>
+      <td>516</td>
+      <td>67</td>
+      <td>17</td>
+      <td>3.780</td>
+      <td>0.209</td>
+      <td>74.779</td>
+      <td>7.008</td>
+      <td><a href='state_profiles_original/TN_all_rows.html'>TN all</a></td>
+      <td><a href='state_profiles_original/TN_multistate_only.html'>TN multi</a></td>
+    </tr>
+    <tr>
+      <td>WA</td>
+      <td>Washington</td>
+      <td>505</td>
+      <td>48</td>
+      <td>23</td>
+      <td>2.959</td>
+      <td>0.195</td>
+      <td>65.239</td>
+      <td>6.282</td>
+      <td><a href='state_profiles_original/WA_all_rows.html'>WA all</a></td>
+      <td><a href='state_profiles_original/WA_multistate_only.html'>WA multi</a></td>
+    </tr>
+    <tr>
+      <td>MD</td>
+      <td>Maryland</td>
+      <td>469</td>
+      <td>51</td>
+      <td>19</td>
+      <td>3.019</td>
+      <td>0.253</td>
+      <td>78.641</td>
+      <td>7.596</td>
+      <td><a href='state_profiles_original/MD_all_rows.html'>MD all</a></td>
+      <td><a href='state_profiles_original/MD_multistate_only.html'>MD multi</a></td>
+    </tr>
+    <tr>
+      <td>MI</td>
+      <td>Michigan</td>
+      <td>434</td>
+      <td>37</td>
+      <td>16</td>
+      <td>2.488</td>
+      <td>0.137</td>
+      <td>65.607</td>
+      <td>4.932</td>
+      <td><a href='state_profiles_original/MI_all_rows.html'>MI all</a></td>
+      <td><a href='state_profiles_original/MI_multistate_only.html'>MI multi</a></td>
+    </tr>
+    <tr>
+      <td>OR</td>
+      <td>Oregon</td>
+      <td>432</td>
+      <td>42</td>
+      <td>12</td>
+      <td>2.481</td>
+      <td>0.240</td>
+      <td>78.947</td>
+      <td>8.309</td>
+      <td><a href='state_profiles_original/OR_all_rows.html'>OR all</a></td>
+      <td><a href='state_profiles_original/OR_multistate_only.html'>OR multi</a></td>
+    </tr>
+    <tr>
+      <td>LA</td>
+      <td>Louisiana</td>
+      <td>401</td>
+      <td>34</td>
+      <td>8</td>
+      <td>1.550</td>
+      <td>0.148</td>
+      <td>71.769</td>
+      <td>4.858</td>
+      <td><a href='state_profiles_original/LA_all_rows.html'>LA all</a></td>
+      <td><a href='state_profiles_original/LA_multistate_only.html'>LA multi</a></td>
+    </tr>
+    <tr>
+      <td>MN</td>
+      <td>Minnesota</td>
+      <td>372</td>
+      <td>32</td>
+      <td>10</td>
+      <td>1.110</td>
+      <td>0.111</td>
+      <td>66.667</td>
+      <td>3.793</td>
+      <td><a href='state_profiles_original/MN_all_rows.html'>MN all</a></td>
+      <td><a href='state_profiles_original/MN_multistate_only.html'>MN multi</a></td>
+    </tr>
+    <tr>
+      <td>KY</td>
+      <td>Kentucky</td>
+      <td>362</td>
+      <td>32</td>
+      <td>10</td>
+      <td>1.094</td>
+      <td>0.207</td>
+      <td>75.676</td>
+      <td>7.808</td>
+      <td><a href='state_profiles_original/KY_all_rows.html'>KY all</a></td>
+      <td><a href='state_profiles_original/KY_multistate_only.html'>KY multi</a></td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>Colorado</td>
+      <td>353</td>
+      <td>34</td>
+      <td>10</td>
+      <td>1.381</td>
+      <td>0.197</td>
+      <td>69.231</td>
+      <td>6.739</td>
+      <td><a href='state_profiles_original/CO_all_rows.html'>CO all</a></td>
+      <td><a href='state_profiles_original/CO_multistate_only.html'>CO multi</a></td>
+    </tr>
+    <tr>
+      <td>WI</td>
+      <td>Wisconsin</td>
+      <td>336</td>
+      <td>33</td>
+      <td>5</td>
+      <td>1.405</td>
+      <td>0.223</td>
+      <td>72.587</td>
+      <td>7.453</td>
+      <td><a href='state_profiles_original/WI_all_rows.html'>WI all</a></td>
+      <td><a href='state_profiles_original/WI_multistate_only.html'>WI multi</a></td>
+    </tr>
+    <tr>
+      <td>OK</td>
+      <td>Oklahoma</td>
+      <td>331</td>
+      <td>12</td>
+      <td>3</td>
+      <td>0.419</td>
+      <td>0.191</td>
+      <td>74.419</td>
+      <td>8.109</td>
+      <td><a href='state_profiles_original/OK_all_rows.html'>OK all</a></td>
+      <td><a href='state_profiles_original/OK_multistate_only.html'>OK multi</a></td>
+    </tr>
+    <tr>
+      <td>NJ</td>
+      <td>New Jersey</td>
+      <td>319</td>
+      <td>34</td>
+      <td>10</td>
+      <td>1.442</td>
+      <td>0.163</td>
+      <td>75.954</td>
+      <td>5.682</td>
+      <td><a href='state_profiles_original/NJ_all_rows.html'>NJ all</a></td>
+      <td><a href='state_profiles_original/NJ_multistate_only.html'>NJ multi</a></td>
+    </tr>
+    <tr>
+      <td>MO</td>
+      <td>Missouri</td>
+      <td>295</td>
+      <td>25</td>
+      <td>15</td>
+      <td>0.674</td>
+      <td>0.147</td>
+      <td>68.619</td>
+      <td>5.099</td>
+      <td><a href='state_profiles_original/MO_all_rows.html'>MO all</a></td>
+      <td><a href='state_profiles_original/MO_multistate_only.html'>MO multi</a></td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>Indiana</td>
+      <td>286</td>
+      <td>32</td>
+      <td>8</td>
+      <td>1.762</td>
+      <td>0.213</td>
+      <td>77.632</td>
+      <td>7.244</td>
+      <td><a href='state_profiles_original/IN_all_rows.html'>IN all</a></td>
+      <td><a href='state_profiles_original/IN_multistate_only.html'>IN multi</a></td>
+    </tr>
+    <tr>
+      <td>SC</td>
+      <td>South Carolina</td>
+      <td>278</td>
+      <td>23</td>
+      <td>12</td>
+      <td>0.800</td>
+      <td>0.185</td>
+      <td>74.486</td>
+      <td>6.365</td>
+      <td><a href='state_profiles_original/SC_all_rows.html'>SC all</a></td>
+      <td><a href='state_profiles_original/SC_multistate_only.html'>SC multi</a></td>
+    </tr>
+    <tr>
+      <td>NM</td>
+      <td>New Mexico</td>
+      <td>254</td>
+      <td>20</td>
+      <td>6</td>
+      <td>1.209</td>
+      <td>0.118</td>
+      <td>60.000</td>
+      <td>3.927</td>
+      <td><a href='state_profiles_original/NM_all_rows.html'>NM all</a></td>
+      <td><a href='state_profiles_original/NM_multistate_only.html'>NM multi</a></td>
+    </tr>
+    <tr>
+      <td>AR</td>
+      <td>Arkansas</td>
+      <td>254</td>
+      <td>9</td>
+      <td>2</td>
+      <td>0.345</td>
+      <td>0.128</td>
+      <td>84.375</td>
+      <td>8.124</td>
+      <td><a href='state_profiles_original/AR_all_rows.html'>AR all</a></td>
+      <td><a href='state_profiles_original/AR_multistate_only.html'>AR multi</a></td>
+    </tr>
+    <tr>
+      <td>KS</td>
+      <td>Kansas</td>
+      <td>233</td>
+      <td>14</td>
+      <td>8</td>
+      <td>0.425</td>
+      <td>0.167</td>
+      <td>67.213</td>
+      <td>6.051</td>
+      <td><a href='state_profiles_original/KS_all_rows.html'>KS all</a></td>
+      <td><a href='state_profiles_original/KS_multistate_only.html'>KS multi</a></td>
+    </tr>
+    <tr>
+      <td>VA</td>
+      <td>Virginia</td>
+      <td>228</td>
+      <td>37</td>
+      <td>11</td>
+      <td>1.341</td>
+      <td>0.107</td>
+      <td>74.214</td>
+      <td>4.192</td>
+      <td><a href='state_profiles_original/VA_all_rows.html'>VA all</a></td>
+      <td><a href='state_profiles_original/VA_multistate_only.html'>VA multi</a></td>
+    </tr>
+    <tr>
+      <td>MS</td>
+      <td>Mississippi</td>
+      <td>214</td>
+      <td>14</td>
+      <td>8</td>
+      <td>0.204</td>
+      <td>0.139</td>
+      <td>68.824</td>
+      <td>4.794</td>
+      <td><a href='state_profiles_original/MS_all_rows.html'>MS all</a></td>
+      <td><a href='state_profiles_original/MS_multistate_only.html'>MS multi</a></td>
+    </tr>
+    <tr>
+      <td>AZ</td>
+      <td>Arizona</td>
+      <td>180</td>
+      <td>27</td>
+      <td>9</td>
+      <td>0.762</td>
+      <td>0.221</td>
+      <td>78.146</td>
+      <td>7.311</td>
+      <td><a href='state_profiles_original/AZ_all_rows.html'>AZ all</a></td>
+      <td><a href='state_profiles_original/AZ_multistate_only.html'>AZ multi</a></td>
+    </tr>
+    <tr>
+      <td>ME</td>
+      <td>Maine</td>
+      <td>174</td>
+      <td>11</td>
+      <td>0</td>
+      <td>0.206</td>
+      <td>0.184</td>
+      <td>76.552</td>
+      <td>6.875</td>
+      <td><a href='state_profiles_original/ME_all_rows.html'>ME all</a></td>
+      <td><a href='state_profiles_original/ME_multistate_only.html'>ME multi</a></td>
+    </tr>
+    <tr>
+      <td>IA</td>
+      <td>Iowa</td>
+      <td>159</td>
+      <td>7</td>
+      <td>2</td>
+      <td>0.229</td>
+      <td>0.195</td>
+      <td>72.662</td>
+      <td>7.317</td>
+      <td><a href='state_profiles_original/IA_all_rows.html'>IA all</a></td>
+      <td><a href='state_profiles_original/IA_multistate_only.html'>IA multi</a></td>
+    </tr>
+    <tr>
+      <td>WV</td>
+      <td>West Virginia</td>
+      <td>154</td>
+      <td>12</td>
+      <td>1</td>
+      <td>0.158</td>
+      <td>0.178</td>
+      <td>72.263</td>
+      <td>6.774</td>
+      <td><a href='state_profiles_original/WV_all_rows.html'>WV all</a></td>
+      <td><a href='state_profiles_original/WV_multistate_only.html'>WV multi</a></td>
+    </tr>
+    <tr>
+      <td>CT</td>
+      <td>Connecticut</td>
+      <td>124</td>
+      <td>18</td>
+      <td>7</td>
+      <td>0.419</td>
+      <td>0.136</td>
+      <td>72.727</td>
+      <td>5.073</td>
+      <td><a href='state_profiles_original/CT_all_rows.html'>CT all</a></td>
+      <td><a href='state_profiles_original/CT_multistate_only.html'>CT multi</a></td>
+    </tr>
+    <tr>
+      <td>AL</td>
+      <td>Alabama</td>
+      <td>107</td>
+      <td>22</td>
+      <td>6</td>
+      <td>0.396</td>
+      <td>0.177</td>
+      <td>80.460</td>
+      <td>7.308</td>
+      <td><a href='state_profiles_original/AL_all_rows.html'>AL all</a></td>
+      <td><a href='state_profiles_original/AL_multistate_only.html'>AL multi</a></td>
+    </tr>
+    <tr>
+      <td>UT</td>
+      <td>Utah</td>
+      <td>86</td>
+      <td>21</td>
+      <td>4</td>
+      <td>0.732</td>
+      <td>0.368</td>
+      <td>87.500</td>
+      <td>13.055</td>
+      <td><a href='state_profiles_original/UT_all_rows.html'>UT all</a></td>
+      <td><a href='state_profiles_original/UT_multistate_only.html'>UT multi</a></td>
+    </tr>
+    <tr>
+      <td>NE</td>
+      <td>Nebraska</td>
+      <td>85</td>
+      <td>11</td>
+      <td>5</td>
+      <td>0.398</td>
+      <td>0.181</td>
+      <td>89.655</td>
+      <td>6.306</td>
+      <td><a href='state_profiles_original/NE_all_rows.html'>NE all</a></td>
+      <td><a href='state_profiles_original/NE_multistate_only.html'>NE multi</a></td>
+    </tr>
+    <tr>
+      <td>NV</td>
+      <td>Nevada</td>
+      <td>73</td>
+      <td>8</td>
+      <td>5</td>
+      <td>0.190</td>
+      <td>0.066</td>
+      <td>59.649</td>
+      <td>2.681</td>
+      <td><a href='state_profiles_original/NV_all_rows.html'>NV all</a></td>
+      <td><a href='state_profiles_original/NV_multistate_only.html'>NV multi</a></td>
+    </tr>
+    <tr>
+      <td>AK</td>
+      <td>Alaska</td>
+      <td>60</td>
+      <td>5</td>
+      <td>3</td>
+      <td>0.541</td>
+      <td>0.178</td>
+      <td>72.881</td>
+      <td>6.475</td>
+      <td><a href='state_profiles_original/AK_all_rows.html'>AK all</a></td>
+      <td><a href='state_profiles_original/AK_multistate_only.html'>AK multi</a></td>
+    </tr>
+    <tr>
+      <td>DE</td>
+      <td>Delaware</td>
+      <td>44</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0.122</td>
+      <td>0.117</td>
+      <td>85.714</td>
+      <td>3.523</td>
+      <td><a href='state_profiles_original/DE_all_rows.html'>DE all</a></td>
+      <td><a href='state_profiles_original/DE_multistate_only.html'>DE multi</a></td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>Idaho</td>
+      <td>34</td>
+      <td>6</td>
+      <td>3</td>
+      <td>0.100</td>
+      <td>0.244</td>
+      <td>80.645</td>
+      <td>9.032</td>
+      <td><a href='state_profiles_original/ID_all_rows.html'>ID all</a></td>
+      <td><a href='state_profiles_original/ID_multistate_only.html'>ID multi</a></td>
+    </tr>
+    <tr>
+      <td>HI</td>
+      <td>Hawaii</td>
+      <td>32</td>
+      <td>5</td>
+      <td>2</td>
+      <td>0.317</td>
+      <td>0.156</td>
+      <td>63.636</td>
+      <td>13.281</td>
+      <td><a href='state_profiles_original/HI_all_rows.html'>HI all</a></td>
+      <td><a href='state_profiles_original/HI_multistate_only.html'>HI multi</a></td>
+    </tr>
+    <tr>
+      <td>VT</td>
+      <td>Vermont</td>
+      <td>31</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.299</td>
+      <td>0.285</td>
+      <td>89.474</td>
+      <td>10.526</td>
+      <td><a href='state_profiles_original/VT_all_rows.html'>VT all</a></td>
+      <td><a href='state_profiles_original/VT_multistate_only.html'>VT multi</a></td>
+    </tr>
+    <tr>
+      <td>RI</td>
+      <td>Rhode Island</td>
+      <td>29</td>
+      <td>6</td>
+      <td>2</td>
+      <td>0.141</td>
+      <td>0.232</td>
+      <td>78.571</td>
+      <td>8.607</td>
+      <td><a href='state_profiles_original/RI_all_rows.html'>RI all</a></td>
+      <td><a href='state_profiles_original/RI_multistate_only.html'>RI multi</a></td>
+    </tr>
+    <tr>
+      <td>NH</td>
+      <td>New Hampshire</td>
+      <td>25</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0.204</td>
+      <td>0.060</td>
+      <td>55.556</td>
+      <td>3.190</td>
+      <td><a href='state_profiles_original/NH_all_rows.html'>NH all</a></td>
+      <td><a href='state_profiles_original/NH_multistate_only.html'>NH multi</a></td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>South Dakota</td>
+      <td>20</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.059</td>
+      <td>0.207</td>
+      <td>95.000</td>
+      <td>8.050</td>
+      <td><a href='state_profiles_original/SD_all_rows.html'>SD all</a></td>
+      <td><a href='state_profiles_original/SD_multistate_only.html'>SD multi</a></td>
+    </tr>
+    <tr>
+      <td>WY</td>
+      <td>Wyoming</td>
+      <td>14</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.141</td>
+      <td>0.626</td>
+      <td>92.857</td>
+      <td>22.643</td>
+      <td><a href='state_profiles_original/WY_all_rows.html'>WY all</a></td>
+      <td><a href='state_profiles_original/WY_multistate_only.html'>WY multi</a></td>
+    </tr>
+    <tr>
+      <td>MT</td>
+      <td>Montana</td>
+      <td>12</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.005</td>
+      <td>0.335</td>
+      <td>100.000</td>
+      <td>13.000</td>
+      <td><a href='state_profiles_original/MT_all_rows.html'>MT all</a></td>
+      <td><a href='state_profiles_original/MT_multistate_only.html'>MT multi</a></td>
+    </tr>
+    <tr>
+      <td>ND</td>
+      <td>North Dakota</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.001</td>
+      <td>-0.252</td>
+      <td>0.000</td>
+      <td>-10.000</td>
+      <td><a href='state_profiles_original/ND_all_rows.html'>ND all</a></td>
+      <td><a href='state_profiles_original/ND_multistate_only.html'>ND multi</a></td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="card">
+        <h2>State Breakdown (Multi-State Only)</h2>
+        <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>state_abbr</th>
+      <th>state_name</th>
+      <th>findings_n</th>
+      <th>studies_n</th>
+      <th>interventions_n</th>
+      <th>contribution_share_pct</th>
+      <th>mean_effect_size_wwc</th>
+      <th>pct_positive_effect_size</th>
+      <th>mean_improvement_index</th>
+      <th>all_profile</th>
+      <th>ms_profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TX</td>
+      <td>Texas</td>
+      <td>1067</td>
+      <td>85</td>
+      <td>23</td>
+      <td>10.708</td>
+      <td>0.138</td>
+      <td>69.590</td>
+      <td>4.977</td>
+      <td><a href='state_profiles_original/TX_all_rows.html'>TX all</a></td>
+      <td><a href='state_profiles_original/TX_multistate_only.html'>TX multi</a></td>
+    </tr>
+    <tr>
+      <td>CA</td>
+      <td>California</td>
+      <td>1000</td>
+      <td>83</td>
+      <td>23</td>
+      <td>9.062</td>
+      <td>0.112</td>
+      <td>67.399</td>
+      <td>4.943</td>
+      <td><a href='state_profiles_original/CA_all_rows.html'>CA all</a></td>
+      <td><a href='state_profiles_original/CA_multistate_only.html'>CA multi</a></td>
+    </tr>
+    <tr>
+      <td>NY</td>
+      <td>New York</td>
+      <td>820</td>
+      <td>53</td>
+      <td>18</td>
+      <td>8.072</td>
+      <td>0.174</td>
+      <td>74.901</td>
+      <td>6.446</td>
+      <td><a href='state_profiles_original/NY_all_rows.html'>NY all</a></td>
+      <td><a href='state_profiles_original/NY_multistate_only.html'>NY multi</a></td>
+    </tr>
+    <tr>
+      <td>DC</td>
+      <td>District of Columbia</td>
+      <td>643</td>
+      <td>32</td>
+      <td>6</td>
+      <td>4.834</td>
+      <td>0.147</td>
+      <td>75.618</td>
+      <td>5.599</td>
+      <td><a href='state_profiles_original/DC_all_rows.html'>DC all</a></td>
+      <td><a href='state_profiles_original/DC_multistate_only.html'>DC multi</a></td>
+    </tr>
+    <tr>
+      <td>PA</td>
+      <td>Pennsylvania</td>
+      <td>640</td>
+      <td>40</td>
+      <td>11</td>
+      <td>4.421</td>
+      <td>0.161</td>
+      <td>70.154</td>
+      <td>5.966</td>
+      <td><a href='state_profiles_original/PA_all_rows.html'>PA all</a></td>
+      <td><a href='state_profiles_original/PA_multistate_only.html'>PA multi</a></td>
+    </tr>
+    <tr>
+      <td>IL</td>
+      <td>Illinois</td>
+      <td>629</td>
+      <td>37</td>
+      <td>11</td>
+      <td>4.669</td>
+      <td>0.173</td>
+      <td>66.476</td>
+      <td>6.752</td>
+      <td><a href='state_profiles_original/IL_all_rows.html'>IL all</a></td>
+      <td><a href='state_profiles_original/IL_multistate_only.html'>IL multi</a></td>
+    </tr>
+    <tr>
+      <td>GA</td>
+      <td>Georgia</td>
+      <td>569</td>
+      <td>31</td>
+      <td>15</td>
+      <td>3.880</td>
+      <td>0.183</td>
+      <td>77.597</td>
+      <td>7.061</td>
+      <td><a href='state_profiles_original/GA_all_rows.html'>GA all</a></td>
+      <td><a href='state_profiles_original/GA_multistate_only.html'>GA multi</a></td>
+    </tr>
+    <tr>
+      <td>MA</td>
+      <td>Massachusetts</td>
+      <td>557</td>
+      <td>35</td>
+      <td>11</td>
+      <td>4.180</td>
+      <td>0.232</td>
+      <td>80.128</td>
+      <td>8.381</td>
+      <td><a href='state_profiles_original/MA_all_rows.html'>MA all</a></td>
+      <td><a href='state_profiles_original/MA_multistate_only.html'>MA multi</a></td>
+    </tr>
+    <tr>
+      <td>NC</td>
+      <td>North Carolina</td>
+      <td>539</td>
+      <td>33</td>
+      <td>8</td>
+      <td>5.011</td>
+      <td>0.124</td>
+      <td>69.723</td>
+      <td>4.781</td>
+      <td><a href='state_profiles_original/NC_all_rows.html'>NC all</a></td>
+      <td><a href='state_profiles_original/NC_multistate_only.html'>NC multi</a></td>
+    </tr>
+    <tr>
+      <td>OH</td>
+      <td>Ohio</td>
+      <td>364</td>
+      <td>31</td>
+      <td>11</td>
+      <td>3.496</td>
+      <td>0.275</td>
+      <td>72.414</td>
+      <td>7.941</td>
+      <td><a href='state_profiles_original/OH_all_rows.html'>OH all</a></td>
+      <td><a href='state_profiles_original/OH_multistate_only.html'>OH multi</a></td>
+    </tr>
+    <tr>
+      <td>MN</td>
+      <td>Minnesota</td>
+      <td>327</td>
+      <td>20</td>
+      <td>7</td>
+      <td>2.306</td>
+      <td>0.099</td>
+      <td>64.664</td>
+      <td>3.238</td>
+      <td><a href='state_profiles_original/MN_all_rows.html'>MN all</a></td>
+      <td><a href='state_profiles_original/MN_multistate_only.html'>MN multi</a></td>
+    </tr>
+    <tr>
+      <td>OK</td>
+      <td>Oklahoma</td>
+      <td>318</td>
+      <td>8</td>
+      <td>2</td>
+      <td>1.042</td>
+      <td>0.189</td>
+      <td>73.276</td>
+      <td>8.091</td>
+      <td><a href='state_profiles_original/OK_all_rows.html'>OK all</a></td>
+      <td><a href='state_profiles_original/OK_multistate_only.html'>OK multi</a></td>
+    </tr>
+    <tr>
+      <td>KY</td>
+      <td>Kentucky</td>
+      <td>317</td>
+      <td>23</td>
+      <td>9</td>
+      <td>2.244</td>
+      <td>0.203</td>
+      <td>75.194</td>
+      <td>7.408</td>
+      <td><a href='state_profiles_original/KY_all_rows.html'>KY all</a></td>
+      <td><a href='state_profiles_original/KY_multistate_only.html'>KY multi</a></td>
+    </tr>
+    <tr>
+      <td>FL</td>
+      <td>Florida</td>
+      <td>311</td>
+      <td>35</td>
+      <td>19</td>
+      <td>2.952</td>
+      <td>0.100</td>
+      <td>75.000</td>
+      <td>3.011</td>
+      <td><a href='state_profiles_original/FL_all_rows.html'>FL all</a></td>
+      <td><a href='state_profiles_original/FL_multistate_only.html'>FL multi</a></td>
+    </tr>
+    <tr>
+      <td>LA</td>
+      <td>Louisiana</td>
+      <td>310</td>
+      <td>23</td>
+      <td>6</td>
+      <td>2.002</td>
+      <td>0.127</td>
+      <td>64.220</td>
+      <td>4.030</td>
+      <td><a href='state_profiles_original/LA_all_rows.html'>LA all</a></td>
+      <td><a href='state_profiles_original/LA_multistate_only.html'>LA multi</a></td>
+    </tr>
+    <tr>
+      <td>WA</td>
+      <td>Washington</td>
+      <td>280</td>
+      <td>22</td>
+      <td>10</td>
+      <td>1.605</td>
+      <td>0.160</td>
+      <td>71.493</td>
+      <td>5.641</td>
+      <td><a href='state_profiles_original/WA_all_rows.html'>WA all</a></td>
+      <td><a href='state_profiles_original/WA_multistate_only.html'>WA multi</a></td>
+    </tr>
+    <tr>
+      <td>MD</td>
+      <td>Maryland</td>
+      <td>264</td>
+      <td>27</td>
+      <td>9</td>
+      <td>2.699</td>
+      <td>0.201</td>
+      <td>78.912</td>
+      <td>4.496</td>
+      <td><a href='state_profiles_original/MD_all_rows.html'>MD all</a></td>
+      <td><a href='state_profiles_original/MD_multistate_only.html'>MD multi</a></td>
+    </tr>
+    <tr>
+      <td>CO</td>
+      <td>Colorado</td>
+      <td>263</td>
+      <td>20</td>
+      <td>6</td>
+      <td>1.396</td>
+      <td>0.168</td>
+      <td>65.487</td>
+      <td>5.734</td>
+      <td><a href='state_profiles_original/CO_all_rows.html'>CO all</a></td>
+      <td><a href='state_profiles_original/CO_multistate_only.html'>CO multi</a></td>
+    </tr>
+    <tr>
+      <td>MO</td>
+      <td>Missouri</td>
+      <td>260</td>
+      <td>17</td>
+      <td>9</td>
+      <td>1.069</td>
+      <td>0.151</td>
+      <td>67.857</td>
+      <td>5.038</td>
+      <td><a href='state_profiles_original/MO_all_rows.html'>MO all</a></td>
+      <td><a href='state_profiles_original/MO_multistate_only.html'>MO multi</a></td>
+    </tr>
+    <tr>
+      <td>OR</td>
+      <td>Oregon</td>
+      <td>251</td>
+      <td>20</td>
+      <td>7</td>
+      <td>1.677</td>
+      <td>0.199</td>
+      <td>72.330</td>
+      <td>6.750</td>
+      <td><a href='state_profiles_original/OR_all_rows.html'>OR all</a></td>
+      <td><a href='state_profiles_original/OR_multistate_only.html'>OR multi</a></td>
+    </tr>
+    <tr>
+      <td>AR</td>
+      <td>Arkansas</td>
+      <td>249</td>
+      <td>8</td>
+      <td>2</td>
+      <td>1.105</td>
+      <td>0.140</td>
+      <td>86.441</td>
+      <td>8.305</td>
+      <td><a href='state_profiles_original/AR_all_rows.html'>AR all</a></td>
+      <td><a href='state_profiles_original/AR_multistate_only.html'>AR multi</a></td>
+    </tr>
+    <tr>
+      <td>TN</td>
+      <td>Tennessee</td>
+      <td>243</td>
+      <td>39</td>
+      <td>9</td>
+      <td>2.675</td>
+      <td>0.301</td>
+      <td>89.756</td>
+      <td>10.078</td>
+      <td><a href='state_profiles_original/TN_all_rows.html'>TN all</a></td>
+      <td><a href='state_profiles_original/TN_multistate_only.html'>TN multi</a></td>
+    </tr>
+    <tr>
+      <td>WI</td>
+      <td>Wisconsin</td>
+      <td>241</td>
+      <td>15</td>
+      <td>3</td>
+      <td>1.272</td>
+      <td>0.266</td>
+      <td>73.404</td>
+      <td>8.109</td>
+      <td><a href='state_profiles_original/WI_all_rows.html'>WI all</a></td>
+      <td><a href='state_profiles_original/WI_multistate_only.html'>WI multi</a></td>
+    </tr>
+    <tr>
+      <td>MI</td>
+      <td>Michigan</td>
+      <td>239</td>
+      <td>24</td>
+      <td>11</td>
+      <td>1.098</td>
+      <td>0.160</td>
+      <td>66.327</td>
+      <td>5.696</td>
+      <td><a href='state_profiles_original/MI_all_rows.html'>MI all</a></td>
+      <td><a href='state_profiles_original/MI_multistate_only.html'>MI multi</a></td>
+    </tr>
+    <tr>
+      <td>SC</td>
+      <td>South Carolina</td>
+      <td>225</td>
+      <td>16</td>
+      <td>9</td>
+      <td>0.772</td>
+      <td>0.171</td>
+      <td>72.021</td>
+      <td>5.774</td>
+      <td><a href='state_profiles_original/SC_all_rows.html'>SC all</a></td>
+      <td><a href='state_profiles_original/SC_multistate_only.html'>SC multi</a></td>
+    </tr>
+    <tr>
+      <td>KS</td>
+      <td>Kansas</td>
+      <td>220</td>
+      <td>10</td>
+      <td>6</td>
+      <td>1.064</td>
+      <td>0.175</td>
+      <td>69.186</td>
+      <td>6.424</td>
+      <td><a href='state_profiles_original/KS_all_rows.html'>KS all</a></td>
+      <td><a href='state_profiles_original/KS_multistate_only.html'>KS multi</a></td>
+    </tr>
+    <tr>
+      <td>NJ</td>
+      <td>New Jersey</td>
+      <td>216</td>
+      <td>21</td>
+      <td>5</td>
+      <td>1.071</td>
+      <td>0.197</td>
+      <td>71.186</td>
+      <td>7.076</td>
+      <td><a href='state_profiles_original/NJ_all_rows.html'>NJ all</a></td>
+      <td><a href='state_profiles_original/NJ_multistate_only.html'>NJ multi</a></td>
+    </tr>
+    <tr>
+      <td>MS</td>
+      <td>Mississippi</td>
+      <td>210</td>
+      <td>13</td>
+      <td>8</td>
+      <td>0.608</td>
+      <td>0.140</td>
+      <td>68.452</td>
+      <td>4.811</td>
+      <td><a href='state_profiles_original/MS_all_rows.html'>MS all</a></td>
+      <td><a href='state_profiles_original/MS_multistate_only.html'>MS multi</a></td>
+    </tr>
+    <tr>
+      <td>NM</td>
+      <td>New Mexico</td>
+      <td>204</td>
+      <td>12</td>
+      <td>4</td>
+      <td>2.467</td>
+      <td>0.108</td>
+      <td>59.487</td>
+      <td>3.343</td>
+      <td><a href='state_profiles_original/NM_all_rows.html'>NM all</a></td>
+      <td><a href='state_profiles_original/NM_multistate_only.html'>NM multi</a></td>
+    </tr>
+    <tr>
+      <td>IN</td>
+      <td>Indiana</td>
+      <td>190</td>
+      <td>20</td>
+      <td>6</td>
+      <td>2.598</td>
+      <td>0.217</td>
+      <td>79.412</td>
+      <td>7.747</td>
+      <td><a href='state_profiles_original/IN_all_rows.html'>IN all</a></td>
+      <td><a href='state_profiles_original/IN_multistate_only.html'>IN multi</a></td>
+    </tr>
+    <tr>
+      <td>ME</td>
+      <td>Maine</td>
+      <td>173</td>
+      <td>10</td>
+      <td>0</td>
+      <td>0.745</td>
+      <td>0.184</td>
+      <td>76.552</td>
+      <td>6.874</td>
+      <td><a href='state_profiles_original/ME_all_rows.html'>ME all</a></td>
+      <td><a href='state_profiles_original/ME_multistate_only.html'>ME multi</a></td>
+    </tr>
+    <tr>
+      <td>VA</td>
+      <td>Virginia</td>
+      <td>154</td>
+      <td>23</td>
+      <td>7</td>
+      <td>1.935</td>
+      <td>0.141</td>
+      <td>80.233</td>
+      <td>4.784</td>
+      <td><a href='state_profiles_original/VA_all_rows.html'>VA all</a></td>
+      <td><a href='state_profiles_original/VA_multistate_only.html'>VA multi</a></td>
+    </tr>
+    <tr>
+      <td>WV</td>
+      <td>West Virginia</td>
+      <td>149</td>
+      <td>9</td>
+      <td>1</td>
+      <td>0.390</td>
+      <td>0.181</td>
+      <td>73.485</td>
+      <td>6.856</td>
+      <td><a href='state_profiles_original/WV_all_rows.html'>WV all</a></td>
+      <td><a href='state_profiles_original/WV_multistate_only.html'>WV multi</a></td>
+    </tr>
+    <tr>
+      <td>IA</td>
+      <td>Iowa</td>
+      <td>145</td>
+      <td>5</td>
+      <td>2</td>
+      <td>0.273</td>
+      <td>0.202</td>
+      <td>70.400</td>
+      <td>7.560</td>
+      <td><a href='state_profiles_original/IA_all_rows.html'>IA all</a></td>
+      <td><a href='state_profiles_original/IA_multistate_only.html'>IA multi</a></td>
+    </tr>
+    <tr>
+      <td>AZ</td>
+      <td>Arizona</td>
+      <td>139</td>
+      <td>19</td>
+      <td>7</td>
+      <td>1.145</td>
+      <td>0.230</td>
+      <td>75.455</td>
+      <td>7.252</td>
+      <td><a href='state_profiles_original/AZ_all_rows.html'>AZ all</a></td>
+      <td><a href='state_profiles_original/AZ_multistate_only.html'>AZ multi</a></td>
+    </tr>
+    <tr>
+      <td>CT</td>
+      <td>Connecticut</td>
+      <td>106</td>
+      <td>14</td>
+      <td>7</td>
+      <td>0.825</td>
+      <td>0.131</td>
+      <td>70.000</td>
+      <td>4.915</td>
+      <td><a href='state_profiles_original/CT_all_rows.html'>CT all</a></td>
+      <td><a href='state_profiles_original/CT_multistate_only.html'>CT multi</a></td>
+    </tr>
+    <tr>
+      <td>AL</td>
+      <td>Alabama</td>
+      <td>82</td>
+      <td>15</td>
+      <td>4</td>
+      <td>0.434</td>
+      <td>0.165</td>
+      <td>81.538</td>
+      <td>7.405</td>
+      <td><a href='state_profiles_original/AL_all_rows.html'>AL all</a></td>
+      <td><a href='state_profiles_original/AL_multistate_only.html'>AL multi</a></td>
+    </tr>
+    <tr>
+      <td>NE</td>
+      <td>Nebraska</td>
+      <td>63</td>
+      <td>7</td>
+      <td>2</td>
+      <td>0.574</td>
+      <td>0.175</td>
+      <td>94.444</td>
+      <td>5.921</td>
+      <td><a href='state_profiles_original/NE_all_rows.html'>NE all</a></td>
+      <td><a href='state_profiles_original/NE_multistate_only.html'>NE multi</a></td>
+    </tr>
+    <tr>
+      <td>NV</td>
+      <td>Nevada</td>
+      <td>62</td>
+      <td>5</td>
+      <td>4</td>
+      <td>0.253</td>
+      <td>0.057</td>
+      <td>62.000</td>
+      <td>1.290</td>
+      <td><a href='state_profiles_original/NV_all_rows.html'>NV all</a></td>
+      <td><a href='state_profiles_original/NV_multistate_only.html'>NV multi</a></td>
+    </tr>
+    <tr>
+      <td>DE</td>
+      <td>Delaware</td>
+      <td>41</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0.337</td>
+      <td>0.121</td>
+      <td>84.211</td>
+      <td>3.805</td>
+      <td><a href='state_profiles_original/DE_all_rows.html'>DE all</a></td>
+      <td><a href='state_profiles_original/DE_multistate_only.html'>DE multi</a></td>
+    </tr>
+    <tr>
+      <td>UT</td>
+      <td>Utah</td>
+      <td>27</td>
+      <td>6</td>
+      <td>2</td>
+      <td>0.251</td>
+      <td>0.434</td>
+      <td>92.308</td>
+      <td>13.692</td>
+      <td><a href='state_profiles_original/UT_all_rows.html'>UT all</a></td>
+      <td><a href='state_profiles_original/UT_multistate_only.html'>UT multi</a></td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>Idaho</td>
+      <td>27</td>
+      <td>5</td>
+      <td>3</td>
+      <td>0.079</td>
+      <td>0.312</td>
+      <td>91.667</td>
+      <td>11.500</td>
+      <td><a href='state_profiles_original/ID_all_rows.html'>ID all</a></td>
+      <td><a href='state_profiles_original/ID_multistate_only.html'>ID multi</a></td>
+    </tr>
+    <tr>
+      <td>RI</td>
+      <td>Rhode Island</td>
+      <td>22</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.236</td>
+      <td>0.138</td>
+      <td>76.190</td>
+      <td>5.429</td>
+      <td><a href='state_profiles_original/RI_all_rows.html'>RI all</a></td>
+      <td><a href='state_profiles_original/RI_multistate_only.html'>RI multi</a></td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>South Dakota</td>
+      <td>20</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.225</td>
+      <td>0.207</td>
+      <td>95.000</td>
+      <td>8.050</td>
+      <td><a href='state_profiles_original/SD_all_rows.html'>SD all</a></td>
+      <td><a href='state_profiles_original/SD_multistate_only.html'>SD multi</a></td>
+    </tr>
+    <tr>
+      <td>AK</td>
+      <td>Alaska</td>
+      <td>13</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.039</td>
+      <td>0.378</td>
+      <td>84.615</td>
+      <td>13.538</td>
+      <td><a href='state_profiles_original/AK_all_rows.html'>AK all</a></td>
+      <td><a href='state_profiles_original/AK_multistate_only.html'>AK multi</a></td>
+    </tr>
+    <tr>
+      <td>MT</td>
+      <td>Montana</td>
+      <td>12</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.018</td>
+      <td>0.335</td>
+      <td>100.000</td>
+      <td>13.000</td>
+      <td><a href='state_profiles_original/MT_all_rows.html'>MT all</a></td>
+      <td><a href='state_profiles_original/MT_multistate_only.html'>MT multi</a></td>
+    </tr>
+    <tr>
+      <td>NH</td>
+      <td>New Hampshire</td>
+      <td>8</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0.047</td>
+      <td>0.385</td>
+      <td>100.000</td>
+      <td>14.750</td>
+      <td><a href='state_profiles_original/NH_all_rows.html'>NH all</a></td>
+      <td><a href='state_profiles_original/NH_multistate_only.html'>NH multi</a></td>
+    </tr>
+    <tr>
+      <td>VT</td>
+      <td>Vermont</td>
+      <td>7</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0.108</td>
+      <td>0.359</td>
+      <td>100.000</td>
+      <td>15.667</td>
+      <td><a href='state_profiles_original/VT_all_rows.html'>VT all</a></td>
+      <td><a href='state_profiles_original/VT_multistate_only.html'>VT multi</a></td>
+    </tr>
+    <tr>
+      <td>HI</td>
+      <td>Hawaii</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.004</td>
+      <td>0.385</td>
+      <td>100.000</td>
+      <td>14.750</td>
+      <td><a href='state_profiles_original/HI_all_rows.html'>HI all</a></td>
+      <td><a href='state_profiles_original/HI_multistate_only.html'>HI multi</a></td>
+    </tr>
+    <tr>
+      <td>WY</td>
+      <td>Wyoming</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.022</td>
+      <td>-0.048</td>
+      <td>50.000</td>
+      <td>-2.000</td>
+      <td><a href='state_profiles_original/WY_all_rows.html'>WY all</a></td>
+      <td><a href='state_profiles_original/WY_multistate_only.html'>WY multi</a></td>
+    </tr>
+    <tr>
+      <td>ND</td>
+      <td>North Dakota</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.004</td>
+      <td>-0.252</td>
+      <td>0.000</td>
+      <td>-10.000</td>
+      <td><a href='state_profiles_original/ND_all_rows.html'>ND all</a></td>
+      <td><a href='state_profiles_original/ND_multistate_only.html'>ND multi</a></td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

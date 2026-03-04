@@ -1,0 +1,358 @@
+state_abbr,topic,findings_n
+AK,K to 12th Grade,13
+AK,STEM,9
+AK,Teachers And School Leaders,4
+AL,High School Completion,12
+AL,K to 12th Grade,58
+AL,Literacy,20
+AL,Postsecondary,19
+AL,STEM,31
+AL,Social Emotional Learning And Behavior,24
+AL,Teachers And School Leaders,10
+AR,High School Completion,12
+AR,K to 12th Grade,55
+AR,Literacy,26
+AR,Postsecondary,17
+AR,STEM,30
+AR,Social Emotional Learning And Behavior,24
+AR,Teachers And School Leaders,8
+AZ,ELL,30
+AZ,Early Childhood,4
+AZ,High School Completion,4
+AZ,K to 12th Grade,87
+AZ,Literacy,78
+AZ,Postsecondary,6
+AZ,STEM,20
+AZ,Social Emotional Learning And Behavior,9
+AZ,Teachers And School Leaders,8
+CA,ELL,17
+CA,Early Childhood,21
+CA,High School Completion,263
+CA,K to 12th Grade,282
+CA,Literacy,306
+CA,Postsecondary,191
+CA,STEM,238
+CA,SWD,21
+CA,Social Emotional Learning And Behavior,245
+CA,Teachers And School Leaders,54
+CO,ELL,7
+CO,High School Completion,151
+CO,K to 12th Grade,77
+CO,Literacy,89
+CO,Postsecondary,2
+CO,STEM,60
+CO,Social Emotional Learning And Behavior,130
+CO,Teachers And School Leaders,16
+CT,High School Completion,4
+CT,K to 12th Grade,74
+CT,Literacy,13
+CT,Postsecondary,24
+CT,STEM,76
+DC,Early Childhood,7
+DC,High School Completion,259
+DC,K to 12th Grade,164
+DC,Literacy,165
+DC,Postsecondary,103
+DC,STEM,128
+DC,Social Emotional Learning And Behavior,165
+DC,Teachers And School Leaders,9
+DE,Early Childhood,40
+DE,STEM,8
+DE,SWD,33
+FL,ELL,11
+FL,Early Childhood,41
+FL,High School Completion,86
+FL,K to 12th Grade,164
+FL,Literacy,78
+FL,Postsecondary,86
+FL,STEM,94
+FL,SWD,33
+FL,Social Emotional Learning And Behavior,52
+FL,Teachers And School Leaders,57
+GA,Early Childhood,9
+GA,High School Completion,202
+GA,K to 12th Grade,179
+GA,Literacy,116
+GA,Postsecondary,90
+GA,STEM,75
+GA,SWD,11
+GA,Social Emotional Learning And Behavior,149
+GA,Teachers And School Leaders,4
+HI,K to 12th Grade,4
+HI,Teachers And School Leaders,4
+IA,High School Completion,118
+IA,K to 12th Grade,21
+IA,Postsecondary,6
+IA,STEM,17
+IA,Social Emotional Learning And Behavior,118
+IA,Teachers And School Leaders,4
+ID,K to 12th Grade,27
+ID,Literacy,6
+ID,STEM,17
+ID,Teachers And School Leaders,4
+IL,ELL,39
+IL,Early Childhood,21
+IL,High School Completion,131
+IL,K to 12th Grade,144
+IL,Literacy,186
+IL,Postsecondary,60
+IL,STEM,107
+IL,Social Emotional Learning And Behavior,167
+IL,Teachers And School Leaders,60
+IN,Early Childhood,22
+IN,High School Completion,44
+IN,K to 12th Grade,93
+IN,Literacy,39
+IN,Postsecondary,50
+IN,STEM,21
+IN,SWD,40
+IN,Social Emotional Learning And Behavior,58
+IN,Teachers And School Leaders,4
+KS,ELL,2
+KS,Early Childhood,9
+KS,High School Completion,118
+KS,K to 12th Grade,51
+KS,Literacy,44
+KS,Postsecondary,42
+KS,STEM,17
+KS,Social Emotional Learning And Behavior,122
+KS,Teachers And School Leaders,4
+KY,Early Childhood,22
+KY,High School Completion,126
+KY,K to 12th Grade,88
+KY,Literacy,17
+KY,Postsecondary,42
+KY,STEM,89
+KY,SWD,40
+KY,Social Emotional Learning And Behavior,183
+KY,Teachers And School Leaders,7
+LA,Early Childhood,4
+LA,High School Completion,130
+LA,K to 12th Grade,73
+LA,Literacy,67
+LA,Postsecondary,68
+LA,STEM,66
+LA,Social Emotional Learning And Behavior,150
+LA,Teachers And School Leaders,40
+MA,ELL,14
+MA,Early Childhood,4
+MA,High School Completion,227
+MA,K to 12th Grade,167
+MA,Literacy,78
+MA,Postsecondary,113
+MA,STEM,83
+MA,SWD,9
+MA,Social Emotional Learning And Behavior,127
+MA,Teachers And School Leaders,14
+MD,Early Childhood,7
+MD,High School Completion,134
+MD,K to 12th Grade,97
+MD,Literacy,42
+MD,Postsecondary,159
+MD,STEM,49
+MD,Social Emotional Learning And Behavior,20
+MD,Teachers And School Leaders,11
+ME,High School Completion,142
+ME,K to 12th Grade,34
+ME,Literacy,20
+ME,Postsecondary,17
+ME,STEM,25
+ME,Social Emotional Learning And Behavior,140
+ME,Teachers And School Leaders,7
+MI,High School Completion,120
+MI,K to 12th Grade,94
+MI,Literacy,40
+MI,Postsecondary,22
+MI,STEM,46
+MI,Social Emotional Learning And Behavior,129
+MI,Teachers And School Leaders,4
+MN,Early Childhood,28
+MN,High School Completion,165
+MN,K to 12th Grade,126
+MN,Literacy,64
+MN,Postsecondary,40
+MN,STEM,83
+MN,SWD,25
+MN,Social Emotional Learning And Behavior,165
+MN,Teachers And School Leaders,35
+MO,Early Childhood,4
+MO,High School Completion,133
+MO,K to 12th Grade,115
+MO,Literacy,46
+MO,Postsecondary,15
+MO,STEM,54
+MO,Social Emotional Learning And Behavior,154
+MO,Teachers And School Leaders,14
+MS,High School Completion,119
+MS,K to 12th Grade,73
+MS,Literacy,31
+MS,STEM,70
+MS,Social Emotional Learning And Behavior,118
+MS,Teachers And School Leaders,6
+MT,K to 12th Grade,12
+MT,STEM,8
+MT,Teachers And School Leaders,4
+NC,ELL,2
+NC,Early Childhood,34
+NC,High School Completion,164
+NC,K to 12th Grade,182
+NC,Literacy,115
+NC,Postsecondary,98
+NC,STEM,210
+NC,SWD,54
+NC,Social Emotional Learning And Behavior,206
+NC,Teachers And School Leaders,44
+ND,Literacy,1
+ND,STEM,1
+NE,Early Childhood,33
+NE,High School Completion,8
+NE,K to 12th Grade,15
+NE,Literacy,17
+NE,Postsecondary,8
+NE,STEM,1
+NE,SWD,33
+NE,Teachers And School Leaders,10
+NH,High School Completion,4
+NH,K to 12th Grade,8
+NH,Postsecondary,4
+NH,Teachers And School Leaders,4
+NJ,Early Childhood,16
+NJ,High School Completion,131
+NJ,K to 12th Grade,41
+NJ,Literacy,33
+NJ,Postsecondary,3
+NJ,STEM,53
+NJ,Social Emotional Learning And Behavior,130
+NJ,Teachers And School Leaders,22
+NM,High School Completion,16
+NM,K to 12th Grade,97
+NM,Literacy,48
+NM,Postsecondary,15
+NM,STEM,136
+NM,Teachers And School Leaders,10
+NV,K to 12th Grade,51
+NV,STEM,58
+NV,Teachers And School Leaders,4
+NY,ELL,9
+NY,Early Childhood,21
+NY,High School Completion,268
+NY,K to 12th Grade,181
+NY,Literacy,209
+NY,Postsecondary,176
+NY,STEM,215
+NY,Social Emotional Learning And Behavior,174
+NY,Teachers And School Leaders,28
+OH,Early Childhood,6
+OH,High School Completion,240
+OH,K to 12th Grade,107
+OH,Literacy,57
+OH,Postsecondary,118
+OH,STEM,49
+OH,SWD,5
+OH,Social Emotional Learning And Behavior,132
+OH,Teachers And School Leaders,32
+OK,High School Completion,118
+OK,K to 12th Grade,17
+OK,Literacy,9
+OK,STEM,9
+OK,Social Emotional Learning And Behavior,118
+OK,Teachers And School Leaders,4
+OR,ELL,5
+OR,Early Childhood,48
+OR,High School Completion,123
+OR,K to 12th Grade,59
+OR,Literacy,24
+OR,Postsecondary,7
+OR,STEM,16
+OR,SWD,39
+OR,Social Emotional Learning And Behavior,175
+OR,Teachers And School Leaders,29
+PA,Early Childhood,44
+PA,High School Completion,245
+PA,K to 12th Grade,174
+PA,Literacy,84
+PA,Postsecondary,157
+PA,STEM,63
+PA,SWD,54
+PA,Social Emotional Learning And Behavior,157
+PA,Teachers And School Leaders,7
+RI,K to 12th Grade,4
+RI,Literacy,2
+RI,Postsecondary,2
+RI,Teachers And School Leaders,4
+SC,High School Completion,128
+SC,K to 12th Grade,89
+SC,Literacy,19
+SC,Postsecondary,9
+SC,STEM,73
+SC,SWD,4
+SC,Social Emotional Learning And Behavior,119
+SC,Teachers And School Leaders,8
+SD,High School Completion,8
+SD,K to 12th Grade,5
+SD,Literacy,8
+SD,Postsecondary,8
+SD,Teachers And School Leaders,4
+TN,Early Childhood,1
+TN,High School Completion,37
+TN,K to 12th Grade,117
+TN,Literacy,100
+TN,Postsecondary,10
+TN,STEM,131
+TN,SWD,25
+TN,Social Emotional Learning And Behavior,61
+TN,Teachers And School Leaders,38
+TX,ELL,40
+TX,High School Completion,208
+TX,K to 12th Grade,420
+TX,Literacy,299
+TX,Postsecondary,212
+TX,STEM,427
+TX,Social Emotional Learning And Behavior,107
+TX,Teachers And School Leaders,37
+UT,High School Completion,9
+UT,K to 12th Grade,13
+UT,Literacy,7
+UT,Postsecondary,9
+UT,STEM,1
+UT,Social Emotional Learning And Behavior,8
+UT,Teachers And School Leaders,6
+VA,ELL,8
+VA,Early Childhood,42
+VA,High School Completion,7
+VA,K to 12th Grade,67
+VA,Literacy,61
+VA,Postsecondary,18
+VA,STEM,72
+VA,SWD,39
+VA,Teachers And School Leaders,10
+VT,High School Completion,4
+VT,K to 12th Grade,4
+VT,Postsecondary,4
+VT,STEM,3
+WA,Early Childhood,63
+WA,High School Completion,148
+WA,K to 12th Grade,85
+WA,Literacy,41
+WA,Postsecondary,9
+WA,STEM,31
+WA,SWD,84
+WA,Social Emotional Learning And Behavior,165
+WA,Teachers And School Leaders,29
+WI,High School Completion,137
+WI,K to 12th Grade,47
+WI,Literacy,54
+WI,Postsecondary,18
+WI,STEM,53
+WI,SWD,8
+WI,Social Emotional Learning And Behavior,153
+WI,Teachers And School Leaders,9
+WV,Early Childhood,7
+WV,High School Completion,118
+WV,K to 12th Grade,12
+WV,Literacy,3
+WV,STEM,11
+WV,Social Emotional Learning And Behavior,131
+WV,Teachers And School Leaders,4
+WY,K to 12th Grade,2
+WY,STEM,2
