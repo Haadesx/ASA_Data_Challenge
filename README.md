@@ -12,6 +12,7 @@ This repository contains:
 - Landing page: `index.html`
 - Dashboard file: `Urvi_Analysis/dashboard/data_readiness_dashboard.html`
 - Documentation (formatted HTML): `Urvi_Analysis/WWC_Project_Documentation_InDepth.html`
+- Methods and math report (formatted HTML): `Urvi_Analysis/Original_Multistate_Methods_Report.html`
 - Data products index: `Urvi_Analysis/data_products/index.html`
 - Outputs index: `outputs_ctx/index.html`
 

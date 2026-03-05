@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Original WWC State Signal - Methods, Thought Process, and Results</title>
+<style>
+body{margin:0;font-family:'IBM Plex Sans','Segoe UI',Arial,sans-serif;background:#f4f8ff;color:#0f172a;line-height:1.45}
+.wrap{max-width:1200px;margin:0 auto;padding:24px}
+.hero{background:linear-gradient(120deg,#0f172a 0%,#1d4ed8 55%,#0891b2 100%);color:#fff;border-radius:14px;padding:20px;box-shadow:0 10px 28px rgba(15,23,42,.2)}
+h1{margin:0 0 8px 0;font-size:30px}
+.sub{color:#dbeafe;font-size:14px}
+.card{background:#fff;border:1px solid #dbe4f0;border-radius:12px;padding:16px;margin-top:14px;box-shadow:0 3px 10px rgba(15,23,42,.05)}
+h2{margin:0 0 10px 0;font-size:20px}
+h3{margin:14px 0 8px 0;font-size:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.kpi{display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;border-radius:999px;padding:6px 12px;margin:4px 8px 4px 0;font-size:13px;font-weight:600}
+.code{font-family:'IBM Plex Mono',Consolas,monospace;background:#f8fafc;padding:2px 6px;border-radius:6px;border:1px solid #e2e8f0}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{border-bottom:1px solid #e2e8f0;padding:7px;text-align:left;vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.3px;color:#475569;background:#f8fafc}
+a{color:#1d4ed8;text-decoration:none}
+a:hover{text-decoration:underline}
+@media (max-width:980px){.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class='wrap'>
+  <section class='hero'>
+    <h1>Original WWC State Signal: Thought Process, Math, and Results</h1>
+    <div class='sub'>Built for ASA Data Challenge | Uses only original WWC export, not teammate-aggregated file.</div>
+  </section>
+
+  <section class='card'>
+    <h2>Thought Process</h2>
+    <p>We needed to answer "what works for whom" without over-claiming causality from aggregated evidence. The core risk was <b>signal blur</b>: many rows list multiple states, so naive state counts and averages can overstate or misattribute signal.</p>
+    <p>So we built two complementary views:</p>
+    <div class='kpi'>All state-coded rows</div>
+    <div class='kpi'>Multi-state-only rows (decomposition view)</div>
+    <p>This lets us check if patterns are stable or shift when we isolate multi-state evidence.</p>
+  </section>
+
+  <section class='card'>
+    <h2>Exact Mathematical Methods</h2>
+    <h3>1) State extraction from original one-hot flags</h3>
+    <p>For each finding row <span class='code'>i</span>, define state set:</p>
+    <p class='code'>S_i = { s : s_Region_State_s = 1 }</p>
+    <p>Let <span class='code'>k_i = |S_i|</span>. Keep rows with <span class='code'>k_i &gt; 0</span>. Multi-state subset <span class='code'>M = { i : k_i ≥ 2 }</span>.</p>
+
+    <h3>2) Exploded state view and weights</h3>
+    <p>Create exploded pairs <span class='code'>(i,s)</span> for each <span class='code'>s ∈ S_i</span>. Assign row weight:</p>
+    <p class='code'>w_(i,s) = 1 / k_i</p>
+    <p>This ensures each original row contributes total weight 1 across all its states.</p>
+
+    <h3>3) State metrics (scope = all_rows or multistate_only)</h3>
+    <p class='code'>findings_n(s) = |{ findingID_i : (i,s) in E_scope }|</p>
+    <p class='code'>studies_n(s) = |{ studyID_i : (i,s) in E_scope }|</p>
+    <p class='code'>interventions_n(s) = |{ interventionID_i : (i,s) in E_scope }|</p>
+    <p class='code'>weighted_finding_contribution(s) = Σ_(i,s in E_scope) w_(i,s)</p>
+    <p class='code'>contribution_share_pct(s) = 100 * weighted_finding_contribution(s) / Σ_s' weighted_finding_contribution(s')</p>
+    <p class='code'>weighted_outcome_sample(s) = Σ_(i,s in E_scope) w_(i,s) * outcome_sample_i</p>
+    <p class='code'>mean_effect_size_wwc(s) = mean(effect_i)</p>
+    <p class='code'>pct_positive_effect_size(s) = 100 * mean(1[effect_i &gt; 0])</p>
+    <p class='code'>mean_improvement_index(s) = mean(improvement_i)</p>
+    <p>Means and positive-rate are over non-null numeric values.</p>
+
+    <h3>4) Target-state intervention summaries (NY, NJ, CA, TX)</h3>
+    <p>For target state <span class='code'>t</span> in multi-state subset:</p>
+    <p class='code'>R_t = { i in M : t in S_i }</p>
+    <p>Then group by intervention to compute findings, studies, mean effect, median effect, positive-rate, and mean improvement.</p>
+  </section>
+
+  <section class='card'>
+    <h2>Results We Are Seeing</h2>
+    <p><b>Geographic concentration:</b> TX + CA + NY + PA contribute <b>40.959%</b> of weighted state contribution.</p>
+    <div class='grid2'>
+      <div>
+        <h3>Top States (All Rows)</h3>
+        <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>state_abbr</th>
+      <th>findings_n</th>
+      <th>studies_n</th>
+      <th>interventions_n</th>
+      <th>contribution_share_pct</th>
+      <th>mean_effect_size_wwc</th>
+      <th>pct_positive_effect_size</th>
+      <th>mean_improvement_index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TX</td>
+      <td>1812</td>
+      <td>168</td>
+      <td>43</td>
+      <td>11.207</td>
+      <td>0.131</td>
+      <td>71.290</td>
+      <td>5.291</td>
+    </tr>
+    <tr>
+      <td>CA</td>
+      <td>1796</td>
+      <td>174</td>
+      <td>41</td>
+      <td>11.352</td>
+      <td>0.160</td>
+      <td>74.471</td>
+      <td>5.871</td>
+    </tr>
+    <tr>
+      <td>NY</td>
+      <td>1735</td>
+      <td>126</td>
+      <td>27</td>
+      <td>12.437</td>
+      <td>0.189</td>
+      <td>80.902</td>
+      <td>6.556</td>
+    </tr>
+    <tr>
+      <td>PA</td>
+      <td>1066</td>
+      <td>80</td>
+      <td>24</td>
+      <td>5.964</td>
+      <td>0.144</td>
+      <td>71.489</td>
+      <td>5.449</td>
+    </tr>
+    <tr>
+      <td>NC</td>
+      <td>955</td>
+      <td>66</td>
+      <td>15</td>
+      <td>6.005</td>
+      <td>0.187</td>
+      <td>73.929</td>
+      <td>6.200</td>
+    </tr>
+    <tr>
+      <td>IL</td>
+      <td>769</td>
+      <td>65</td>
+      <td>14</td>
+      <td>2.800</td>
+      <td>0.162</td>
+      <td>66.667</td>
+      <td>6.481</td>
+    </tr>
+    <tr>
+      <td>FL</td>
+      <td>731</td>
+      <td>103</td>
+      <td>44</td>
+      <td>5.512</td>
+      <td>0.163</td>
+      <td>71.831</td>
+      <td>5.342</td>
+    </tr>
+    <tr>
+      <td>MA</td>
+      <td>720</td>
+      <td>64</td>
+      <td>15</td>
+      <td>2.932</td>
+      <td>0.203</td>
+      <td>79.130</td>
+      <td>7.717</td>
+    </tr>
+    <tr>
+      <td>DC</td>
+      <td>651</td>
+      <td>34</td>
+      <td>6</td>
+      <td>1.353</td>
+      <td>0.146</td>
+      <td>75.945</td>
+      <td>5.580</td>
+    </tr>
+    <tr>
+      <td>OH</td>
+      <td>613</td>
+      <td>55</td>
+      <td>18</td>
+      <td>3.724</td>
+      <td>0.239</td>
+      <td>74.046</td>
+      <td>7.363</td>
+    </tr>
+    <tr>
+      <td>GA</td>
+      <td>604</td>
+      <td>39</td>
+      <td>17</td>
+      <td>1.408</td>
+      <td>0.185</td>
+      <td>76.435</td>
+      <td>7.042</td>
+    </tr>
+    <tr>
+      <td>TN</td>
+      <td>516</td>
+      <td>67</td>
+      <td>17</td>
+      <td>3.780</td>
+      <td>0.209</td>
+      <td>74.779</td>
+      <td>7.008</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div>
+        <h3>Top States (Multi-State Only)</h3>
+        <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>state_abbr</th>
+      <th>findings_n</th>
+      <th>studies_n</th>
+      <th>interventions_n</th>
+      <th>contribution_share_pct</th>
+      <th>mean_effect_size_wwc</th>
+      <th>pct_positive_effect_size</th>
+      <th>mean_improvement_index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TX</td>
+      <td>1067</td>
+      <td>85</td>
+      <td>23</td>
+      <td>10.708</td>
+      <td>0.138</td>
+      <td>69.590</td>
+      <td>4.977</td>
+    </tr>
+    <tr>
+      <td>CA</td>
+      <td>1000</td>
+      <td>83</td>
+      <td>23</td>
+      <td>9.062</td>
+      <td>0.112</td>
+      <td>67.399</td>
+      <td>4.943</td>
+    </tr>
+    <tr>
+      <td>NY</td>
+      <td>820</td>
+      <td>53</td>
+      <td>18</td>
+      <td>8.072</td>
+      <td>0.174</td>
+      <td>74.901</td>
+      <td>6.446</td>
+    </tr>
+    <tr>
+      <td>DC</td>
+      <td>643</td>
+      <td>32</td>
+      <td>6</td>
+      <td>4.834</td>
+      <td>0.147</td>
+      <td>75.618</td>
+      <td>5.599</td>
+    </tr>
+    <tr>
+      <td>PA</td>
+      <td>640</td>
+      <td>40</td>
+      <td>11</td>
+      <td>4.421</td>
+      <td>0.161</td>
+      <td>70.154</td>
+      <td>5.966</td>
+    </tr>
+    <tr>
+      <td>IL</td>
+      <td>629</td>
+      <td>37</td>
+      <td>11</td>
+      <td>4.669</td>
+      <td>0.173</td>
+      <td>66.476</td>
+      <td>6.752</td>
+    </tr>
+    <tr>
+      <td>GA</td>
+      <td>569</td>
+      <td>31</td>
+      <td>15</td>
+      <td>3.880</td>
+      <td>0.183</td>
+      <td>77.597</td>
+      <td>7.061</td>
+    </tr>
+    <tr>
+      <td>MA</td>
+      <td>557</td>
+      <td>35</td>
+      <td>11</td>
+      <td>4.180</td>
+      <td>0.232</td>
+      <td>80.128</td>
+      <td>8.381</td>
+    </tr>
+    <tr>
+      <td>NC</td>
+      <td>539</td>
+      <td>33</td>
+      <td>8</td>
+      <td>5.011</td>
+      <td>0.124</td>
+      <td>69.723</td>
+      <td>4.781</td>
+    </tr>
+    <tr>
+      <td>OH</td>
+      <td>364</td>
+      <td>31</td>
+      <td>11</td>
+      <td>3.496</td>
+      <td>0.275</td>
+      <td>72.414</td>
+      <td>7.941</td>
+    </tr>
+    <tr>
+      <td>MN</td>
+      <td>327</td>
+      <td>20</td>
+      <td>7</td>
+      <td>2.306</td>
+      <td>0.099</td>
+      <td>64.664</td>
+      <td>3.238</td>
+    </tr>
+    <tr>
+      <td>OK</td>
+      <td>318</td>
+      <td>8</td>
+      <td>2</td>
+      <td>1.042</td>
+      <td>0.189</td>
+      <td>73.276</td>
+      <td>8.091</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+
+    <h3>Target States (NY, NJ, CA, TX) - Multi-State-Only</h3>
+    <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>state_abbr</th>
+      <th>findings_n</th>
+      <th>studies_n</th>
+      <th>interventions_n</th>
+      <th>mean_effect_size_wwc</th>
+      <th>pct_positive_effect_size</th>
+      <th>mean_improvement_index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NY</td>
+      <td>820</td>
+      <td>53</td>
+      <td>18</td>
+      <td>0.174</td>
+      <td>74.901</td>
+      <td>6.446</td>
+    </tr>
+    <tr>
+      <td>NJ</td>
+      <td>216</td>
+      <td>21</td>
+      <td>5</td>
+      <td>0.197</td>
+      <td>71.186</td>
+      <td>7.076</td>
+    </tr>
+    <tr>
+      <td>CA</td>
+      <td>1000</td>
+      <td>83</td>
+      <td>23</td>
+      <td>0.112</td>
+      <td>67.399</td>
+      <td>4.943</td>
+    </tr>
+    <tr>
+      <td>TX</td>
+      <td>1067</td>
+      <td>85</td>
+      <td>23</td>
+      <td>0.138</td>
+      <td>69.590</td>
+      <td>4.977</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h3>Cross-State Intervention Spread (support threshold applied)</h3>
+    <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>intervention_name</th>
+      <th>states</th>
+      <th>n_total</th>
+      <th>max_eff</th>
+      <th>min_eff</th>
+      <th>spread</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Knowledge is Power Program (KIPP)</td>
+      <td>4</td>
+      <td>114</td>
+      <td>0.235</td>
+      <td>0.2</td>
+      <td>0.035</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h3>Top Multi-State Combinations by Findings</h3>
+    <table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>state_combo</th>
+      <th>findings_n</th>
+      <th>studies_n</th>
+      <th>interventions_n</th>
+      <th>mean_effect_size_wwc</th>
+      <th>pct_positive_effect_size</th>
+      <th>mean_improvement_index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AR | CA | DC | GA | IL | MA | NY | OK | PA | TX</td>
+      <td>176</td>
+      <td>1</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>8.824</td>
+    </tr>
+    <tr>
+      <td>NC | NM | TX</td>
+      <td>125</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.042</td>
+      <td>64.000</td>
+      <td>1.696</td>
+    </tr>
+    <tr>
+      <td>CA | CO | DC | GA | IA | IL | KS | KY | LA | MA | ME | MI | MN | MO | MS | NC | NJ | NY | OH | OK | OR | PA | SC | WA | WI | WV</td>
+      <td>118</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.187</td>
+      <td>69.307</td>
+      <td>7.050</td>
+    </tr>
+    <tr>
+      <td>NY | OH</td>
+      <td>82</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0.349</td>
+      <td>71.951</td>
+      <td>8.512</td>
+    </tr>
+    <tr>
+      <td>CA | DC | FL | MD | PA | TX</td>
+      <td>76</td>
+      <td>3</td>
+      <td>1</td>
+      <td>0.042</td>
+      <td>72.727</td>
+      <td>1.677</td>
+    </tr>
+    <tr>
+      <td>CA | NC | PA</td>
+      <td>65</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0.014</td>
+      <td>56.364</td>
+      <td>0.545</td>
+    </tr>
+    <tr>
+      <td>TN | TX</td>
+      <td>57</td>
+      <td>11</td>
+      <td>0</td>
+      <td>0.442</td>
+      <td>94.737</td>
+      <td>16.544</td>
+    </tr>
+    <tr>
+      <td>CT | FL | KY | MN | MO | MS | NV | NY | SC | TX</td>
+      <td>45</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.033</td>
+      <td>57.576</td>
+      <td>0.133</td>
+    </tr>
+    <tr>
+      <td>CA | NY</td>
+      <td>45</td>
+      <td>7</td>
+      <td>1</td>
+      <td>-0.013</td>
+      <td>83.871</td>
+      <td>6.205</td>
+    </tr>
+    <tr>
+      <td>GA | MA</td>
+      <td>41</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.067</td>
+      <td>80.000</td>
+      <td>3.024</td>
+    </tr>
+    <tr>
+      <td>IN | KY</td>
+      <td>40</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.260</td>
+      <td>90.000</td>
+      <td>10.025</td>
+    </tr>
+    <tr>
+      <td>IL | KS | KY | LA</td>
+      <td>36</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.231</td>
+      <td>80.000</td>
+      <td>8.850</td>
+    </tr>
+  </tbody>
+</table>
+  </section>
+
+  <section class='card'>
+    <h2>How This Connects to the ASA Task</h2>
+    <p>These outputs are directly aligned to "what works for whom": they show how effectiveness changes across contexts (states), and where evidence density is heavy vs thin. This supports a concrete transportability question:</p>
+    <p><b>Do interventions validated in one state context retain effectiveness in another context?</b></p>
+    <p>Live visuals:</p>
+    <p><a href='./dashboard/original_map_only_dashboard.html'>Map-only USA EDA</a> | <a href='./dashboard/original_full_state_eda_dashboard.html'>Full state EDA</a> | <a href='./dashboard/multistate_original_signal_dashboard.html'>Multi-state signal dashboard</a></p>
+  </section>
+</div>
+</body>
+</html>
