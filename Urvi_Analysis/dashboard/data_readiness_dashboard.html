@@ -53,6 +53,28 @@
     .decision .value { margin-top: 4px; font-size: 24px; font-weight: 700; }
     .score { text-align: right; font-family: "IBM Plex Mono", monospace; font-size: 30px; font-weight: 600; }
     .score small { display: block; font-family: "IBM Plex Sans"; font-size: 12px; color: #dbeafe; }
+    .quicknav h2 { margin: 0 0 8px; font-size: 15px; }
+    .quicknav-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(170px, 1fr));
+      gap: 10px;
+    }
+    .quicknav a {
+      display: block;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: #f8fbff;
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 13px;
+      transition: all .15s ease;
+    }
+    .quicknav a:hover {
+      border-color: #bfdbfe;
+      background: #eef4ff;
+    }
 
     .kpis {
       margin-top: 14px;
@@ -118,6 +140,7 @@
       .hero-grid, .grid2, .grid2eq { grid-template-columns: 1fr; }
       .kpis { grid-template-columns: repeat(2, minmax(140px,1fr)); }
       .score { text-align: left; }
+      .quicknav-grid { grid-template-columns: repeat(2, minmax(150px, 1fr)); }
     }
   </style>
 </head>
@@ -136,6 +159,20 @@
           68.9/100
           <small>Composite Readiness Score</small>
         </div>
+      </div>
+    </section>
+
+    <section class="card quicknav">
+      <h2>Project Navigation</h2>
+      <div class="quicknav-grid">
+        <a href="../../index.html">Home</a>
+        <a href="./original_map_only_dashboard.html">Original Map-Only EDA</a>
+        <a href="./original_full_state_eda_dashboard.html">Original Full State EDA</a>
+        <a href="./multistate_original_signal_dashboard.html">Multi-State Signal</a>
+        <a href="../Original_Multistate_Methods_Report.html">Methods and Math Report</a>
+        <a href="../WWC_Project_Documentation_InDepth.html">In-Depth Documentation</a>
+        <a href="../data_products/index.html">Data Products</a>
+        <a href="../../outputs_ctx/index.html">Model Outputs</a>
       </div>
     </section>
 
