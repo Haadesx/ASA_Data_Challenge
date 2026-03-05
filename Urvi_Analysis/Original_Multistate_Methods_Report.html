@@ -5,23 +5,101 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <title>Original WWC State Signal - Methods, Thought Process, and Results</title>
 <style>
-body{margin:0;font-family:'IBM Plex Sans','Segoe UI',Arial,sans-serif;background:#f4f8ff;color:#0f172a;line-height:1.45}
-.wrap{max-width:1200px;margin:0 auto;padding:24px}
-.hero{background:linear-gradient(120deg,#0f172a 0%,#1d4ed8 55%,#0891b2 100%);color:#fff;border-radius:14px;padding:20px;box-shadow:0 10px 28px rgba(15,23,42,.2)}
-h1{margin:0 0 8px 0;font-size:30px}
+:root{
+  --ink:#0f172a;
+  --muted:#475569;
+  --line:#dbe4f0;
+  --line-soft:#e7edf7;
+  --brand:#1d4ed8;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'IBM Plex Sans','Segoe UI',Arial,sans-serif;
+  color:var(--ink);
+  line-height:1.45;
+  background:
+    radial-gradient(1200px 600px at -10% -30%,#c7d2fe 0%,transparent 65%),
+    radial-gradient(1000px 520px at 110% -20%,#bfdbfe 0%,transparent 65%),
+    #f4f8ff;
+}
+.wrap{max-width:1320px;margin:0 auto;padding:24px 18px 36px}
+.hero{
+  background:linear-gradient(120deg,#0f172a 0%,#1d4ed8 55%,#0891b2 100%);
+  color:#fff;
+  border-radius:16px;
+  padding:22px;
+  box-shadow:0 12px 30px rgba(15,23,42,.2)
+}
+h1{margin:0 0 8px 0;font-size:30px;line-height:1.2}
 .sub{color:#dbeafe;font-size:14px}
-.card{background:#fff;border:1px solid #dbe4f0;border-radius:12px;padding:16px;margin-top:14px;box-shadow:0 3px 10px rgba(15,23,42,.05)}
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:18px;
+  margin-top:14px;
+  box-shadow:0 5px 16px rgba(15,23,42,.06)
+}
 h2{margin:0 0 10px 0;font-size:20px}
 h3{margin:14px 0 8px 0;font-size:16px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.kpi{display:inline-block;background:#eef2ff;border:1px solid #c7d2fe;border-radius:999px;padding:6px 12px;margin:4px 8px 4px 0;font-size:13px;font-weight:600}
-.code{font-family:'IBM Plex Mono',Consolas,monospace;background:#f8fafc;padding:2px 6px;border-radius:6px;border:1px solid #e2e8f0}
-table{width:100%;border-collapse:collapse;font-size:13px}
-th,td{border-bottom:1px solid #e2e8f0;padding:7px;text-align:left;vertical-align:top}
-th{font-size:12px;text-transform:uppercase;letter-spacing:.3px;color:#475569;background:#f8fafc}
-a{color:#1d4ed8;text-decoration:none}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(560px,1fr));gap:14px}
+.kpi{
+  display:inline-block;
+  background:#eef2ff;
+  border:1px solid #c7d2fe;
+  border-radius:999px;
+  padding:6px 12px;
+  margin:4px 8px 4px 0;
+  font-size:13px;
+  font-weight:600
+}
+.code{
+  font-family:'IBM Plex Mono',Consolas,monospace;
+  background:#f8fafc;
+  padding:2px 6px;
+  border-radius:6px;
+  border:1px solid #e2e8f0
+}
+.table-wrap{
+  width:100%;
+  overflow-x:auto;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.8);
+}
+table{
+  width:100%;
+  min-width:860px;
+  border-collapse:separate;
+  border-spacing:0;
+  font-size:13px
+}
+th,td{border-bottom:1px solid var(--line-soft);padding:8px 10px;vertical-align:top}
+th{
+  position:sticky;
+  top:0;
+  z-index:1;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.3px;
+  color:var(--muted);
+  background:#f2f6fc;
+  text-align:left
+}
+tbody tr:nth-child(even) td{background:#fcfdff}
+td:first-child,th:first-child{text-align:left}
+td:not(:first-child),th:not(:first-child){text-align:right;white-space:nowrap}
+.combo-table td:first-child,.combo-table th:first-child{white-space:normal;min-width:320px;max-width:440px;line-height:1.35}
+a{color:var(--brand);text-decoration:none}
 a:hover{text-decoration:underline}
-@media (max-width:980px){.grid2{grid-template-columns:1fr}}
+@media (max-width:980px){
+  .wrap{padding:16px 10px 24px}
+  h1{font-size:26px}
+  .grid2{grid-template-columns:1fr}
+  table{min-width:720px}
+}
 </style>
 </head>
 <body>
@@ -565,5 +643,24 @@ a:hover{text-decoration:underline}
     <p><a href='./dashboard/original_map_only_dashboard.html'>Map-only USA EDA</a> | <a href='./dashboard/original_full_state_eda_dashboard.html'>Full state EDA</a> | <a href='./dashboard/multistate_original_signal_dashboard.html'>Multi-state signal dashboard</a></p>
   </section>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("table").forEach(function (table) {
+    if (!table.parentElement || !table.parentElement.classList.contains("table-wrap")) {
+      var wrapper = document.createElement("div");
+      wrapper.className = "table-wrap";
+      table.parentNode.insertBefore(wrapper, table);
+      wrapper.appendChild(table);
+    }
+  });
+
+  document.querySelectorAll("table").forEach(function (table) {
+    var firstHeader = table.querySelector("th");
+    if (firstHeader && firstHeader.textContent.trim().toLowerCase() === "state_combo") {
+      table.classList.add("combo-table");
+    }
+  });
+});
+</script>
 </body>
 </html>
