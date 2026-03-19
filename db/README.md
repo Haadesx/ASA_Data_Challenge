@@ -12,7 +12,21 @@ This setup loads two datasets into PostgreSQL via Docker:
 - Query-friendly, sanitized lowercase column names
 - Explicit source-to-db mapping in `db/column_mappings/*.csv`
 
-## Start
+## Start (recommended)
+
+```bash
+./db/start.sh
+```
+
+What `./db/start.sh` does:
+
+- Checks Docker daemon availability
+- Attempts to start Docker Desktop on macOS if needed
+- Runs `docker compose up -d`
+- Waits for PostgreSQL readiness
+- Prints loaded-row counts and connection commands
+
+## Start (manual fallback)
 
 ```bash
 docker compose up -d

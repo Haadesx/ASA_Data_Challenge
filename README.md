@@ -31,6 +31,7 @@ After GitHub Pages is enabled, public URL should be:
 A Dockerized PostgreSQL setup is available for ad-hoc querying of both the original WWC export and teammate aggregated data.
 
 - Setup guide: `db/README.md`
+- Start script: `./db/start.sh`
 - Compose file: `docker-compose.yml`
 - Init SQL: `db/init/`
 - Source-to-db column mappings: `db/column_mappings/`
