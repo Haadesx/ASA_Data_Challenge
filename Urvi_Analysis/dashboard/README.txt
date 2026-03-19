@@ -14,3 +14,4 @@ Generated files (new subset names + compatibility aliases):
 - Urvi_Analysis/data_products/topic_coverage_summary.csv
 - Urvi_Analysis/data_products/predictive_core_intervention_support.csv
 - Urvi_Analysis/dashboard/data_readiness_dashboard.html
+- Urvi_Analysis/dashboard/texas_dashboard.html
