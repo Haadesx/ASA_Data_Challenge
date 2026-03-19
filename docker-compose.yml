@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: wwc_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: wwc
+      POSTGRES_USER: wwc_user
+      POSTGRES_PASSWORD: wwc_password
+    ports:
+      - "5433:5432"
+    volumes:
+      - wwc_pgdata:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d:ro
+      - ./WWC-export-archive-2025-Aug-25-172838/Interventions_Studies_And_Findings.csv:/data/Interventions_Studies_And_Findings.csv:ro
+      - ./Urvi_Analysis/asadata_aggregated.csv:/data/asadata_aggregated.csv:ro
+
+volumes:
+  wwc_pgdata:

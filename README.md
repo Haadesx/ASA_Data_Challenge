@@ -25,3 +25,12 @@ After GitHub Pages is enabled, public URL should be:
 - `Urvi_Analysis/WWC_Project_Documentation_InDepth.md`
 - `docs/wwc_end_to_end_documentation.md`
 - `Urvi_Analysis/mentor_data_availability_plan.md`
+
+## Docker SQL Environment
+
+A Dockerized PostgreSQL setup is available for ad-hoc querying of both the original WWC export and teammate aggregated data.
+
+- Setup guide: `db/README.md`
+- Compose file: `docker-compose.yml`
+- Init SQL: `db/init/`
+- Source-to-db column mappings: `db/column_mappings/`
