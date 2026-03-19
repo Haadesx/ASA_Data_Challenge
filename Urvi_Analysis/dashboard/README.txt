@@ -15,3 +15,6 @@ Generated files (new subset names + compatibility aliases):
 - Urvi_Analysis/data_products/predictive_core_intervention_support.csv
 - Urvi_Analysis/dashboard/data_readiness_dashboard.html
 - Urvi_Analysis/dashboard/texas_dashboard.html
+
+Rebuild scripts:
+- Urvi_Analysis/scripts/generate_texas_dashboard.py (original-only Texas dashboard using s_Urbanicity_* fields)
