@@ -11,6 +11,7 @@ This setup loads two datasets into PostgreSQL via Docker:
 - Both original and aggregated data in one DB
 - Query-friendly, sanitized lowercase column names
 - Explicit source-to-db mapping in `db/column_mappings/*.csv`
+- Saved query packs and reports, similar to a lightweight analysis notebook but in SQL
 
 ## Start (recommended)
 
@@ -50,18 +51,36 @@ Or from host:
 PGPASSWORD=wwc_password psql -h localhost -p 5433 -U wwc_user -d wwc
 ```
 
+## Run a saved query pack
+
+```bash
+./db/run_query.sh db/queries/texas_urbanicity_eda.sql
+```
+
+That query pack produces:
+
+- table row counts
+- Texas overall vs urban vs rural mean effect sizes
+- rural/urban overlap count
+- Texas urbanicity buckets
+- intervention-name coverage in Texas
+- named intervention summaries by urbanicity bucket
+
+## Reports
+
+- `db/reports/texas_urbanicity_report.md`: written interpretation of the saved Texas urbanicity EDA
+
 ## Quick checks
 
 ```sql
 SELECT COUNT(*) AS original_rows FROM raw.wwc_original;
 SELECT COUNT(*) AS aggregated_rows FROM raw.wwc_aggregated;
 
-SELECT s_region_state, AVG(NULLIF(f_effect_size_wwc, '')::numeric) AS mean_effect
+SELECT
+  COUNT(*) AS texas_rows,
+  AVG(NULLIF(f_effect_size_wwc, '')::numeric) AS mean_effect
 FROM raw.wwc_original
-WHERE s_region_state ILIKE '%Texas%'
-GROUP BY 1
-ORDER BY 2 DESC NULLS LAST
-LIMIT 20;
+WHERE s_region_state_texas = '1.00';
 ```
 
 ## Regenerate schema/mappings (if CSV headers change)
