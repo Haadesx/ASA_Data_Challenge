@@ -35,3 +35,16 @@ A Dockerized PostgreSQL setup is available for ad-hoc querying of both the origi
 - Compose file: `docker-compose.yml`
 - Init SQL: `db/init/`
 - Source-to-db column mappings: `db/column_mappings/`
+
+## SQL Subagent
+
+A reusable delegated-agent setup for SQL analysis lives at:
+
+- `.claude/agents/wwc-postgres-analyst.md`
+- `docs/data/wwc-postgres-schema.md`
+
+Compatibility pointer:
+
+- `docs/asa_sql_subagent.md`
+
+Use the canonical agent spec when you want a subagent to run reproducible WWC SQL analysis against the Docker database.
